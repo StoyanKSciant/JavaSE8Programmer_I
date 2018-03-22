@@ -7,5 +7,6 @@ public class CourseBook extends Book{
 	public CourseBook() {
 		author = "ABC";
 		modifyTemplate();
+		countPages(); // CourseBook can't access private method countPages
 	}
 }

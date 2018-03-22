@@ -9,8 +9,12 @@ public class House {
 		book.printBook();
 
 		// can't access protected
-
 		book.author="ABC";
 		book.modifyTemplate();
+
+		Book b = new Book();
+		// can't access package
+		int c = b.issueCount;
+		b.issueHistory();
 	}
 }
