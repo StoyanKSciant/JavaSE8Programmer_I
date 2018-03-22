@@ -1,4 +1,4 @@
-package P1.Basics;
+package p1.basics;
 
 class EJavaB {
 	static public void main(String phone[]) {

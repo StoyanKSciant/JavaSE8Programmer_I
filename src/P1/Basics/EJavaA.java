@@ -1,4 +1,4 @@
-package P1.Basics;
+package p1.basics;
 
 class EJavaA {
 	public static void main(String sun[]) {

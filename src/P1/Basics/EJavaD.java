@@ -1,4 +1,4 @@
-package P1.Basics;
+package p1.basics;
 
 class EJavaD {
 	static void public main(String args[]) {

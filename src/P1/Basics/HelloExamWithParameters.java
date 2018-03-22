@@ -1,4 +1,4 @@
-package P1.Basics;
+package p1.basics;
 
 public class HelloExamWithParameters {
 	public static void main(String args[]) {
