@@ -5,4 +5,9 @@ public class Book {
 
 	public void printBook() {
 	}
+
+	protected String author = "ABC";
+
+	protected void modifyTemplate() {
+	}
 }

@@ -7,5 +7,10 @@ public class House {
 		Book book = new Book();
 		String value = book.isbn;
 		book.printBook();
+
+		// can't access protected
+
+		book.author="ABC";
+		book.modifyTemplate();
 	}
 }
