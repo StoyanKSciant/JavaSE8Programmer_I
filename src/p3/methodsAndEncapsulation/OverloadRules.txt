@@ -1,0 +1,56 @@
+
+* Overloaded methods must have different method parameters from one another.
+* Overloaded methods may or may not define a different return type.
+* Overloaded methods may or may not define different access modifiers.
+* Overloaded methods can’t be defined by only changing their return type or
+	access modifiers.
+* Overloaded methods fail to compile when the used calling arguments are dubious.
+* Overloaded constructors must be defined using different argument lists.
+* Overloaded constructors can’t be defined by just a change in the access modifiers.
+* Overloaded constructors must be defined using different argument lists.
+* Overloaded constructors can’t be defined by just a change in the access modifiers.
+* Overloaded constructors may be defined using different access modifiers.
+* A constructor can call another overloaded constructor by using the keyword this.
+* A constructor can’t invoke a constructor by using its class’s name.
+* If present, the call to another constructor must be the first statement in
+	a constructor.
+
+* Overloaded methods can change the access modifiers, but changing the access modifier
+	alone won’t make it an overloaded method.
+
+What happens if you define a return type for a constructor?
+	Java will treat it as another
+	method, not a constructor, which also implies that it won’t be called implicitly when
+	you create an object of its class:
+
+	class Employee {
+		void Employee() {
+			System.out.println("Constructor");
+		}
+	}
+	class Office {
+		public static void main(String args[]) {
+			Employee emp = new Employee();	// Doesn’t call method Employee with return type void
+		}
+	}
+
+An initializer block is defined within a class, not as a part of a method. It executes for
+	every object that’s created for a class. In the following example, the class Employee
+	defines an initializer block:
+
+	class Employee {
+		{
+			System.out.println("Employee:initializer");	//Initializer block
+		}
+	}
+
+You can’t invoke a constructor within a class by using the class’s name.
+
+	class Employee {
+		String name;
+		int age;
+		Employee() {
+			Employee(null, 0);
+		}
+	}
+

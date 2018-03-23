@@ -36,5 +36,10 @@ public class integersExamples {
 		binVal = 0b100001011;
 		System.out.println(baseDecimal + octVal);
 		System.out.println(hexVal + binVal);
+
+		baseDecimal = 015;	// works with 0 for first digit
+		System.out.println(baseDecimal);
+		baseDecimal = 10;
+		System.out.println(baseDecimal = 10);
 	}
 }
