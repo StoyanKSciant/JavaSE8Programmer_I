@@ -1,0 +1,29 @@
+* abstract
+* static
+* final
+* synchronized
+* native
+* strictfp
+* transient
+* volatile
+
+* synchronized — A synchronized method can’t be accessed by multiple
+threads concurrently. This constraint is used to protect the integrity
+of data that might be accessed and changed by multiple threads
+concurrently. You can’t mark classes, interfaces, or variables with
+this modifier.
+
+* native — A native method calls and makes use of libraries and methods
+implemented in other programming languages such as C or C++. You can’t
+mark classes, interfaces, or variables with this modifier.
+
+* transient — A transient variable isn’t serialized when the corresponding
+object is serialized. The transient modifier can’t be applied to classes,
+interfaces, or methods.
+
+* volatile — A volatile variable’s value can be safely modified by different
+threads. Classes, interfaces, and methods cannot use this modifier.
+
+* strictfp — Classes, interfaces, and methods defined using this keyword
+ensure that calculations using floating-point numbers are identical on
+all platforms. This modifier can’t be used with variables.

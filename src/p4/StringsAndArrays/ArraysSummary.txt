@@ -1,0 +1,80 @@
+* An array is an object that stores a collection of values.
+
+* An array itself is an object.
+
+* An array can store two types of data—a collection of primitive data types and a
+collection of objects.
+
+* You can define one-dimensional and multidimensional arrays.
+
+* A one-dimensional array is an object that refers to a collection of scalar values.
+
+* A two-dimensional (or more) array is referred to as a multidimensional array.
+
+* A two-dimensional array refers to a collection of objects, in which each of the
+objects is a one-dimensional array.
+
+* Similarly, a three-dimensional array refers to a collection of two-dimensional
+arrays, and so on.
+
+* Multidimensional arrays may or may not contain the same number of elements
+in each row or column.
+
+* The creation of an array involves three steps: declaration of an array, allocation
+of an array, and initialization of array elements.
+
+* An array declaration is composed of an array type, a variable name, and one or
+more occurrences of [].
+
+* Square brackets can follow either the variable name or its type. In the case of
+multidimensional arrays, it can follow both of them.
+
+* An array declaration creates a variable that refers to null.
+
+* Because no elements of an array are created when it’s declared, it’s invalid to
+define the size of an array with its declaration.
+
+* Array allocation allocates memory for the elements of an array. When you allocate
+memory for an array, you must specify its dimensions, such as the number
+of elements the array should store.
+
+* Because an array is an object, it’s allocated using the keyword new, followed by
+the type of value that it stores, and then its size.
+
+* Once allocated, all the array elements store their default values. Elements of an
+array that store objects refer to null. Elements of an array that store primitive
+data types store 0 for integer types (byte, short, int, long), 0.0 for decimal
+types (float and double), false for boolean, or /u0000 for char data.
+
+* To access an element in a two-dimensional array, use two array position values.
+
+* You can combine all the steps of array declaration, allocation, and initialization
+into one single step.
+
+* When you combine array declaration, allocation, and initialization in a single
+step, you can’t specify the size of the array. The size of the array is calculated by
+the number of values that are assigned to the array.
+
+* You can declare and allocate an array but choose not to initialize it (for example,
+	int[] a = new int[5];).
+
+* The Java compiler doesn’t check the range of the index positions at which you
+try to access an array element. The code throws an ArrayIndexOutOfBoundsException
+exception if the requested index position doesn’t fall in the valid range
+at runtime.
+
+* A multidimensional array can be asymmetrical; it may not define the same number
+of columns for each of its rows.
+
+* The type of an array can also be an interface or abstract class. Such an array
+can be used to store objects of classes that inherit from the interface type or
+the abstract class type.
+
+* The type of an array can also be java.lang.Object. Because all classes extend
+the class java.lang.Object class, elements of this array can refer to any object.
+
+* All the arrays are objects and can access the variable length, which specifies the
+number or components stored by the array.
+
+* Because all arrays are objects, they inherit and can access all methods from the
+class Object.

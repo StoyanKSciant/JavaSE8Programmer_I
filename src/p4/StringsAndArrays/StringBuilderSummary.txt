@@ -1,0 +1,38 @@
+The class StringBuilder is defined in the package java.lang and represents a
+mutable sequence of characters.
+
+* The StringBuilder class is very efficient when a user needs to modify a
+sequence of characters often. Because it’s mutable, the value of a String-
+Builder object can be modified without the need to create a new String-
+Builder object.
+
+* A StringBuilder object can be created using its constructors, which can accept
+either a String object, another StringBuilder object, an int value to specify
+the capacity of StringBuilder, or nothing.
+
+* The methods charAt(), indexOf(), substring(), and length() defined in the class
+StringBuilder work in the same way as methods with the same names defined
+in the class String.
+
+* The append method adds the specified value at the end of the existing value of
+a StringBuilder object.
+
+* The insert() method enables you to insert characters at a specified position in a
+StringBuilder object. The main difference between the append() and insert()
+methods is that the insert() method enables you to insert the requested data at a
+particular position, whereas the append() method only allows you to add the
+requested data at the end of the StringBuilder object.
+
+* The method delete() removes the characters in a substring of the specified
+StringBuilder. The method deleteCharAt() removes the char at the specified
+position.
+
+* Unlike the class String, the class StringBuilder doesn’t define the method trim. !!!
+
+* The method reverse() reverses the sequence of characters of a StringBuilder.
+
+* The replace method in the class StringBuilder replaces a sequence of characters,
+identified by their position, with another String.
+
+* In addition to using the method substring, you can also use the method sub-
+Sequence() to retrieve a subsequence of a StringBuilder object.

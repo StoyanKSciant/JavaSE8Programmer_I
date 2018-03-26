@@ -1,0 +1,58 @@
+The class String represents an immutable sequence of characters.
+
+* A String object can be created by using the operator new, by using the assignment
+operator (=), or by using double quotes (as in System.out.println
+("Four")).
+
+* String objects created using the assignment operator are placed in a POOL of
+String objects. Whenever the JRE receives a new request to create a String
+object using the assignment operator, it checks whether a String object with
+the same value already exists in the pool. If found, it returns the object reference
+for the existing String object from the pool.
+
+* String objects created using the operator new are NEVER placed in the POOL
+of String objects.
+
+* The comparison operator (==) compares String references, whereas the equals
+method compares the String values.
+
+* None of the methods defined in the class String can modify its value.
+
+* The method charAt(int index) retrieves a character at a specified index of
+a String.
+
+
+* The method indexOf() can be used to search a String for the occurrence of a
+char or a String, starting from the first position or a specified position.
+
+* The method substring() can be used to retrieve a portion of a String object.
+The substring method doesn’t include the character at the end position.
+
+* The trim() method will return a new String by removing all the leading and
+trailing white spaces in a String. This method doesn’t remove any white space
+within a String.
+
+* You can use the method length() to retrieve the length of a String.
+
+* The method startsWith() determines whether a String starts with a specified
+String.
+
+* The method endsWith() determines whether a String ends with a specified String.
+
+* It’s a common practice to use multiple String methods in a single line of code.
+When chained, the methods are evaluated from left to right.
+
+* You can use the concatenation operators + and += and comparison operators !=
+and == with String objects.
+
+* The Java language provides special support for concatenating String objects by
+using the operators + and +=.
+
+* The right technique for comparing two String values for equality is to use the
+method equals() defined in the String class. This method returns a true value if
+the object being compared isn’t null and is a String object that represents the
+same sequence of characters as the object to which it’s being compared.
+
+* The comparison operator == determines whether both the reference variables
+are referring to the same String objects. Hence, it’s not the right operator for
+comparing String values.
