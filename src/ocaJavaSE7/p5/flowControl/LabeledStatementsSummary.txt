@@ -1,0 +1,23 @@
+You can use a labeled break statement to exit an outer loop. Here’s an example:
+
+	String[] programmers = {"Outer", "Inner"};
+	outer:
+	for (String outer : programmers) {
+		for (String inner : programmers) {
+			if (inner.equals("Inner")){
+				break outer;
+				// OR
+				continue outer;
+			}
+			System.out.print(inner + ":");
+		}
+	}
+
+* You can add labels to a code block defined using braces, {}, all looping statements
+(for, enhanced for loop, while, do-while), conditional constructs (if
+and switch statements), expressions and assignments, return statements, try
+blocks, and throws statements.
+
+*  You can’t add labels to declarations of variables.
+*  You can use a labeled break statement to exit an outer loop.
+*  You can use a labeled continue statement to skip the iteration of the outer loop

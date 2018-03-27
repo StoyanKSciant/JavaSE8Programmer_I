@@ -1,0 +1,11 @@
+*  The break statement is used to exit—or break out of—the for, for-each, do, and
+do-while loops and the switch construct.
+
+*  The continue statement is used to skip the remaining steps in the current iteration
+and start with the next loop iteration. The continue statement works with
+the for, for-each, do, and do-while loops and the switch construct.
+
+*  When you use the break statement with nested loops, it exits the inner loop.
+
+*  When you use the continue statement with nested loops, it exits the current
+iteration of the inner loop.

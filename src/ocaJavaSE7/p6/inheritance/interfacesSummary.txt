@@ -1,0 +1,58 @@
+* Though Java does not allow a class to inherit from more than one class, it allows a class
+to implement multiple interfaces. A class uses the keyword implements to implement
+an interface.
+
+* Does a change in the signature of a method in an interface have any impact on the definition
+of this method in the classes that implement it? Yes, it does. If the signature of a
+method is changed in an interface, all classes that implement the interface will fail to
+compile
+
+* An interface can only define constants. Once it’s assigned, you can’t change the value
+of a constant.
+
+* The variables of an interface are implicitly public, final, and static.
+	interface MyInterface {	is equivalent to: 	interface MyInterface {
+		int age = 10;				--->			public static final int AGE = 10;
+	}											}
+
+* If a derived class doesn’t implement all the abstract methods defined by its base class, then it also needs to be
+an abstract class.
+
+* You should initialize all variables in an interface, or your code won’t compile:
+	interface MyInterface {
+		int AGE;		// won't compile
+	}
+
+* The access modifiers play an important role in determining the inheritance of base
+class members in derived classes. A derived class inherits all the non-private members
+of its base class.
+
+* Because a derived class may inherit different implementations for the same method
+signature from multiple base classes, multiple inheritance is not allowed in Java.
+
+* Default—Members with default access can be accessed in a derived class only if
+base and derived classes reside in the same package.
+
+* protected—Members with protected access are accessible to all the derived
+classes, regardless of the packages in which the base and derived classes are defined.
+
+* public—Members with public access are visible to all the other classes.
+
+* private base class members can't be inherited.
+
+* Base class members with default access can't be inherited, if the base class and derived classes exist
+in separate packages.
+
+* Constructors of the base class can't be inherited. A derived class can call a base class’s constructors,
+but it doesn’t inherit them (section 6.5 discusses how a derived class can
+call a base class’s constructors using the implicit reference super).
+
+* An abstract class can extend a concrete class and vice versa.
+
+* An abstract class can implement interfaces.
+
+* An abstract class can extend another abstract class.
+
+* The first concrete class in the hierarchy must supply actual method implementations
+for all abstract methods.
+
