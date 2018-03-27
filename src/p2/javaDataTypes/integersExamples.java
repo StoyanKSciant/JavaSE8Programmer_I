@@ -1,4 +1,4 @@
-package p2.JavaDataTypes;
+package p2.javaDataTypes;
 
 public class integersExamples {
 

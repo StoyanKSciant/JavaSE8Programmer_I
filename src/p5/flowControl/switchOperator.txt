@@ -1,0 +1,60 @@
+switch accepts:	(Note: no floats)
+	-char
+	-byte
+	-short
+	-int
+	-String
+	-Integer
+	-Short
+	-Byte
+	-Character
+	-enum
+
+
+*The value of a case label must be a compile-time constant value; that is, the
+value should be known at the time of code compilation:
+	int a=10, b=20, c=30;
+	switch (a) {
+		case b+c: System.out.println(b+c); break;	// not allowed
+		case 10*7: System.out.println(10*7512+10); break;	// allowed
+	}
+
+*null isn’t allowed as a case label
+
+You can define multiple statements in the update clause, including calls to other
+methods. The only limit is that these statements will execute in the order in which
+they appear, at the end of all the statements defined in the for block.
+
+	String line = "ab";
+	for (int i=0; i < line.length(); ++i, printMethod())	// call other method in statement
+	System.out.println(line.charAt(i));
+	}
+		private static void printMethod() {
+		System.out.println("Happy");
+	}
+
+*LABELED BREAK STATEMENTS
+
+You can use a labeled break statement to exit an outer loop. Here’s an example:
+
+	String[] programmers = {"Outer", "Inner"};
+	outer:
+	for (String outer : programmers) {
+		for (String inner : programmers) {
+			if (inner.equals("Inner")){
+				break outer;
+				// OR
+				continue outer;
+			}
+			System.out.print(inner + ":");
+		}
+	}
+
+
+You can add labels to a code block defined using braces, {}, all looping
+statements (for, enhanced for loop, while, do-while), conditional constructs
+(if and switch statements), expressions and assignments, return statements,
+try blocks, and throws statements.
+
+
+

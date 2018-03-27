@@ -1,4 +1,4 @@
-package p4.StringsAndArrays;
+package p4.stringsAndArrays;
 
 public class StringsExamples {
 
