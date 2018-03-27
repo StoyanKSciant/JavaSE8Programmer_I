@@ -23,4 +23,18 @@ public class Programmer extends Employee implements Trainable {
 	public void attendTraining(String[] trainingSchedule) {
 		System.out.println("Prog - attendTraining");
 	}
+
+	@Override
+	public void startProjectWork() {
+		defineClasses();
+		unitTestCode();
+	}
+
+	private void defineClasses() {
+		System.out.println("define classes");
+	}
+
+	private void unitTestCode() {
+		System.out.println("unit test code");
+	}
 }

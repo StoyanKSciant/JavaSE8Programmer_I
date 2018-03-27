@@ -1,0 +1,19 @@
+*  Overridden methods are defined by classes and interfaces that share inheritance
+relationships.
+
+*  The name of the overridden method must be the same in both the base class
+and the derived class.
+
+*  The argument list passed to the overridden method must be the same in both
+the base class and derived class.
+
+*  The return type of an overriding method in the derived class can be the same,
+or a subclass of the return type of the overridden method in the base class.
+When the overriding method returns a subclass of the return type of the overridden
+method, it is known as a covariant return type.
+
+*  An overridden method defined in the base class can be an abstract method or
+a non-abstract method.
+
+*  Access modifiers for an overriding method can be the same or less restrictive
+than the method being overridden, but they can’t be more restrictive
