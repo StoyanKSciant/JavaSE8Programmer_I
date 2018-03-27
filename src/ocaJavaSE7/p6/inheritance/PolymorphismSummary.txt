@@ -1,0 +1,28 @@
+* Polymorphism is the ability of objects to execute methods defined in a superclass
+or base class, depending upon their type. Classes that share an inheritance relationship
+exhibit polymorphism. The polymorphic method should be defined in both the
+base class and the inherited class.
+
+* The polymorphic methods are also called overridden methods.
+
+* Overridden methods should define methods with the same name, same argument
+list, same list of method parameters. The return type of the overriding method can
+be the same, or a subclass of the return type of the overridden method in the base
+class, which is also known as covariant return type.
+
+* Access modifiers for an overriding method can be the same or less restrictive
+but can’t be more restrictive than the method being overridden.
+
+* A derived class is said to override a method in the base class if it defines a
+method with the same name, same parameter list, and same return type as in
+the derived class.
+
+* If a method defined in a base class is overloaded in the derived classes, then
+these two methods (in the base class and the derived class) are not called polymorphic
+methods.
+
+* When implementing polymorphism with classes, a method defined in the base
+class may or may not be abstract.
+
+* When implementing polymorphism with interfaces, a method defined in the
+base interface is always abstract.

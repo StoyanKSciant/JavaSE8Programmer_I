@@ -1,0 +1,40 @@
+* A class can inherit the properties and behavior of another class.
+
+* An interface can inherit zero or more interfaces. An interface cannot inherit
+a class.
+
+* Inheritance enables you to use existing code.
+
+* Inheriting a class is also known as subclassing.
+
+* A class that inherits another class is called a derived class or subclass.
+
+* A class that is inherited is called a parent or base class.
+
+* Private members of a base class cannot be inherited in the derived class.
+
+* A derived class can only inherit members with the default access modifier if
+both the base class and the derived class are in the same package.
+
+* A class uses the keyword extends to inherit a class.
+
+* An abstract class can inherit a concrete class, and a concrete class can inherit
+an abstract class.
+
+							Interfaces
+
+* A class can implement multiple interfaces.
+
+* An interface uses the keyword extends to inherit another interface.
+
+* A class uses the keyword implements to implement an interface.
+
+* A class can implement multiple interfaces but can inherit only one class.
+
+* An interface can extend multiple interfaces.
+
+* The method signatures of a method defined in an interface and in the class
+that implements the interface must match; otherwise, the class won’t compile.
+
+* An abstract class can inherit a concrete class, and a concrete class can inherit
+an abstract class.

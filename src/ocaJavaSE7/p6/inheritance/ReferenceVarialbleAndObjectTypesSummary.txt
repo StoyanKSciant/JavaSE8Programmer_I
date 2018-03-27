@@ -1,0 +1,31 @@
+* With inheritance, you can also refer to an object of a derived class using a variable
+of a base class or interface.
+
+* An object of a base class can’t be referred to using a reference variable of its
+derived class.
+
+* When an object is referred to by a reference variable of a base class, the reference
+variable can only access the variables and members that are defined in the
+base class.
+
+* When an object is referred to by a reference variable of an interface implemented
+by a class, the reference variable can access only the variables and methods
+defined in the interface.
+
+* You may need to access an object of a derived class using a reference variable of
+the base class to group and use all the classes with common parent classes
+or interfaces.
+
+* With inheritance, you can also refer to an object of a derived class using a variable
+of a base class or interface.
+* An object of a base class can’t be referred to using a reference variable of its
+derived class.
+* When an object is referred to by a reference variable of a base class, the reference
+variable can only access the variables and members that are defined in the
+base class.
+* When an object is referred to by a reference variable of an interface implemented
+by a class, the reference variable can access only the variables and methods
+defined in the interface.
+* You may need to access an object of a derived class using a reference variable of
+the base class to group and use all the classes with common parent classes
+or interfaces.
