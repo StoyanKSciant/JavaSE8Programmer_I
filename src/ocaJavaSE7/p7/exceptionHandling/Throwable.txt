@@ -1,0 +1,61 @@
+* An exception is an object of the class java.lang.Throwable.
+
+* A user-defined class can throw any exception from the Java API.
+
+* When a piece of code hits an obstacle in the form of an exceptional condition,
+it creates an object of subclass java.lang.Throwable, initializes it with the necessary
+information (such as its type and optionally a textual description and the
+offending program’s state), and hands it over to the JVM.
+
+* The JVM keeps an account of all the methods that were called when it hits the
+code that throws an exception. To find an appropriate exception handler, it
+looks through all these method calls.
+
+* Define catch blocks to include alternative code to execute when an exceptional
+condition arises.
+
+* A try block can be followed by one or more catch blocks.
+
+* The catch blocks must be followed by zero or one finally block.
+
+* A try block can’t define multiple finally blocks.
+
+* The order in which the catch blocks are placed matters. If the caught exceptions
+have an inheritance relationship, the base class exceptions can’t be caught
+before the derived class exceptions. An attempt to do this will result in compilation
+failure.
+
+* A finally block will execute even if a try or catch block defines a return
+statement.
+
+* A try block may be followed by either a catch or a finally block or both.
+
+NB  * If both catch and finally blocks define return statements, the calling method
+	will receive the value from the finally block.
+
+NB  * If a catch block returns a primitive data type, a finally block can’t modify the
+	value being returned by it.
+
+NB  * If a catch block returns an object, a finally block can modify the value being
+	returned by it.
+
+NB  * A finally block alone wouldn’t suffice with a try block if code in the try
+block throws a checked exception. In this case, you need to catch the checked
+exception or define in the method signature that the exception is thrown, or
+your code won’t compile.
+
+* None of the try, catch, and finally blocks can exist independently.
+
+* The finally block can’t appear before a catch block.
+
+* You can rethrow an error that you catch in an exception handler.
+
+* You can either handle an exception or declare it to be thrown by your method.
+In the latter case, you need not handle the exception in your code. This applies
+to checked exceptions.
+
+* You can create nested exception handlers.
+
+* A try, catch, or finally block can define another try-catch-finally block.
+Theoretically, there is no limit on the allowed level of nesting of try-catch-finally
+blocks.

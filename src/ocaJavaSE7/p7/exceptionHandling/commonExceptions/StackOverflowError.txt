@@ -1,0 +1,11 @@
+* The StackOverflowError error extends Virtual-MachineError.
+
+public class DemoStackOverflowError{
+	static void recursion() {
+		recursion();
+	}
+	public static void main(String args[]) {
+		recursion();
+	}
+}
+

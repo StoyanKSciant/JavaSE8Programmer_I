@@ -1,0 +1,14 @@
+*ArrayIndexOutOfBoundsException and IndexOutOfBounds-
+Exception are runtime exceptions, which share an IS-A relationship. IndexOutOf-
+BoundsException is subclassed by ArrayIndexOutOfBoundsException.
+
+* ArrayIndexOutOfBoundsException is thrown when a piece of code tries to access
+an array out of its bounds (either an array is accessed at a position less than 0 or at a
+position greater than or equal to its length).
+
+* IndexOutOfBoundsException is thrown
+when a piece of code tries to access a list, like an ArrayList, using an illegal index
+
+* NOTE: When you try to access an invalid array position, ArrayIndexOutOf-
+BoundsException is thrown. When you try to access an invalid ArrayList
+position, IndexOutOfBoundsException is thrown.

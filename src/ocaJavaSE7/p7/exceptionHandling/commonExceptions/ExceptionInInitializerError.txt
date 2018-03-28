@@ -1,0 +1,34 @@
+* The ExceptionInInitializerError error is typically thrown by the JVM when a
+static initializer in your code throws any type of RuntimeException
+
+* Runtime exceptions arising from any of the followin will throw this error:
+1. Execution of an anonymous static block
+2. Initialization of a static variable
+3. Execution of a static method (called from either of the previous two items)
+
+
+ExceptionInInitializerError caused by NumberFormatException:
+public class DemoExceptionInInitializerError {
+	static {
+		int num = Integer.parseInt("sd", 16);
+	}
+}
+
+
+ExceptionInInitializerError caused by java.lang.NullPointerException
+public class DemoExceptionInInitializerError1 {
+	static String name = null;
+	static int nameLength = name.length();
+}
+
+ExceptionInInitializerError caused by MyException
+public class DemoExceptionInInitializerError2 {
+	static String name = getName();
+	static String getName() {
+		throw new MyException();
+	}
+}
+
+* ExceptionInInitializerError can be caused by an object of RuntimeException only.
+It can’t occur as the result of an error or checked exception thrown by the static
+initialization block.

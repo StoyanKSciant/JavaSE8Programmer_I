@@ -1,0 +1,21 @@
+* errors are considered to be serious exceptional conditions and they
+can’t be directly controlled by your code
+
+* An error is a serious exception thrown by the JVM as a result of an error in the
+environment state that processes your code. For example, NoClassDefFound-
+Error is an error thrown by the JVM when it’s unable to locate the .class file that
+it’s supposed to run. StackOverflowError is another error thrown by the JVM
+when the size of the memory required by the stack of a Java program is greater
+than what the JRE has offered for the Java application. This error usually occurs
+as a result of infinite or highly nested loops.
+
+* An error is a subclass of class java.lang.Error.
+
+* An error need not be a part of a method signature.
+
+* An error can be caught by an exception handler, but it shouldn’t be.
+
+* Though you can handle the errors syntactically, there is little that you can do
+when these errors occur. For example, when the JVM throws OutOfMemory-
+Error, your code execution will halt, even if you define an exception handler
+for it.

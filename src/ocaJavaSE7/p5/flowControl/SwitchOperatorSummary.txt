@@ -6,6 +6,7 @@ values.
 	byte,
 	short,
 	int, and
+	NOTE: doesn’t accept long primitive data type argument.
 String. It also accepts arguments of wrapper classes:
 Character,
 Byte,

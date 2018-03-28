@@ -1,0 +1,19 @@
+* Exceptions are divided into three categories: checked exceptions, runtime (or
+unchecked exceptions), and errors. These three categories share IS-A relationships
+(inheritance).
+
+* Subclasses of the class java.lang.RuntimeException are categorized as runtime
+exceptions.
+
+* Subclasses of the class java.lang.Error are categorized as errors.
+
+* Subclasses of the class java.lang.Exception are categorized as checked exceptions
+if they are not subclasses of class java.lang.Runtime.
+
+* The class java.lang.RuntimeException is a subclass of the class java.lang.Exception.
+
+* The class java.lang.Exception is a subclass of the class java.lang.Throwable.
+
+* The class java.lang.Error is also a subclass of the class java.lang.Throwable.
+
+* The class java.lang.Throwable inherits the class java.lang.Object.

@@ -1,0 +1,68 @@
+* This exception is thrown by the JVM if you try to access a method or a variable with
+a null value.
+
+The key is to ensure that the reference variable has been assigned a non-null value.
+
+* Accessing members of a reference variable that is explicitly assigned a null value.
+
+* Accessing members of an uninitialized instance or static reference variable.
+These are implicitly assigned a null value.
+
+* Using an uninitialized local variable, which may seem to throw a NullPointer-
+Exception.
+
+* Attempting to access nonexistent array positions.
+
+* Using members of an array element that are assigned a null value.
+
+
+* You can prevent a NullPointerException from being thrown by checking whether an
+object is null before trying to access its member:
+
+import java.util.ArrayList;
+	class ThrowNullPointerException {
+	static ArrayList<String> list;
+	public static void main(String[] args) {
+		if (list!=null)				// null check
+		list.add("1");
+	}
+}
+
+* BY DEFAULT, the static and instance variables of a class are assigned a null value.
+
+What happens if you modify the previous code so ArrayList<String> list becomes local?
+
+import java.util.ArrayList;
+class ThrowNullPointerException {
+	public static void main(String[] args) {
+		ArrayList<String> list;
+		if (list!=null)
+			list.add("1");
+	}
+}
+
+Result: Fails to compile
+Interestingly, the previous code fails to compile. list is defined as a local variable
+inside the method main, and
+* BY DEFAULT, local variables aren’t assigned a value—not even a null value.
+
+If you attempt to use an uninitialized local variable, your code will fail to compile.
+
+class ThrowAnotherNullPointerException {
+	static String[] oldLaptops;
+	public static void main(String[] args) {
+		System.out.println(oldLaptops[1]);			// Throws NullPointerException
+
+		String[] newLaptops = new String[2];
+		System.out.println(newLaptops[1].toString());	//Throws NullPointerException
+	}
+}
+
+The variable oldLaptops is assigned a null value by default because it’s a static variable.
+
+* In the exam, watch out for code that tries to use an uninitialized
+local variable. Because such variables aren’t initialized with even a null value,
+you can’t print their value using the System.out.println method. Such code won’t compile.
+
+
+
