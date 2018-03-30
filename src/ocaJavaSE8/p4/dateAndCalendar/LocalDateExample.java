@@ -3,6 +3,7 @@ package ocaJavaSE8.p4.dateAndCalendar;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Month;
+import java.time.Period;
 
 	//LocalDate is immutable. Calling any method on its instance won’t
 	// modify its value!
@@ -85,5 +86,10 @@ public class LocalDateExample {
 		LocalDate aDate = LocalDate.of(1970,1,8);
 		System.out.println(launchBook.toEpochDay());
 		System.out.println(aDate.toEpochDay());
+	}
+
+	public static void manipulateUsingPeriod() {
+		LocalDate date = LocalDate.of(2052, 01, 31);
+		System.out.println(date.plus(Period.ofDays(7)));
 	}
 }
