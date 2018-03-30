@@ -1,22 +1,40 @@
 
 * Overloaded methods must have different method parameters from one another.
+
 * Overloaded methods may or may not define a different return type.
+
 * Overloaded methods may or may not define different access modifiers.
+
 * Overloaded methods can’t be defined by only changing their return type or
-	access modifiers.
+access modifiers.
+
 * Overloaded methods fail to compile when the used calling arguments are dubious.
+
 * Overloaded constructors must be defined using different argument lists.
+
 * Overloaded constructors can’t be defined by just a change in the access modifiers.
+
 * Overloaded constructors must be defined using different argument lists.
+
 * Overloaded constructors can’t be defined by just a change in the access modifiers.
+
 * Overloaded constructors may be defined using different access modifiers.
+
+* Overloaded methods can change the return type of the method, but changing
+the return type won’t make it an overloaded method.
+
 * A constructor can call another overloaded constructor by using the keyword this.
+
 * A constructor can’t invoke a constructor by using its class’s name.
+
 * If present, the call to another constructor must be the first statement in
 	a constructor.
 
-* Overloaded methods can change the access modifiers, but changing the access modifier
+NB * Overloaded methods can change the access modifiers, but changing the access modifier
 	alone won’t make it an overloaded method.
+
+* Overloaded methods can change the return type of the
+	method, but changing the return type won’t make it an overloaded method.
 
 What happens if you define a return type for a constructor?
 	Java will treat it as another
@@ -53,4 +71,3 @@ You can’t invoke a constructor within a class by using the class’s name.
 			Employee(null, 0);
 		}
 	}
-

@@ -1,0 +1,19 @@
+* An executable Java class is a class that, when handed over to the Java Virtual
+Machine (JVM), starts its execution at a particular point in the class. This point
+of execution is the main method.
+
+* For a class to be executable, the class should define a main method with the
+signature public static void main(String args[]) or public static void
+main(String... args). The positions of static and public can be interchanged,
+and the method parameter can use any valid name.
+
+* A class can define multiple methods with the name main, provided that the signature
+of these methods doesn’t match the signature of the main method
+defined in the previous point. These overloaded versions aren’t considered the
+main method.
+
+* The main method accepts an array of type String containing the method
+parameters passed to it by the JVM.
+
+* The keyword java and the name of the class aren’t passed on as command
+parameters to the main method.

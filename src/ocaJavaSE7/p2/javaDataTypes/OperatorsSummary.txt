@@ -1,0 +1,108 @@
+Operators && (AND)
+
+true && true ->  true
+true && false ->  false
+false && true ->  false
+false && false ->  false
+true && true && false -> false
+------------------------------
+Operator || (OR)
+
+true || true ->  true
+true || false ->  true
+false || true ->  true
+false || false ->  false
+false || false || true -> true
+------------------------------
+Operator ! (NOT)
+
+!true ->  false
+!false ->  true
+------------------------------
+
+
+
+							Assignment operators:
+
+* Assignment operators can be used to assign or reassign values to all types of
+variables.
+
+* A variable can’t be assigned to an incompatible value. For example, character
+and numeric values can’t be assigned to a boolean variable and vice versa.
+
+* += and -= are short forms of addition/subtraction and assignment.
+
+* += can be read as “first add and then assign” and -= can be read as “first subtract
+and then assign.”
+
+
+
+							Arithmetic operators:
+
+* Arithmetic operators can’t be used with the boolean data type. Attempting to
+do so will make the code fail to compile.
+
+* ++ and –- are unary increment and decrement operators. These operators work
+with single operands.
+
+* Unary operators can be used in prefix or postfix notation.
+
+* When the unary operators ++ and -- are used in prefix notation, the value of the
+variable increments/decrements just before the variable is used in an expression.
+
+* When the unary operators ++ and -- are used in postfix notation, the value
+of the variable increments/decrements just after the variable is used in an
+expression.
+
+* By default, unary operators have a higher precedence than multiplication operators
+and addition operators.
+
+
+
+							Relational operators:
+
+* Relational operators are used to compare values for equality (==) and inequality
+(!=). They’re also used to determine whether two numeric values are greater
+than (>, >=) or less than (<, <=) each other.
+
+* You can’t compare incomparable values. For example, you can’t compare a
+boolean with an int, a char, or a floating-point number. If you try to do so,
+your code will not compile.
+
+* The operators equal to (==) and not equal to (!=) can be used to compare all
+types of primitives: char, byte, short, int, long, float, double, and boolean.
+
+* The operator == returns true if the primitive values being compared are equal.
+
+* The operator != returns true if the primitive values being compared are not
+equal.
+
+* The result of the relational operator is always a boolean value.
+
+
+
+							Logical operators:
+
+* You can use the logical operators to determine whether a set of conditions is
+true or false and proceed accordingly.
+
+* Logical AND (&&) evaluates to true if all operands are true and false otherwise.
+
+* Logical OR (||) evaluates to true if any or all the operands are true.
+
+* Logical negation (!) negates the boolean value. It evaluates to true for false
+and vice versa.
+
+* The result of a logical operation is always a boolean value.
+
+* The logical operators && and || are also called short-circuit operators. If these
+operators can determine the output of the expression with the evaluation of the
+first operand, they don’t evaluate the second operand.
+
+* The && operator returns true only if both of the operands are true. If the first
+operand to this operator evaluates to false, the result can never be true.
+Therefore, && does not evaluate the second operand.
+
+* Similarly, the || operator returns true if any of the operands is true. If the first
+operand to this operator evaluates to true, the result can never be false.
+Therefore, || does not evaluate the second operator.

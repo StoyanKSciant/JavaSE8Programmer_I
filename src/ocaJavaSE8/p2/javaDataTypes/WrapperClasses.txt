@@ -1,0 +1,72 @@
+* Wrapper classes are immutable = classes that don't allow changes to the
+state of their instances after initialization. The wrapper class variable
+is assigned a new object.
+
+* all wrapper classes extends the class java.lang.nuber classes Boolean and
+Character directly extend the class Object.
+
+* You can create objects of all the wrapper classes in the multiple ways:
+1. Assignment - By assigning a primitive to a wrapper class variable (autoboxing)
+
+Boolean b = true;
+Byte byte1 = 10;
+
+
+2. Constructor - By using wrapper class constructors
+They don't accept non-argument constructor because they are immutable and can't
+be changed later.
+
+Boolean bool2 = new Boolean("trUE");	// String argumnet is not case-sensitive
+Byte byte2 = new Byte("10");
+
+
+3. Static methods - By calling static method of wrapper classes, like, valueOf()
+
+Boolean bool4 = Boolean.valueOf(true);
+Double double4 = Double.valueOf(10.2);
+
+
+					Comparing objects of wrapper class
+
+*The valueOf() method return an object of the corresponding wrapper
+when it's passed an argument of a primitive type or String.
+
+NB* Wrapper classes Byte, Short, Integer, Long cache objects with
+	values of the range -128 to 127. The Character class caches objects
+	with values 0 to 127.
+	These classes define inner static classes that store
+	objects for the primitive values -128 to 127 of 0 to 127 in an array.
+	If ypu request and obhect of any of these classes, from this range,
+	the valueOf() method retunrs a reference to a predefined object;
+	otherwise, it creates a new object and returns its reference;
+
+	of any of these classes, from the range, the valueOf() method
+	returns a reference toa  predefined object, otherwise it creates a
+	new object and returns its reference:
+
+		Long var1 = Long.valueOf(123);
+		Long var2 = Long.valueOf("123");
+		System.out.println(var1 == var2);	// compare cached values
+
+		Long var3 = Long.valueOf(223);
+		Long var4 = Long.valueOf(233);
+		System.out.println(var3 == var4);	// compare object instances
+
+* No cached instances exists for Double and Float
+
+* You can't compare wrapper instances for equality using equals() or ==
+If they aren't of the same class. The code won't compile for instances that
+are compared using ==. When compared using equals(), the output will be false.
+
+* AUTOBOXING Java converts primitive types to their wrapper equivalence
+-=/+= can be used only with primitives (wrappers are immutable!)
+
+* UNBOXING converts wrapper classes to their primitive types equivalence
+result of arithmetic operation may be stored in List of generics using
+which requires conversion to object instance
+
+* unboxing wrapper reference variable, which refers to null will throw
+a NullPointerException
+
+
+

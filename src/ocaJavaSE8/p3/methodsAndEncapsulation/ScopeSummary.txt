@@ -1,0 +1,32 @@
+								Scope of variables:
+
+* Variables can have multiple scopes: class, instance, local, and method parameters.
+
+* Local variables are defined within a method. Loop variables are local to the
+loop within which they’re defined.
+
+* The scope of local variables is less than the scope of a method if they’re
+declared in a sub-block (within braces, {}) in a method. This sub-block can be
+an if statement, a switch construct, a loop, or a try-catch block (discussed in
+chapter 7).
+
+* Local variables can’t be accessed outside the method in which they’re defined.
+
+* In a method, a local variable can’t be accessed before its declaration.
+
+* Instance variables are defined and accessible within an object. They’re accessible
+to all the instance methods of a class.
+
+* Class variables are shared by all the objects of a class—they can be accessed even
+if there are no objects of the class.
+
+* Method parameters are used to accept arguments in a method. Their scope is
+limited to the method where they’re defined.
+
+* A method parameter and a local variable can’t be defined using the same name.
+
+* Class and instance variables can’t be defined using the same name.
+
+* Local and instance variables can be defined using the same name. In a method,
+if a local variable exists with the same name as an instance variable, the local
+variable takes precedence.
