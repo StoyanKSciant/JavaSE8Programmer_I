@@ -15,8 +15,7 @@ class BankAccount {
 	}
 }
 
-public class Comparison {
-
+public class CompairUserClasses {
 
 	public static void defaultComparisonTest(){
 		BankAccount b1 = new BankAccount();
@@ -28,11 +27,10 @@ public class Comparison {
 		BankAccount b3 = new BankAccount();
 		b3.acctNumber = "11223344";
 		b3.acctType = 3;
-		System.out.println(b1.equals(b2));	// false
-		System.out.println(b2.equals(b3));	// true
-		System.out.println(b1.equals(new String("abc")));	// false
+		System.out.println(b1.equals(b2));	// false, values of the reference variables don't match
+		System.out.println(b2.equals(b3));	// true,	the values of the reference variables match
+		System.out.println(b1.equals(new String("abc")));	// false, different object type
 	}
-
 
 	public static void main(String args[]) {
 		defaultComparisonTest();

@@ -46,6 +46,8 @@ the list, if it’s present.
 
 * You can add multiple elements to an ArrayList from another ArrayList or any
 other class that’s a subclass of Collection by using the method addAll.
+	* addAll(Collection<? extends E> c)
+	* addAll(int index, Collection<? extends E> c)
 
 * You can remove all the ArrayList elements by calling the method clear() on it.
 
