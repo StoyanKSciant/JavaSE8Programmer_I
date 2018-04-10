@@ -1,0 +1,30 @@
+
+* You can use a ternary operator ?: to define a compact if-else construct to assign
+value to a variable depending on a boolean expression.
+
+* The parentheses enclosing a boolean expression are optimal for better readability.
+The code will work without them.
+
+* You can assign a literal value or an expression to a variable using a ternary operator.
+
+* A method that returns a value can be used to initialize a variable in a ternary
+construct.
+
+NB! * If the expression used to evaluate a ternary operator doesn't return a boolean or
+Boolean value, the code won't compile.
+
+* All three parts of a ternary operator are mandatory.
+
+NB! * The value returned by a ternary operator must be assign to a variable, or the code
+won't compile.
+
+* Because a ternary operator must return values, which are assigned to a variable, it can't
+include code blocks.
+
+* A method that doesn't return a value can't be used to initialize variables in a ternary
+construct.
+
+* The value returned by a ternary construct must be compatible with a variable type to which
+the value is being assigned.
+
+* Ternary operators can be nested to any level.

@@ -1,0 +1,10 @@
+Use casting to access some of the members of derived class, which aren't
+explicitly available, by using the reference variable of the base type or
+the implemented interface.
+
+((HRExecutive) interviewer).specialization = new String[] {"Staffing"}
+
+The parentheses that surround the whole (HRExecutive)interviewer token
+are required to bypass the Java operator precedence rules, according to
+which the "casting" operator has lower priority then the "." operator
+

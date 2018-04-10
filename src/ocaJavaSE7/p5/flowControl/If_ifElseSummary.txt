@@ -1,31 +1,31 @@
 * The if statement enables you to execute a set of statements in your code based
 on the result of a condition, which should evaluate to a boolean or Boolean value.
 
-*  The multiple flavors of an if statement are if, if-else, and if-else-if-else.
+* The multiple flavors of an if statement are if, if-else, and if-else-if-else.
 
-*  The if construct doesn’t use the keyword then to define code to execute when
+* The if construct doesn’t use the keyword then to define code to execute when
 an if condition evaluates to true. The then part of the if construct follows the
 if condition.
 
-*  An if construct may or may not define its else part.
+* An if construct may or may not define its else part.
 
-*  The else part of an if construct can’t exist without the definition of its then part.
+* The else part of an if construct can’t exist without the definition of its then part.
 
-*  It’s easy to get confused with the common if-else syntax used in other programming
+* It’s easy to get confused with the common if-else syntax used in other programming
 languages. The if-elsif and if-elseif statements aren’t used in Java to
 define if-else-if-else constructs. The correct keywords are if and else.
 
-*  You can execute a single statement or a block of statements for corresponding
+* You can execute a single statement or a block of statements for corresponding
 true and false conditions. A pair of braces marks a block of statements: {}.
 
-*  If an if construct doesn’t use {} to define a block of code to execute for its then
+* If an if construct doesn’t use {} to define a block of code to execute for its then
 or else part, only the first line of code is part of the if construct.
 
-*  An assignment of a boolean variable can also be passed as an argument to the
+* An assignment of a boolean variable can also be passed as an argument to the
 if construct. It’s valid because the resultant value is boolean, which is accepted
 by if constructs.
 
-*  Theoretically, nested if and if-else constructs have no limits on their levels.
+* Theoretically, nested if and if-else constructs have no limits on their levels.
 When using nested if-else constructs, be careful about matching the else part
 with the right if part.
 
