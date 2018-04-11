@@ -1,0 +1,21 @@
+
+* The import statement can't be used to import multiple classes or interfaces
+with the same name.
+
+* By default, all classes and interfaces in separate packages and subpackages
+aren't visible to each  other.
+
+* All classes and interfaces in the same package are visible to each other.
+
+* An import statement allows the use of simple name for packaged classes and
+interfaces defined from different packages.
+
+* An import statement allows the use of simple names for packaged classes and
+interfaces defined in other packages.
+
+* You can't import classes from a subpackage by using the wildcard character,
+an asteriks (*), in the import statement.
+
+NB! * A class from a default package can't be used in any named package class
+regardless of whether it's defined within the same directory or not.
+

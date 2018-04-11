@@ -1,0 +1,12 @@
+
+* An initializer block is defined within a class, not as a part of a method. It executes
+for every object that's created for a class.
+
+* If you define both an initializer and a constructor for a class, both of these will
+execute. The initializer block will execute prior to the constructor.
+
+* Unlike constructor, and initializer block can't accept method parameters.
+
+* An initializer block can create local variables. It can access and assign values to
+instance and static variables. It can call methods and define loops, conditional statemnts
+and try-catch-finally blocks.
