@@ -1,0 +1,75 @@
+
+* LocalDate can be used to store dates like 2015-12-27 without time or time zones.
+
+* LocalDate instances are immutable.
+
+* The LocalDate constructor is marked private.
+
+* Use LocalDate’s overloaded static method of() to instantiate it:
+	– public static LocalDate of(int year, int month, int dayOfMonth)
+	– public static LocalDate of(int year, Month month, int dayOfMonth)
+
+* The of() methods will throw a DateTimeException when values passed to it are
+out of range.
+
+* In date classes released with Java 8, the January month is represented by int
+value 1 and not 0. The date classes defined with or prior to Java 7 represent January
+using 0.
+
+* LocalDate’s static method now() returns the current date from the system clock
+as a LocalDate instance.
+
+* Use LocalDate’s static method parse() to parse a string in the format 2016-02-
+27 to instantiate LocalDate.
+
+* If you pass invalid values to parse() or of(), you’ll get a DateTimeParse-
+Exception. The format of the string passed to parse() must be exactly of the
+format 9999-99-99. The month and date values passed to parse() must be of
+two digits; a single digit is considered an invalid value. For days and months
+with a value 1–9, pass 01–09.
+
+* You can use LocalDate’s instance methods like getXX() to query LocalDate on
+its year, month, and date values:
+	– getDayOfMonth()
+	– getDayOfWeek()
+	– getDayOfYear()
+	– getMonth()
+	– getMonthValue()
+	– getYear()
+
+* LocalDate’s instance minusXX() methods return a copy of its value after subtracting
+the specified days, months, weeks, or years from it:
+	– minusDays()
+	– minusMonths()
+	– minusWeeks()
+	– minusYears()
+
+* LocalDate is immutable. All the methods that seem to manipulate its value
+return a copy of the LocalDate instance on which it’s called.
+
+* The plusXX() methods return a copy of LocalDate’s value after adding the specified
+days, months, or year to it:
+	– plusDays()
+	– plusMonths()
+	– plusWeeks()
+	– plusYears()
+
+* The withXX() methods return a copy of LocalDate’s value replacing the specified
+day, month, or year in it:
+	– withDayOfMonth()
+	– withDayOfYear()
+	– withMonth()
+	– withYear()
+
+* All additions, subtractions, or replacements to LocalDate consider leap years.
+
+* Despite the verbs used in the previous methods (add, subtract, replace), none of
+them actually modifies an existing LocalDate—all of them return a new instance
+with the requested changes applied.
+
+* The LocalDate class defines overloaded atTime() instance methods. These
+methods combine LocalDate with time to create and return LocalDateTime,
+which stores both the date and time.
+
+* Use the method toEpochDay() to convert LocalDate to the epoch date—the
+count of days from January 1, 1970.

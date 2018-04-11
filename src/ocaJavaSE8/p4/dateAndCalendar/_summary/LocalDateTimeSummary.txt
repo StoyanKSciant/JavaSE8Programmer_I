@@ -1,0 +1,10 @@
+
+* LocalDateTime stores a value like 2050-06-18T14:20:30:908765 (year-monthdayThours:
+minutes:seconds:nanoseconds).
+
+* The LocalDateTime class uses the letter T to separate date and time values in its
+printed value.
+
+* You can consider this class to offer the functionality of both the LocalDate and
+LocalTime classes. This class defines similar methods as those defined by the
+LocalDate and LocalTime classes.
