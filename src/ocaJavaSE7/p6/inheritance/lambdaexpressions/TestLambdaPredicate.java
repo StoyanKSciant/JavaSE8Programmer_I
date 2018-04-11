@@ -1,9 +1,9 @@
 package ocaJavaSE7.p6.inheritance.lambdaexpressions;
 
 import java.util.ArrayList;
+import java.util.function.Predicate;
 
-public class Test {
-
+public class TestLambdaPredicate {
 	public static void main(String[] args) {
 
 		Emp e1 = new Emp("Schreya", 5, 9999.00);
@@ -16,12 +16,15 @@ public class Test {
 		empArrList.add(e2);
 		empArrList.add(e3);
 		empArrList.add(e4);
-		filter(empArrList, new ValidatePerformanceRating());
+
+		//					{	parameter -> lambda body	}	curly braces are optional
+		Predicate<Emp> predicate = e -> e.getPerformanceRating() >= 5;
+		filter(empArrList, predicate);
 	}
 
-	static void filter(ArrayList<Emp> list, Validate rule) {
-		for(Emp e : list) {
-			if(rule.check(e)) {
+	static void filter(ArrayList<Emp> list, Predicate<Emp> rule) {
+		for (Emp e : list) {
+			if (rule.test(e)) {				// Predicate method boolean test()
 				System.out.println(e);
 			}
 		}

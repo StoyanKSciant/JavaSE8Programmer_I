@@ -1,7 +1,7 @@
-there are a few scenarios in Java in which a finally block does not execute:
-* Application termination—The try or the catch block executes System.exit,
-which terminates the application
-* Fatal errors—A crash of the JVM or the OS
+There are a few scenarios in Java in which a finally block does not execute:
+	* Application termination—The try or the catch block executes System.exit,
+	which terminates the application
+	* Fatal errors—A crash of the JVM or the OS
 
 * Watch out for code that returns a value from the catch block and
 modifies it in the finally block. If a catch block returns a primitive data

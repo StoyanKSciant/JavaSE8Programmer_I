@@ -1,12 +1,3 @@
-* Though Java does not allow a class to inherit from more than one class, it allows a class
-to implement multiple interfaces. A class uses the keyword implements to implement
-an interface.
-
-* Does a change in the signature of a method in an interface have any impact on the definition
-of this method in the classes that implement it? Yes, it does. If the signature of a
-method is changed in an interface, all classes that implement the interface will fail to
-compile
-
 * An interface can only define constants. Once it’s assigned, you can’t change the value
 of a constant.
 
@@ -15,44 +6,63 @@ of a constant.
 		int age = 10;				--->			public static final int AGE = 10;
 	}											}
 
-* If a derived class doesn’t implement all the abstract methods defined by its base class, then it also needs to be
-an abstract class.
+* A class can implement multiple interfaces.
 
-* You should initialize all variables in an interface, or your code won’t compile:
-	interface MyInterface {
-		int AGE;		// won't compile
-	}
+* An interface uses the keyword extends to inherit another interface.
 
-* The access modifiers play an important role in determining the inheritance of base
-class members in derived classes. A derived class inherits all the non-private members
-of its base class.
+* A class uses the keyword implements to implement an interface.
 
-* Because a derived class may inherit different implementations for the same method
-signature from multiple base classes, multiple inheritance is not allowed in Java.
+* A class can implement multiple interfaces but can inherit only one class.
 
-* Default—Members with default access can be accessed in a derived class only if
-base and derived classes reside in the same package.
+* An interface can extend multiple interfaces.
 
-* protected—Members with protected access are accessible to all the derived
-classes, regardless of the packages in which the base and derived classes are defined.
+* Interfaces in Java 8 can also define abstract methods.
 
-* public—Members with public access are visible to all the other classes.
+* The declaration of a interface can't include a class name. An interface can never extends
+any class.
 
-* private base class members can't be inherited.
+* All the top-level Java types (classes, enums, interfaces) can be declared using only two
+access levels: public and default.
 
-* Base class members with default access can't be inherited, if the base class and derived classes exist
-in separate packages.
+* Inner or nested types can be declared using any access level.
 
-* Constructors of the base class can't be inherited. A derived class can call a base class’s constructors,
-but it doesn’t inherit them (section 6.5 discusses how a derived class can
-call a base class’s constructors using the implicit reference super).
+* A static method in an interface can't be called using a reference variable. It must be
+called using the interface name.
 
-* An abstract class can extend a concrete class and vice versa.
+* Unlike an interface, if you define a static method in a base class, it can be accessed using
+either a reference variable or the class name.
 
-* An abstract class can implement interfaces.
+* You must implement an abstract method of an interface using the explicit access modifier
+public.
 
-* An abstract class can extend another abstract class.
+* While overriding a default method, you must not use the keyword default. The rules for
+overriding default and regular methods are same.
 
-* The first concrete class in the hierarchy must supply actual method implementations
-for all abstract methods.
+* static methods in a class and the interface that it implements are not related to each
+other. A static method in a class doesn't hide or override the static method in the
+interface that it implements.
 
+* A class can extends multiple interfaces, only if a set of rules is abhered to:
+	- A class can implement multiple interfaces with the same constant names only if the
+	reference to the constants is not ambiguous.
+	- A class can implement multiple interface with the same abstract method names if they
+	have the same signature or form an overloaded set of methods.
+	- A class can implement multiple interfaces with the same default method name if it
+	overrides its default implementation.
+	- A class can implement multiple interfaces, with the same static method name
+	regardless of their return types or signature.
+
+* When an interface extends multiple interfaces, Java ensured that it doesn't inherit
+multiple method implementations for the same method.
+
+* An interface can extend multiple interfaces that define static methods with the same name
+the signatures of these methods don't matter.
+
+* The variables of an interface are implicitly public, final, and static.
+
+* The methods of an interface are implicitly public.
+
+* An interface can't define any constructors.
+
+* The method signatures of a method defined in an interface and in the class
+that implements the interface must match; otherwise, the class won’t compile.

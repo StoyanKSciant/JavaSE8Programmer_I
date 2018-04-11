@@ -1,3 +1,6 @@
+* Casting is the process of forcefully making a variable behave as a variable
+of another type.
+
 Use casting to access some of the members of derived class, which aren't
 explicitly available, by using the reference variable of the base type or
 the implemented interface.

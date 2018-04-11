@@ -4,7 +4,7 @@ Exception.
 
 * A runtime exception is a subclass of java.lang.RuntimeException.
 
-* A runtime exception may not be a part of the method signature, even if a
+NB !* A runtime exception may not be a part of the method signature, even if a
 method may throw it.
 
 * A runtime exception may not necessarily be caught by a try-catch block.

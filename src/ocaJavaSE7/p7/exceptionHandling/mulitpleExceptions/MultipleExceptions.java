@@ -1,4 +1,4 @@
-package ocaJavaSE7.p7.exceptionHandling.mulitpleExeptions;
+package ocaJavaSE7.p7.exceptionHandling.mulitpleExceptions;
 
 import java.io.*;
 

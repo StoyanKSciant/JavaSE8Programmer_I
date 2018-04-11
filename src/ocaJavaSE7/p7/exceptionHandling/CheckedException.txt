@@ -1,3 +1,5 @@
+
+
 * A checked exception is an unacceptable condition foreseen by the author of a
 method but outside the immediate control of the code. For example, FileNot-
 FoundException
@@ -7,10 +9,12 @@ subclass of java.lang.RuntimeException. It’s interesting to note, however,
 that the class java.lang.RuntimeException itself is a subclass of the class
 java.lang.Exception.
 
-* Trying to execute a method that throws a checked exception without handling
+NB! * Checked exceptions must be declared before being thrown
+
+NB! * Trying to execute a method that throws a checked exception without handling
 the thrown exception causes a compilation error.
 
-* Trying to call a method recursively without defining an exit condition is considered
+NB! * Trying to call a method recursively without defining an exit condition is considered
 an exceptional condition.
 
 * If a method uses another method that may throw a checked exception, one of the two

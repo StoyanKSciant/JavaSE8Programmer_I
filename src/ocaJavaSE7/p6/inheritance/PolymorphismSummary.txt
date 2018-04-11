@@ -26,3 +26,5 @@ class may or may not be abstract.
 
 * When implementing polymorphism with interfaces, a method defined in the
 base interface is always abstract.
+
+* Static methods in interfaces don't participate in polymorphism.

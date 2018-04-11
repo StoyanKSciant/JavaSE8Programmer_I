@@ -1,4 +1,5 @@
-* errors are considered to be serious exceptional conditions and they
+
+* Errors are considered to be serious exceptional conditions and they
 can’t be directly controlled by your code
 
 * An error is a serious exception thrown by the JVM as a result of an error in the
@@ -19,3 +20,6 @@ as a result of infinite or highly nested loops.
 when these errors occur. For example, when the JVM throws OutOfMemory-
 Error, your code execution will halt, even if you define an exception handler
 for it.
+
+* ExceptionInInitializerError may be thrown by JVM when a static initializer in your
+code throws a NullPointerException.

@@ -1,0 +1,8 @@
+
+
+Java 8 has added multiple functional interfaces for your convenience. This exam covers
+just one of these - interface Predicate - discussed in the next section.
+
+To use Predicate in your code, your method must accept a parameter of type Predicate
+and you must use its public method test to evaluate an argument.
+
