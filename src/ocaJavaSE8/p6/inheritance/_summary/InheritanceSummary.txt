@@ -1,5 +1,8 @@
 * A class can inherit the properties and behavior of another class.
 
+NB! * A reference variable of the base class can't access the variables and methods
+ defined in its subclass without an explicit cast.
+
 * An interface can inherit zero or more interfaces. An interface cannot inherit a class.
 
 * Inheritance enables you to use existing code.
@@ -9,6 +12,9 @@
 * A class that inherits another class is called a derived class or subclass.
 
 * A class that is inherited is called a parent or base class.
+
+NB! * A base class can use reference variables and object of its derived classes
+(with exception of constructors).
 
 * Private members of a base class cannot be inherited in the derived class.
 

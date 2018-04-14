@@ -1,3 +1,5 @@
+NB! * Interface can't be initialized 
+
 * An interface can only define constants. Once it’s assigned, you can’t change the value
 of a constant.
 
@@ -5,6 +7,10 @@ of a constant.
 	interface MyInterface {	is equivalent to: 	interface MyInterface {
 		int age = 10;				--->			public static final int AGE = 10;
 	}											}
+
+NB! * A class that implements interfaces* (*that have defined a method with the
+same signature and implementation), must always override that methods because 
+of the risk of ambiguity.
 
 * A class can implement multiple interfaces.
 

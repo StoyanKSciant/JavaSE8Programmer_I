@@ -1,4 +1,15 @@
-							Primitive data types:
+NB! * The variable is initialized to its default value if its never actually 
+initialized by the code
+
+Default values:
+
+char - \n0000
+byte, short, int - 0
+long - 0L
+float - 0.0f
+double - 0.0d
+boolean - false
+object - null
 
 * Java defines eight primitive data types: char, byte, short, int, long, float, double,
 and boolean.

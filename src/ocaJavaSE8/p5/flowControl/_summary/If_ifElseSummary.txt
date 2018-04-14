@@ -1,3 +1,8 @@
+NB! * If you initialize a variable within an if or else if construct, the 
+compiler can't be sure if that initialization code is reachable, so this code 
+will throw compiler error. But if there is "else" at if/"if else" code becomes
+compilable.
+
 * The if statement enables you to execute a set of statements in your code based
 on the result of a condition, which should evaluate to a boolean or Boolean value.
 

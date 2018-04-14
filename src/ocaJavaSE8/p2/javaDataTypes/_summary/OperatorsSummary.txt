@@ -14,10 +14,12 @@ false || true ->  true
 false || false ->  false
 false || false || true -> true
 ------------------------------
-Operator ! (NOT)
+Operator ! (NOT)*
 
 !true ->  false
 !false ->  true
+
+* can't be directly applied to variable, only to evaluation condition.
 ------------------------------
 
 
