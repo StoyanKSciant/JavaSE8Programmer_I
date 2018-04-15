@@ -1,4 +1,7 @@
 
+NB! * if the compiler finds unreachable code at compilation time, the code won’t
+ compile.
+
 * Both the do-while and while loops execute a set of statements until the termination
 condition evaluates to false. The only difference between these two
 statements is that the do-while loop executes the code at least once, even if the

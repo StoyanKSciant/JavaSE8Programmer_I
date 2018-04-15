@@ -1,10 +1,30 @@
 
+NB! * Java accepts changes in the objects of base-derived classes as the sole 
+criterion to define overloaded constructors and methods.
+
+Exmp:		class Shoe {}
+			class Boot extends Shoe {}
+			class ShoeFactory {				// *both constructors are valid
+				ShoeFactory(Boot val) {			// *
+					System.out.println("boot");
+				}
+				ShoeFactory(Shoe val) {			// *
+					System.out.println("shoe");
+				}
+			}
+
 * Constructors are special methods defined in a class that create and return an
 object of the class in which they're defined.
 
 * Constructors habe the same name as the class, and the don't cpecify a return type.
 
 * User-defined constructors are defined by the developer.
+
+NB! * While trying to compile child class with no set constructors, the Java
+compiler generates a default constructor for it, which looks like the following:
+ChildClass() {
+	super();
+}
 
 * If a class defines multiple initializer blocks, their order of execution depends on
 their placement in a class. But all of them execute before a class's constructor.

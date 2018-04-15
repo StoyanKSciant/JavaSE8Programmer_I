@@ -11,6 +11,10 @@ double - 0.0d
 boolean - false
 object - null
 
+NB! * The local variables (variables that are declared within a method) aren’t
+initialized with their default values. If you try to print the value of a local
+variable before initializing it, the code won’t compile.
+
 * Java defines eight primitive data types: char, byte, short, int, long, float, double,
 and boolean.
 
