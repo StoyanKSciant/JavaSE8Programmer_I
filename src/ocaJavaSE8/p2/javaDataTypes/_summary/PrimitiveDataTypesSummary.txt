@@ -1,4 +1,4 @@
-NB! * The variable is initialized to its default value if its never actually 
+NB! * The variable is initialized to its default value if its never actually
 initialized by the code
 
 Default values:
@@ -14,6 +14,9 @@ object - null
 NB! * The local variables (variables that are declared within a method) aren’t
 initialized with their default values. If you try to print the value of a local
 variable before initializing it, the code won’t compile.
+
+NB! * Conversion from byte, char or short to int, long or float does not need a cast
+Because int, long or float are bigger that byte char or short.
 
 * Java defines eight primitive data types: char, byte, short, int, long, float, double,
 and boolean.

@@ -10,3 +10,5 @@ execute. The initializer block will execute prior to the constructor.
 * An initializer block can create local variables. It can access and assign values to
 instance and static variables. It can call methods and define loops, conditional statemnts
 and try-catch-finally blocks.
+
+* synchronized keyword can only be applied to a method or a block.

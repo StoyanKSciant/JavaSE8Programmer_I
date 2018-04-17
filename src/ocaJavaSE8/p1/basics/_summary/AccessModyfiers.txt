@@ -1,4 +1,6 @@
 
+public < protected < package (i.e. no modifier) < private
+
 Access PUBLIC members   || Same package||Sepr. package
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||
 Derived classes   		||	  YES  	   ||	 YES 	||

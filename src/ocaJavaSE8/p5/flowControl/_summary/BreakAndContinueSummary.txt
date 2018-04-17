@@ -9,3 +9,8 @@ the for, for-each, do, and do-while loops and the switch construct.
 
 *  When you use the continue statement with nested loops, it exits the current
 iteration of the inner loop.
+
+NB! * A break statement with no label attempts to transfer control to the innermost
+enclosing switch, while, do, or for statement; this statement, which is called the
+break target, then immediately completes normally. !!! If no switch, while, do, or for
+statement encloses the break statement, a compile-time error occurs.

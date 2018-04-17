@@ -1,4 +1,4 @@
-* A switch statement is used to compare the value of a variable with multiple 
+* A switch statement is used to compare the value of a variable with multiple
 predefined values.
 
 *  A switch statement accepts arguments of type
@@ -41,3 +41,27 @@ found and the required code statements have executed.
 * In absence of the break statement, control will fall through all the remaining
 case values in a switch statement until the first break statement is found, evaluating
 the code for the case statements in order.
+
+* Only String, byte, char, short, int, and enum values can be used as types of a switch
+variable. (String is allowed since Java 7.) Wrapper classes Byte, Character, Short, and
+Integer are allowed as well.
+
+* The case constants must be assignable to the switch  variable. For example, if your
+switch variable is of class String, your case labels must use Strings as well.
+
+* The switch variable must be big enough to hold all the case  onstants. For example,
+if the switch variable is of type char, then none of the case  constants can be greater
+than 65535 because a char's range is from 0 to 65535. Similarly,  the following will
+not compile because 300 cannot be assigned to 'by', which can only hold values from
+-128 to 127. byte by = 10;
+	switch(by){     
+		case 200 :  //some code;     
+		case 300 :  //some code; }
+
+* All case labels should be COMPILE TIME CONSTANTS. You cannot have variables as case
+labels.
+
+* No two of the case constant expressions associated with a switch statement may have
+the same value.
+
+* At most one default label may be associated with the same switch statement.

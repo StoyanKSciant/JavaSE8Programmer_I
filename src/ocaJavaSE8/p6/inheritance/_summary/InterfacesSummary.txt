@@ -1,4 +1,4 @@
-NB! * Interface can't be initialized 
+NB! * Interface can't be initialized
 
 * An interface can only define constants. Once it’s assigned, you can’t change the value
 of a constant.
@@ -9,7 +9,7 @@ of a constant.
 	}											}
 
 NB! * A class that implements interfaces* (*that have defined a method with the
-same signature and implementation), must always override that methods because 
+same signature and implementation), must always override that methods because
 of the risk of ambiguity.
 
 * A class can implement multiple interfaces.
@@ -72,3 +72,4 @@ the signatures of these methods don't matter.
 
 * The method signatures of a method defined in an interface and in the class
 that implements the interface must match; otherwise, the class won’t compile.
+
