@@ -1,3 +1,4 @@
+
 Operators && (AND)
 
 true && true ->  true
@@ -5,7 +6,8 @@ true && false ->  false
 false && true ->  false
 false && false ->  false
 true && true && false -> false
-------------------------------
+________________________________
+
 Operator || (OR)
 
 true || true ->  true
@@ -13,14 +15,15 @@ true || false ->  true
 false || true ->  true
 false || false ->  false
 false || false || true -> true
-------------------------------
+________________________________
+
 Operator ! (NOT)*
 
 !true ->  false
 !false ->  true
 
 * can't be directly applied to variable, only to evaluation condition.
-------------------------------
+______________________________________________________________________________
 
 
 

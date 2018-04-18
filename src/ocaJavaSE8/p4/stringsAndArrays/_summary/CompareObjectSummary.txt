@@ -1,10 +1,7 @@
 * Any Java class can define a set of rules to determine whether two objects should
 be considered equal.
 
-* The method equals() is defined in the class java.lang.Object. All the Java
-classes directly or indirectly inherit this class.
-
-* The default implementation of the equals() method only compares whether two
+NB! * The default implementation of the equals() method only compares whether two
 object variables refer to the same object.
 
 * Because instance variables are used to store the state of an object, it’s common
@@ -14,12 +11,11 @@ objects should be considered equal.
 * When you override the equals() method in your class, make sure that you use the
 correct method signature for the equals method.
 
-* The Java API defines a contract for the equals method, which should be taken
-care of when you implement the method in any of your classes.
-
-* According to the contract of the method equals, if a null value is passed to it,
+NB! * The Java API defines a contract for the equals method, which should be
+taken care of when you implement the method in any of your classes.
+According to the contract of the method equals, if a null value is passed to it,
 the method equals should return false.
 
-* If the equals() method modifies the value of any of the instance variables of the
-method parameter passed to it, or of the object on which it is called, it will violate
-the contract.
+* If the equals() method modifies the value of any of the instance variables of
+the method parameter passed to it, or of the object on which it is called, it
+will violate the contract.

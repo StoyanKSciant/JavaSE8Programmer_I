@@ -1,9 +1,8 @@
+
 * An array is an object that stores a collection of values.
 
-* An array itself is an object.
-
-* An array can store two types of data—a collection of primitive data types and a
-collection of objects.
+* An array can store two types of data — a collection of primitive data types
+or a collection of objects.
 
 * You can define one-dimensional and multidimensional arrays.
 
@@ -41,10 +40,10 @@ of elements the array should store.
 * Because an array is an object, it’s allocated using the keyword new, followed by
 the type of value that it stores, and then its size.
 
-* Once allocated, all the array elements store their default values. Elements of an
-array that store objects refer to null. Elements of an array that store primitive
-data types store 0 for integer types (byte, short, int, long), 0.0 for decimal
-types (float and double), false for boolean, or /u0000 for char data.
+NB! * Once allocated, all the array elements store their default values. Elements
+of an array that store objects refer to null. Elements of an array that store
+primitive data types store 0 for integer types (byte, short, int, long), 0.0 for
+decimal types (float and double), false for boolean, or /u0000 for char data.
 
 * To access an element in a two-dimensional array, use two array position values.
 
@@ -55,8 +54,8 @@ into one single step.
 step, you can’t specify the size of the array. The size of the array is calculated by
 the number of values that are assigned to the array.
 
-* You can declare and allocate an array but choose not to initialize it (for example,
-	int[] a = new int[5];).
+* You can declare and allocate an array but choose not to initialize it
+(for example: int[] a = new int[5];).
 
 * The Java compiler doesn’t check the range of the index positions at which you
 try to access an array element. The code throws an ArrayIndexOutOfBoundsException
@@ -73,8 +72,8 @@ the abstract class type.
 * The type of an array can also be java.lang.Object. Because all classes extend
 the class java.lang.Object class, elements of this array can refer to any object.
 
-* All the arrays are objects and can access the variable length, which specifies the
-number or components stored by the array.
+* All the arrays are objects and can access the variable length, which specifies
+the number or components stored by the array.
 
-* Because all arrays are objects, they inherit and can access all methods from the
-class Object.
+* Because all arrays are objects, they inherit and can access all methods from
+the class Object.

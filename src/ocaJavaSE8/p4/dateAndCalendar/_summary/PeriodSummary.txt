@@ -3,17 +3,17 @@
 like 2 years, 5 months, and 10 days. To work with time-based amounts in seconds
 and nanoseconds, you can use the Duration class.
 
+* Period is an immutable class.
+
 * You can add or subtract Period instances from LocalDate and LocalDateTime
 classes.
-
-* Period is an immutable class.
 
 * The Period class defines multiple factory methods to create its instances. The
 static methods of(), ofYears(), ofMonths(), ofWeeks(), and ofDays() accept
 int values to create periods of years, months, weeks, or days.
 
-* A Period of 35 days is not stored as 1 month and 5 days. Its individual elements,
-that is, days, months, and years, are stored the way it is initialized.
+NB! * A Period of 35 days is not stored as 1 month and 5 days. Its individual
+elements, that is, days, months, and years, are stored the way it is initialized.
 
 * You can define positive or negative periods of time. You can define Period
 instances representing 15 or -15 days.
@@ -21,7 +21,7 @@ instances representing 15 or -15 days.
 * You can also parse a string to instantiate Period by using its static method
 parse. This method parses string values of the format PnYnMnD or PnW, where
 n represents a number and the letters (P, Y, M, D, and W) represent parse, year,
-month, day, and week. These letters can exist in lower- or uppercase. Each
+month, day, and week. These letters can exist in lower- or upper case. Each
 string must start with the letter p or P and must include at least one of the four
 sections, that is, year, month, week, or day.
 
@@ -46,7 +46,10 @@ calling the method plus.
 * Similarly, you can use the method minus() with classes LocalDate and Local-
 DateTime to subtract a period of years, months, weeks, or days.
 
-* You can use the instance methods getYears(), getMonths(), and getDays() to
+* You can use the instance methods
+	getYears(),
+	getMonths(),
+	getDays() to
 query a Period instance on its years, months, and days. All these methods
 return an int value.
 
@@ -64,14 +67,14 @@ return a copy of Period instances with the specified period subtracted or modifi
 * In the class Period, both the getXXX() methods and minusXXX() methods use
 the plural form: getYears(), minusHours().
 
-* When you subtract a Period instance using the minusXXX() methods, its individual
+NB! * When you subtract a Period instance using the minusXXX() methods, its individual
 elements are subtracted. Subtracting P10D from P1M returns P1M-10D
 and not P20D.
 
 * The method multipliedBy(int) in the class Period is used to modify all elements
 of a Period instance. Period doesn’t define divideBy.
 
-* Adding a Period of 10 months to a Period of 5 months gives 15 months, not 1
+NB! * Adding a Period of 10 months to a Period of 5 months gives 15 months, not 1
 year and 3 months.
 
 * The method toTotalMonths() returns the total number of months in the period

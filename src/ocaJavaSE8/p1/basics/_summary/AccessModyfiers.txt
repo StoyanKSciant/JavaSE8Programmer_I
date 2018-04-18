@@ -1,45 +1,71 @@
 
 public < protected < package (i.e. no modifier) < private
 
-Access PUBLIC members   || Same package||Sepr. package
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Derived classes   		||	  YES  	   ||	 YES 	||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Unrelated classes 	 	||	  YES 	   ||	 YES    ||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Access PUBLIC members   || Same package ||Sepr. package
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Derived classes   		||	   YES  	||	  YES 	  ||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Unrelated classes 	 	||	   YES 	    ||	  YES     ||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+_________________________________________________________
 
+Access PROTECTED        || Same package ||Sepr. package
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Derived classes   		||	   YES  	||  YES*/NO** ||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Unrelated classes 	 	||	   YES 	    ||	  NO	  ||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-Access PROTECTED        || Same package||Sepr. package
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Derived classes   		||	  YES  	   || YES*/NO** ||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Unrelated classes 	 	||	  YES 	   ||	 NO	    ||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-
-* using interface
+* using inheritance
 ** using reference variable
 
+Derived classes can access protected methods only by inheritance
+and not by reference example:
 
-Access PACKAGE members  || Same package||Sepr. package
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Derived classes   		||	  YES  	   ||	 NO 	||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Unrelated classes 	 	||	  YES 	   ||	 NO	    ||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
+package library;
+public class Book {
+	protected string author;
+	protected void modifyTemplate(){}
+}
 
+package building;
+import library.Book;
+public class House{
+	public House(){
+		Book book=new Book();	// can initialize public class
+		book.author="ABC";		// can't access protected field
+		book.modifyTemplate();	// can't access protected field
+	}
+}
+
+BUT WITH INHERITANCE YOU CAN ACCESS PROTECTED MEMBERS:
+
+package building;
+import library.Book;
+public class StoryBook extends Book{	// inherit protected fields
+	public StoryBook(){
+	author="ABC";			// inherited fields are accessible
+	modifyTemplate();		// inherited fields are accessible
+	}
+}
+
+
+_________________________________________________________
+
+Access PACKAGE members  || Same package ||Sepr. package
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Derived classes   		||	   YES  	||	   NO 	  ||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Unrelated classes 	 	||	   YES 	    ||	   NO	  ||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 Default access can be compared to package-private (accessible
 only within a package)
+_________________________________________________________
 
-Protected access can be compared to packageprivate
-+ kids (“kids” refer to derived classes). Kids can access protected
-methods only by inheritance and not by reference (accessing members by
-using the dot operator on an object).
-
-
-Access PRIVATE          || Same package||Sepr. package
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Derived classes   		||	  NO  	   ||	 NO 	||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Unrelated classes 	 	||	  NO 	   ||	 NO	    ||
-||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Access PRIVATE          || Same package|| Sepr. package
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Derived classes   		||	   NO  	   ||	   NO 	  ||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Unrelated classes 	 	||	   NO 	   ||	   NO	  ||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||

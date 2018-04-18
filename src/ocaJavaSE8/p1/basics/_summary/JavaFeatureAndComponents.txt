@@ -1,10 +1,11 @@
+
 * Object orientation Java emulates real-life object definition and behavior. It uses
-classes, interfaces, or enums to define all its code.
+classes, interfaces, or enumerators to define all its code.
 
 * Abstraction Java lets you abstract objects and include only the required properties
-and behavior in yout code.
+and behavior in your code.
 
-* Encapsulation The state or the fileds of a class are protected from unwanted
+* Encapsulation The state or the fields of a class are protected from unwanted
 access and manipulation.
 
 * Inheritance Java enables ins classes to inherit other classes and implement interfaces.
@@ -13,12 +14,12 @@ The interfaces can inherit other interfaces.
 * Polymorphism Java enables its classes to exhibit multiple behaviors for the same
 methods calls.
 
-* Type safety In java, you must declare a variable with its data type before you cam
+* Type safety In java, you must declare a variable with its data type before you can
 use it.
 
 * Automatic memory management Java uses garbage
 
-* Multithreading and concurrency = Java defines classes and interfaces to enable
-developers to develop multithreaded code.
+* Multi-threading and concurrency = Java defines classes and interfaces to enable
+developers to develop multi-threaded code.
 
 * Java isn't single-threaded language.

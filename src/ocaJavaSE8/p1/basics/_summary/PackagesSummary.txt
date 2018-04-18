@@ -1,8 +1,13 @@
 
+* Classes and interfaces defined in the same Java source code file
+can't be defined in separate packages. Classes and interfaces imported
+using the import statement are available to all the classes and
+interfaces defined in the same Java source code file.
+
 * The import statement can't be used to import multiple classes or interfaces
 with the same name.
 
-* By default, all classes and interfaces in separate packages and subpackages
+* By default, all classes and interfaces in separate packages and sub-packages
 aren't visible to each  other.
 
 * All classes and interfaces in the same package are visible to each other.
@@ -13,7 +18,7 @@ interfaces defined from different packages.
 * An import statement allows the use of simple names for packaged classes and
 interfaces defined in other packages.
 
-* You can't import classes from a subpackage by using the wildcard character,
+* You can't import classes from a sub-package by using the wildcard character,
 an asteriks (*), in the import statement.
 
 NB! * A class from a default package can't be used in any named package class

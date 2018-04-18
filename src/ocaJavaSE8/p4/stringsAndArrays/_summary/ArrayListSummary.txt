@@ -1,3 +1,4 @@
+
 * ArrayList is one of the most widely used classes from the Collections framework.
 It offers the best combination of features offered by an array and the List
 data structure.
@@ -11,19 +12,19 @@ to it.
 
 * ArrayList implements all list operations (add, modify, and delete values).
 
-* ArrayList allows duplicate values to be added to it and maintains its insertion
-order.
+* ArrayList allows duplicate values to be added to it and maintains its
+insertion order.
 
 * You can use either Iterator or ListIterator to iterate over the items of an
 ArrayList.
 
 * ArrayList supports generics, making it type safe.
 
-* Internally, an array of type java.lang.Object is used to store the data in an
-ArrayList.
+NB! * Internally, an array of type java.lang.Object is used to store the data in
+an ArrayList.
 
-* You can add a value to an ArrayList either at its end or at a specified position
-by using the method add.
+* You can add a value to an ArrayList either at its end or at a specified
+position by using the method add.
 
 * To access the elements of an ArrayList, you can use either the enhanced for
 loop, Iterator, or ListIterator.
@@ -41,7 +42,7 @@ existing element in ArrayList or modifying its existing values.
 
 * remove(int) removes the element at the specified position in the list.
 
-* remove(Object o) removes the first occurrence of the specified element from
+* remove(Object O) removes the first occurrence of the specified element from
 the list, if it’s present.
 
 * You can add multiple elements to an ArrayList from another ArrayList or any
@@ -55,17 +56,17 @@ other class that’s a subclass of Collection by using the method addAll.
 
 * size() returns the number of elements in the list.
 
-* contains(Object o) returns true if the list contains the specified element.
+* contains(Object O) returns true if the list contains the specified element.
 
-* indexOf(Object o) returns the index of the first occurrence of the specified
+* indexOf(Object O) returns the index of the first occurrence of the specified
 element in the list, or –1 if the list doesn’t contain the element.
 
-* lastIndexOf(Object o) returns the index of the last occurrence of the specified
+* lastIndexOf(Object O) returns the index of the last occurrence of the specified
 element in the list, or –1 if the list doesn’t contain the element.
 
-* The method clone() defined in the class ArrayList returns a shallow copy of this
-ArrayList instance. “Shallow copy” means that the method creates a new instance
-of the ArrayList to be cloned, but the ArrayList elements aren’t copied.
+NB! * The method clone() defined in the class ArrayList returns a shallow copy
+of this ArrayList instance. “Shallow copy” means that the method creates a new
+instance of the ArrayList to be cloned, but the ArrayList elements aren’t copied.
 
 * You can use the method toArray() to return an array containing all of the elements
 in ArrayList in sequence from the first to the last element.

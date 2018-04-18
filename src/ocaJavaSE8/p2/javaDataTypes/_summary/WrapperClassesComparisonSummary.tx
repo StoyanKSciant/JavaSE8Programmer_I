@@ -1,0 +1,38 @@
+
+* The valueOf() method return an object of the corresponding wrapper when it's
+passed an argument of a primitive type or String.
+
+NB! * Wrapper classes Byte, Short, Integer, Long cache objects with values of
+the range -128 to 127. The Character class caches objects with values 0 to 127.
+
+These primitive values -128 to 127 of 0 to 127 are stored in an array.
+If you request and object of any of these classes, from this range, the
+
+
+NB! * For all wrapper classes the valueOf() method returns a reference to a
+predefined object, otherwise it creates a new object and returns its reference:
+
+		Long var1 = Long.valueOf(123);
+		Long var2 = Long.valueOf("123");
+		System.out.println(var1 == var2);	// compare cached values
+
+		Long var3 = Long.valueOf(223);
+		Long var4 = Long.valueOf(233);
+		System.out.println(var3 == var4);	// compare object instances
+
+* No cached instances exists for Double and Float
+
+NB! * You can't compare wrapper instances for equality using equals() or "=="
+If they aren't of the same class.
+	*	The code won't compile for instances that are compared using ==.
+	*	When compared using equals(), the output will be false.
+
+* AUTOBOXING Java converts primitive types to their wrapper equivalence
+-=/+= can be used only with primitives (wrappers are immutable!)
+
+* UNBOXING converts wrapper classes to their primitive types equivalence
+result of arithmetic operation may be stored in List of generics using
+which requires conversion to object instance
+
+* Unboxing wrapper reference variable, which refers to null will throw a
+NullPointerException

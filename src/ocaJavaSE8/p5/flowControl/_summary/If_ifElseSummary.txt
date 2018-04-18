@@ -1,12 +1,17 @@
+
 NB! * If you initialize a variable within an if or else if construct, the
 compiler can't be sure if that initialization code is reachable, so this code
 will throw compiler error. But if there is "else" at if/"if else" code becomes
 compilable.
 
-NB! * if-clause and the else-clause can have empty statements. Empty statement
-( i.e. just ; ) is a valid statement. But this is illegal "if (true) else;"
-because the if part doesn't contain any valid statement. A statement cannot start
- with an else
+NB! * if-clause and the else-clause can have empty statements.
+Empty statement (" ; ") is a valid statement. But this is illegal "if (true) else;"
+because the if part doesn't contain any valid statement.
+
+*  A statement cannot start with an else.
+
+NB! The else part of an if construct can’t exist without the definition of its
+{then} part.
 
 * The if statement enables you to execute a set of statements in your code based
 on the result of a condition, which should evaluate to a boolean or Boolean value.
@@ -18,8 +23,6 @@ an if condition evaluates to true. The then part of the if construct follows the
 if condition.
 
 * An if construct may or may not define its else part.
-
-* The else part of an if construct can’t exist without the definition of its then part.
 
 * It’s easy to get confused with the common if-else syntax used in other programming
 languages. The if-elsif and if-elseif statements aren’t used in Java to

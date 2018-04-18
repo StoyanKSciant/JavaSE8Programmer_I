@@ -1,22 +1,16 @@
-* abstract
-* static
-* final
-* synchronized
-* native
-* strictfp
-* transient
-* volatile
+
+abstract | static | final | synchronized | native | strictfp | transient | volatile
 
 * The abstract keyword, when prefixed to the definition of a concrete class, can
 change it to an abstract class, even if it doesn't define any abstract methods.
 
 * An abstract class can't be instantiated.
 
-* An interface is implicitly abstract. The Java compiler automatically adds the
+NB! * An interface is implicitly abstract. The Java compiler automatically adds the
 keyword abstract to the definition of an interface (which means that adding
 the keyword abstract to the definition of an interface is redundant).
 
-* An abstract method doesn't have a body. When a non-abstract class extends a
+NB! * An abstract method doesn't have a body. When a non-abstract class extends a
 class with an abstract method, it must implement the method.
 
 * A variable can't be defined as an abstract variable.
@@ -51,23 +45,23 @@ class or interface.
 
 
 
-* synchronized is A synchronized method can't be accessed by multiple
+* synchronized method can't be accessed by multiple
 threads concurrently. This constraint is used to protect the integrity
 of data that might be accessed and changed by multiple threads
 concurrently. You can't mark classes, interfaces, or variables with
 this modifier.
 
-* native is A native method calls and makes use of libraries and methods
+* native method calls and makes use of libraries and methods
 implemented in other programming languages such as C or C++. You can't
 mark classes, interfaces, or variables with this modifier.
 
-* transient is A transient variable isn't serialized when the corresponding
+* transient variable isn't serialized when the corresponding
 object is serialized. The transient modifier can't be applied to classes,
 interfaces, or methods.
 
-* volatile is A volatile variable's value can be safely modified by different
+* volatile variable's value can be safely modified by different
 threads. Classes, interfaces, and methods cannot use this modifier.
 
-* strictfp is Classes, interfaces, and methods defined using this keyword
+* strictfp: Classes, interfaces, and methods defined using this keyword
 ensure that calculations using floating-point numbers are identical on
 all platforms. This modifier can't be used with variables.

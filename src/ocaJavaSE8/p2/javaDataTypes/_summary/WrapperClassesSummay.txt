@@ -6,150 +6,90 @@ is assigned a new object.
 Character directly extend the class Object.
 
 * You can create objects of all the wrapper classes in the multiple ways:
-	1. Assignment - By assigning a primitive to a wrapper class variable (autoboxing)
+	1. Assignment - By assigning a primitive to a wrapper class variable
+	(autoboxing)
 
 	Boolean b = true;
 	Byte byte1 = 10;
 
-
 	2. Constructor - By using wrapper class constructors
-	They don't accept non-argument constructor because they are immutable and can't
-	be changed later.
+	They don't accept non-argument constructor because they are immutable and
+	can't be changed later.
 
-	Boolean bool2 = new Boolean("trUE");	// String argument is not case-sensitive
+	Boolean bool2 = new Boolean("trUE");// String argument is not case-sensitive
 	Byte byte2 = new Byte("10");
 
 
-	3. Static methods - By calling static method of wrapper classes, like, valueOf()
+	3. Static methods - By calling static method of wrapper classes valueOf()
 
 	Boolean bool4 = Boolean.valueOf(true);
 	Double double4 = Double.valueOf(10.2);
 
-NB! * Boolean class has two constructors - Boolean(String) and Boolean(boolean) The
-String constructor allocates a Boolean object representing the value true if the
-string argument is not null and is equal, ignoring case, to the string "true".
-Otherwise, allocate a Boolean object representing the value false. Examples:
+NB! * Boolean class has two constructors - Boolean(String) and Boolean(boolean)
+The String constructor allocates a Boolean object representing the value "true"
+if the string argument is not null and is equal, ignoring case, to the string
+"true".
 
-	new Boolean("True") 	// produces a Boolean object that represents true.
+Otherwise, allocate a Boolean object representing the value false. Examples:
+	new Boolean("True") // produces a Boolean object that represents true.
 	new Boolean("yes") 	// produces a Boolean object that represents false.
 The boolean constructor is self explanatory.
 
-
 NB! * Boolean class has two static helper methods for creating booleans -
-parseBoolean and valueOf. Boolean.parseBoolean(String ) method returns a primitive
-boolean and not a Boolean object (Note - Same is with the case with other
-parseXXX methods such as Integer.parseInt - they return primitives and not objects).
-The boolean returned represents the value true if the string argument is not null
-and is equal, ignoring case, to the string "true".
+parseBoolean and valueOf.
+	1. Boolean.parseBoolean(String ) method returns a primitive boolean and not
+	a Boolean object (Note - Same is with the case with other parseXXX methods
+	such as Integer.parseInt - they return primitives and not objects).
+	The boolean returned represents the value true if the string argument is
+	not null and is equal, ignoring case, to the string "true".
 
-Boolean.valueOf(String) and its overloaded Boolean.valueOf(boolean) version, on
-the other hand, work similarly but return a reference to either Boolean.TRUE or
-Boolean.FALSE wrapper objects. Observe that they don't create a new Boolean object
-but just return the static constants TRUE or FALSE defined in Boolean class.
+	2. Boolean.valueOf(String) and its overloaded Boolean.valueOf(boolean)
+	version, on the other hand, work similarly but return a reference to either
+NB!	Boolean.TRUE or Boolean.FALSE wrapper objects. Observe that they don't
+	create a new Boolean object but just return the static constants TRUE or
+	FALSE defined in Boolean class.
 
-NB! * When you use the equality operator ( == ) with booleans, if exactly one of the
-operands is a Boolean wrapper, it is first unboxed into a boolean primitive and then
-the two are compared (JLS 15.21.2). If both are Boolean wrappers, then their references
-are compared just like in the case of other objects.
+NB! * When you use the equality operator ( == ) with booleans, if exactly one of
+the operands is a Boolean wrapper, it is first unboxed into a boolean primitive
+and then the two are compared.
+If both are Boolean wrappers, then their references are compared just like in
+the case of other objects:
 Thus, 	new Boolean("true") == new Boolean("true") is false, but
 		new Boolean("true") == Boolean.parseBoolean("true") is true.
 
 
-* All wrapper classes define a constructor that accepts a String argument representing
-the primitive value that needs to be wrapped.
-
-* All wrapper classes (except Characters) define a constructor that accepts a String
-argument representing the primitive value that needs to be wrapped.
+* All wrapper classes (except Characters) define a constructor that accepts a
+String argument representing the primitive value that needs to be wrapped.
 
 NB! * None of the wrapper class defines a no-argument constructor.
 
-* You can assign a primitive value directly to a reference variable of its wrapper class
-type, called autoboxing. The reverse is unboxing, when an object of a primitive wrapper
-class is converted to its corresponding primitive value.
+* You can assign a primitive value directly to a reference variable of its wrapper
+class type, called autoboxing. The reverse is unboxing, when an object of a
+primitive wrapper class is converted to its corresponding primitive value.
 
-* All wrapper classes define methods of the format primitive Value(), where the term
-primitive refers to the exect primitive data type name.
+* All wrapper classes define methods of the format primitive Value(), where the
+term primitive refers to the exact primitive data type name.
 
-* To get a primitive data type value corresponding to a string value, you can use the
-static utility method parseDataType, where DataType refers to the type of the return
-value.
+NB! * To get a primitive data type value corresponding to a string value, you can
+use the static utility method parseDataType, where DataType refers to the type
+of the return value.
 
-* The valueOf() method returns an object of the corresponding wrapper class when it's
-passed an argument of a primitive type or String.
-
-* You can compare object of wrapper classes for equality by using the method equals
-or the comparison operator, ==.
+* The valueOf() method returns an OBJECT of the corresponding wrapper class when
+ it's passed an argument of a primitive type or String.
 
 NB! * The method "equals" always compares the primitive value stored by a wrapper
-instance and == compares object references. The operator == return true if the variables
-being compared refer to the same instance.
+instance and == compares object references. The operator == return true if the
+variables being compared refer to the same instance.
 
 * In the case of the Boolean class, the cached instance are accessible directly
 because only two exist: the static constants Boolean.TRUE and Boolean.FALSE.
 
-NB! * The Character class caches instances with values from 0 to 127. Classes Byte, Short,
-Integer and Long cache instances for values -128 to 127.
+NB! * The Character class caches instances with values from 0 to 127. Classes
+Byte, Short, Integer and Long cache instances for values -128 to 127.
 
 NB! * No cached instances exist for the Float and Double wrapper classes.
 
-NB! * Wrapper classes are immutable. Adding a primitive value to a wrapper class variable
-doesn't modify the value of the object it refers to. The wrapper class variable is
-assigned a new object.
-
-* Unboxing a wrapper reference variable, which refers to null, will throw a NullPointerException
-
-
-
-
-
-
-
-
-
-
-
-
-					Comparing objects of wrapper class
-
-*The valueOf() method return an object of the corresponding wrapper
-when it's passed an argument of a primitive type or String.
-
-NB!* Wrapper classes Byte, Short, Integer, Long cache objects with
-	values of the range -128 to 127. The Character class caches objects
-	with values 0 to 127.
-	These classes define inner static classes that store
-	objects for the primitive values -128 to 127 of 0 to 127 in an array.
-	If ypu request and obhect of any of these classes, from this range,
-	the valueOf() method retunrs a reference to a predefined object;
-	otherwise, it creates a new object and returns its reference;
-
-	of any of these classes, from the range, the valueOf() method
-	returns a reference toa  predefined object, otherwise it creates a
-	new object and returns its reference:
-
-		Long var1 = Long.valueOf(123);
-		Long var2 = Long.valueOf("123");
-		System.out.println(var1 == var2);	// compare cached values
-
-		Long var3 = Long.valueOf(223);
-		Long var4 = Long.valueOf(233);
-		System.out.println(var3 == var4);	// compare object instances
-
-* No cached instances exists for Double and Float
-
-* You can't compare wrapper instances for equality using equals() or ==
-If they aren't of the same class. The code won't compile for instances that
-are compared using ==. When compared using equals(), the output will be false.
-
-* AUTOBOXING Java converts primitive types to their wrapper equivalence
--=/+= can be used only with primitives (wrappers are immutable!)
-
-* UNBOXING converts wrapper classes to their primitive types equivalence
-result of arithmetic operation may be stored in List of generics using
-which requires conversion to object instance
-
-* unboxing wrapper reference variable, which refers to null will throw
-a NullPointerException
-
-
+NB! * Wrapper classes are immutable. Adding a primitive value to a wrapper class
+variable doesn't modify the value of the object it refers to. The wrapper class
+variable is assigned a new object.
 

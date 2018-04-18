@@ -2,9 +2,18 @@
 * LocalDateTime stores a value like 2050-06-18T14:20:30:908765 (year-monthdayThours:
 minutes:seconds:nanoseconds).
 
-* The LocalDateTime class uses the letter T to separate date and time values in its
-printed value.
+* The LocalDateTime class uses the letter T to separate date and time values in
+its printed value.
 
-* You can consider this class to offer the functionality of both the LocalDate and
-LocalTime classes. This class defines similar methods as those defined by the
-LocalDate and LocalTime classes.
+* You can consider this class to offer the functionality of both the LocalDate
+and LocalTime classes. This class defines similar methods as those defined by
+the LocalDate and LocalTime classes.
+
+	LocalDateTime prizeCeremony = LocalDateTime.parse("2050-06-05T14:00:00");
+
+	LocalDateTime dateTimeNow = LocalDateTime.now();
+
+	LocalTime time = LocalTime.of(14, 10, 0);
+	LocalDate date = LocalDate.of(2016,02,28);
+	LocalDateTime dateTime = time.atDate(date);
+	System.out.println(dateTime);

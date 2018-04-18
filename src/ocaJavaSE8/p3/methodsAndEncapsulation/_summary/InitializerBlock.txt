@@ -1,14 +1,20 @@
+* An initializer block is defined within a class, not as a part of a method. It
+executes for every object that's created for a class.
+In the following example, the class Employee defines an initializer block:
 
-* An initializer block is defined within a class, not as a part of a method. It executes
-for every object that's created for a class.
+	class Employee {
+		{
+			System.out.println("Employee:initializer");	//Initializer block
+		}
+	}
 
-* If you define both an initializer and a constructor for a class, both of these will
-execute. The initializer block will execute prior to the constructor.
+NB! * If you define both an initializer and a constructor for a class, both of these
+will execute. The initializer block will execute prior to the constructor.
 
 * Unlike constructor, and initializer block can't accept method parameters.
 
-* An initializer block can create local variables. It can access and assign values to
-instance and static variables. It can call methods and define loops, conditional statemnts
-and try-catch-finally blocks.
+* An initializer block can create local variables. It can access and assign
+values to instance and static variables. It can call methods and define loops,
+conditional statements and try-catch-finally blocks.
 
 * synchronized keyword can only be applied to a method or a block.

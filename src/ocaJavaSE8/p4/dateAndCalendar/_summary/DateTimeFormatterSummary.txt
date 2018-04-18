@@ -5,21 +5,30 @@ be used to format and parse date and time objects.
 * A DateTimeFormatter can define rules to format or parse a date object, time
 object, or both.
 
-
-* You can instantiate or access a DateTimeFormatter object in multiple ways:
-	– By calling a static ofXXX method, passing it a FormatStyle value
-	– By accessing public static fields of DateTimeFormatter
-	– By using a static method ofPattern and passing it a string value
-
-* To instantiate a DateTimeFormatter using ofXXX methods, pass it a Format-
-Style value (FormatStyle.FULL, FormatStyle.LONG, FormatStyle.MEDIUM, or
-FormatStyle.SHORT).
-
-* You can access a DateTimeFormatter object by using the public and static fields
-of this class: BASIC_ISO_DATE, ISO_DATE, ISO_TIME, and ISO_DATE_TIME.
-
 * The method format in DateTimeFormatter formats a date or time object to a
 String using the rules of the formatter.
 
+NB! * You can instantiate or access a DateTimeFormatter object in multiple ways:
+
+	– By calling a static ofXXX method, passing it a FormatStyle value
+		* To instantiate a DateTimeFormatter using ofXXX methods, pass it a
+		Format-Style value (FormatStyle.FULL, FormatStyle.LONG, FormatStyle.MEDIUM, or
+		FormatStyle.SHORT).
+
+	– By accessing public static fields of DateTimeFormatter
+		* You can access a DateTimeFormatter object by using the public and static fields
+		of this class: BASIC_ISO_DATE, ISO_DATE, ISO_TIME, and ISO_DATE_TIME.
+		ex:	DateTimeFormatter formatter5 = DateTimeFormatter.ISO_DATE;
+
+	– By using a static method ofPattern and passing it a string value
+
+		* You can instantiate a DateTimeFormatter using a pattern (of letters and
+		symbols) by using the static method ofPattern and passing it a string value:
+		ex:	DateTimeFormatter formatter6= DateTimeFormatter.ofPattern("yyyy-M-dd");
+
 * To parse a date or time object, you can use either the parse method in date/
 time objects or the parse method in the DateTimeFormatter class.
+
+NB! * LocalDate, LocalTime, LocalDate Time use static parse(<String> or
+<formatter.ISO_LOCAL_DATE>), but DateTimeFormatter use and defines parse as
+instance method.

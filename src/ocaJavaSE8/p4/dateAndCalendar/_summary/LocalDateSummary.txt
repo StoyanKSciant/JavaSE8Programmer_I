@@ -1,11 +1,11 @@
 
-* Java 8 introduces a new package java.time to deal with dates. The old classes such
+NB! * Java 8 introduces a new package java.time to deal with dates. The old classes such
 as java.util.Date are not recommended anymore. java.time Package: This is the base
 package of new Java Date Time API. All the commonly used classes such as LocalDate,
 LocalTime, LocalDateTime, Instant, Period, Duration are part of this package. All
 of these classes are immutable and thread safe.
 
-* LocalDate can be used to store dates like 2015-12-27 without time or time zones.
+* LocalDate can be used to store dates like 2015-12-27 WITHOUT time or time zones.
 
 * LocalDate instances are immutable.
 
@@ -34,6 +34,12 @@ format 9999-99-99. The month and date values passed to parse() must be of
 two digits; a single digit is considered an invalid value. For days and months
 with a value 1–9, pass 01–09.
 
+NB! * LocalDate is immutable so (add, subtract, replace) can't actually modifie
+an existing LocalDate — all of them return a new instance with the requested
+changes applied.
+
+* All additions, subtractions, or replacements to LocalDate consider leap years.
+
 * You can use LocalDate’s instance methods like getXX() to query LocalDate on
 its year, month, and date values:
 	– getDayOfMonth()
@@ -50,9 +56,6 @@ the specified days, months, weeks, or years from it:
 	– minusWeeks()
 	– minusYears()
 
-* LocalDate is immutable. All the methods that seem to manipulate its value
-return a copy of the LocalDate instance on which it’s called.
-
 * The plusXX() methods return a copy of LocalDate’s value after adding the specified
 days, months, or year to it:
 	– plusDays()
@@ -66,12 +69,6 @@ day, month, or year in it:
 	– withDayOfYear()
 	– withMonth()
 	– withYear()
-
-* All additions, subtractions, or replacements to LocalDate consider leap years.
-
-* Despite the verbs used in the previous methods (add, subtract, replace), none of
-them actually modifies an existing LocalDate—all of them return a new instance
-with the requested changes applied.
 
 * The LocalDate class defines overloaded atTime() instance methods. These
 methods combine LocalDate with time to create and return LocalDateTime,

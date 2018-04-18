@@ -15,19 +15,19 @@ NB! * The local variables (variables that are declared within a method) aren’t
 initialized with their default values. If you try to print the value of a local
 variable before initializing it, the code won’t compile.
 
-NB! * Conversion from byte, char or short to int, long or float does not need a cast
-Because int, long or float are bigger that byte char or short.
+NB! * Conversion from {byte, char or short} to {int, long or float} does not
+need a cast Because int, long or float are bigger that byte char or short.
 
-* Java defines eight primitive data types: char, byte, short, int, long, float, double,
-and boolean.
+* Java defines eight primitive data types: char, byte, short, int, long, float,
+double and boolean.
 
 * Primitive data types are the simplest data types.
 
 * Primitive data types are predefined by the programming language. A user can’t
 define a primitive data type in Java.
 
-* It’s helpful to categorize the primitive data types as Boolean, numeric, and character
-data types.
+* It’s helpful to categorize the primitive data types as Boolean, numeric, and
+character data types.
 
 							The boolean data type:
 
@@ -54,7 +54,7 @@ to store their values.
 * The float and double data types use 32 and 64 bits, respectively, to store their
 values.
 
-* The default type of integers—that is, nondecimal numbers—is int.
+* The default type of integers (non-decimal) numbers is int.
 
 * To designate an integer literal value as a long value, add the suffix L or l to the
 literal value.
@@ -63,30 +63,31 @@ literal value.
 formats. This exam won’t ask you to convert a number from one number
 system to another.
 
-* Literal values in the decimal number system use digits from 0 to 9 (a total of
-10 digits).
+	* Literal values in the decimal number system use digits from 0 to 9 (a total of
+	10 digits).
 
-* Literal values in the octal number system use digits from 0 to 7 (a total of
-8 digits).
+	* Literal values in the octal number system use digits from 0 to 7 (a total of
+	8 digits).
 
-* Literal values in the hexadecimal number system use digits from 0 to 9 and letters
-from A to F (a total of 16 digits and letters).
+	* Literal values in the hexadecimal number system use digits from 0 to 9 and letters
+	from A to F (a total of 16 digits and letters).
 
-* Literal values in the binary number system use digits 0 and 1 (a total of 2 digits).
+	* Literal values in the binary number system use digits 0 and 1 (a total of 2 digits).
 
-* The literal values in the octal number system start with the prefix 0. For example,
-0413 in the octal number system is 267 in the decimal number system.
+	* The literal values in the octal number system start with the prefix 0. For example,
+	0413 in the octal number system is 267 in the decimal number system.
 
-* The literal values in the hexadecimal number system start with the prefix 0x.
-For example, 0x10B in the hexadecimal number system is 267 in the decimal
-number system.
+	* The literal values in the hexadecimal number system start with the prefix 0x.
+	For example, 0x10B in the hexadecimal number system is 267 in the decimal
+	number system.
 
-* The literal values in the binary number system start with the prefix 0b or 0B. For
-example, the decimal value 267 is 0B100001011 in the binary system.
+	* The literal values in the binary number system start with the prefix 0b or 0B. For
+	example, the decimal value 267 is 0B100001011 in the binary system.
 
 * Starting with Java 7, you can use underscores within the Java literal values to
-make them more readable. 0B1_0000_10_11, 0_413, and 0x10_B are valid
-binary, octal, and hexadecimal literal values.
+make them more readable:
+
+0B1_0000_10_11, 0_413, and 0x10_B are valid binary, octal, and hexadecimal literal values.
 
 * The default type of a decimal number is double.
 
@@ -106,13 +107,15 @@ characters from virtually all the world’s existing scripts and languages.
 inclusive) to store a char. Unicode values are defined in the hexadecimal number
 system.
 
-* Internally, the char data type is stored as an unsigned integer value (only positive
-integers).
-
-* When you assign a letter to a char, Java stores its integer equivalent value. You
+NB! * Internally, the char data type is stored as an unsigned integer value (only
+positive integers).
+ 	When you assign a letter to a char, Java stores its integer equivalent value. You
 may assign a positive integer value to a char instead of a letter, such as 122.
 
 * The literal value 122 is not the same as the Unicode value \u0122. The former is
 a decimal number and the latter is a hexadecimal number.
 
 * Single quotes, not double quotes, are used to assign a letter to a char variable.
+
+
+

@@ -1,46 +1,51 @@
+* Constructors are special methods defined in a class that create and return an
+object of the class in which they're defined. They are named after the class,
+and the don't specify a return type.
+
+* If you define a return type for a constructor, it'll no longer be treated like
+a constructor. It'll be treated like a regular method, even though it shares the
+same name as its class.
+
+	class Employee {
+		void Employee() {
+			System.out.println("Constructor");
+		}
+	}
+	class Office {
+		public static void main(String args[]) {
+			Employee emp = new Employee();	// Doesn't call method Employee with
+											// return type void
+		}
+	}
+
+NB! * While trying to compile child class with no set constructors, the Java
+compiler generates a default constructor for it, which looks like the following:
+	ChildClass() {
+		super();
+	}
+
+	Accessibility of a default constructor matches the accessibility of its class.
+	Java creates a public default constructor for a public class. It creates a
+	default constructor with package access for a class with package-level access.
+
+NB! * A Constructor can be declared public, protected, default or private.
 
 NB! * Java accepts changes in the objects of base-derived classes as the sole
 criterion to define overloaded constructors and methods.
 
-Exmp:		class Shoe {}
-			class Boot extends Shoe {}
-			class ShoeFactory {				// *both constructors are valid
-				ShoeFactory(Boot val) {			// *
-					System.out.println("boot");
-				}
-				ShoeFactory(Shoe val) {			// *
-					System.out.println("shoe");
-				}
+ex:	class Shoe {}
+		class Boot extends Shoe {}
+		class ShoeFactory {				    // *both constructors are valid
+			ShoeFactory(Boot val) {			// *
+				System.out.println("boot");
 			}
-
-* Constructors are special methods defined in a class that create and return an
-object of the class in which they're defined.
-
-NB! * A Constructor can be declared private
-
-* Constructors habe the same name as the class, and the don't cpecify a return type.
+			ShoeFactory(Shoe val) {			// *
+				System.out.println("shoe");
+			}
+		}
 
 * User-defined constructors are defined by the developer.
 
-NB! * While trying to compile child class with no set constructors, the Java
-compiler generates a default constructor for it, which looks like the following:
-ChildClass() {
-	super();
-}
-
-* If a class defines multiple initializer blocks, their order of execution depends on
-their placement in a class. But all of them execute before a class's constructor.
-
-* Default constructor are defined by Java, but only if the developer doesn't define any
-constructor in a class.
-
-* You can define a constructor using the four access levels: public, protected, default
-and private.
-
-* Accessibility of a default constructor matches the accessibility of its class. Java
-creates a public default constructor for a public class. It creates a default constructor
-with package access for a class with package-level access.
-
-* If you define a return type for a constructor, it'll no longer be treated like a
-constructor. It'll be treated like a regular method, even though it shares the same name
-as its class.
+NB! * If a class defines multiple initializer blocks, their order of execution
+depends on their placement in a class. But all of them execute before a class's
+constructor.

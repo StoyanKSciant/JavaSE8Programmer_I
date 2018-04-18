@@ -1,8 +1,7 @@
-* It stores time in the format hours-minutes-seconds (without a time zone).
-
-* It stores time to nanosecond precision.
-
 * LocalTime is immutable.
+
+* It stores time in the format hours-minutes-seconds (without a time zone) with
+nanosecond precision.
 
 * You can instantiate LocalTime using LocalTime’s static method of() that accepts
 hours, minutes, seconds, and nanoseconds.
@@ -28,10 +27,10 @@ minutes values passed to parse() must be of two digits; a single digit is consid
 an invalid value. For hours and minutes with a value 0–9, pass 00–09.
 
 * You can use constants from the LocalTime class to work with predefined times:
-	– LocalTime.MIN—Minimum supported time, that is, 00:00
-	– LocalTime.MAX—Maximum supported time, that is, 23:59:59.999999999
-	– LocalTime.MIDNIGHT—Time when day starts, that is, 00:00
-	– LocalTime.NOON—Noontime, that is, 12:00
+	– LocalTime.MIN—Minimum = 00:00
+	– LocalTime.MAX—Maximum = 23:59:59.999999999
+	– LocalTime.MIDNIGHT—Time = 00:00
+	– LocalTime.NOON—Noontime = 12:00
 
 * You can use instance methods like getXX() to query LocalTime on its hour,
 minutes, seconds, and nanoseconds. All these methods return an int value.
@@ -43,20 +42,22 @@ names like getHours(), getMinutes(), getSeconds(), or getNanoSeconds().
 * You can use the instance methods isAfter() and isBefore() to check whether
 a time is after or before the specified time.
 
-* You can use the instance methods minusHours(), minusMinutes(), minusSeconds(),
-and minusNanos() to create and return a copy of LocalTime instances
-with the specified period subtracted.
+* You can use the instance methods
+	minusHours(),
+	minusMinutes(),
+	minusSeconds(),
+	minusNanos()
+to create and return a copy of LocalTime instances with the specified period subtracted.
 
 * Unlike the getXXX() methods, the minusXXX() methods use the plural form:
-getHour() versus minusHours(), getMinute() versus minusMinutes(), getSecond()
-versus minusSeconds(), and getNano() versus minusNanos().
+	getHour() versus minusHours(),
+	getMinute() versus minusMinutes(),
+	getSecond() versus minusSeconds(),
+	and getNano() versus minusNanos().
 
 * The plusHours(), plusMinutes(), plusSeconds(), and plusNanos() methods
 accept long values and add the specified hours, minutes, seconds, or nanoseconds
 to time, returning its copy as LocalTime.
-
-* LocalTime is immutable. Calling any method on an instance won’t modify
-its value.
 
 * The withHour(), withMinute(), withSecond(), and withNano() methods accept
 an int value and return a copy of LocalTime with the specified value altered.

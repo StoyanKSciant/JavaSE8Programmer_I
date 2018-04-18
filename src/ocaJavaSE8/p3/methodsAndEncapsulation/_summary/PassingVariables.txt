@@ -1,27 +1,27 @@
-NB! * A reference variable of derived class can't be used to refer to an object 
+
+NB! * A reference variable of derived class can't be used to refer to an object
 of it's base class
 
-* When you pass a primitive variable to a method, its value remains the same after
-the execution of the method. This doesn’t change, regardless of whether the
-method reassigns the primitive to another variable or modifies it.
+* When you pass a primitive variable to a method, its value remains the same
+after the execution of the method. This doesn’t change, regardless of whether
+the method reassigns the primitive to another variable or modifies it.
 
 * When you pass an object to a method, the method can modify the object’s state
-by executing its methods. In this case, the modified state of the object is reflected
-in the calling method.
+by executing its methods. In this case, the modified state of the object is
+reflected in the calling method.
 
-NB! * If you modify the state of loop variable (of ref type) the modified object
-state will be reflected in the array But if you assign new object to that loop 
-variable it won't be reflected in the list or the array that's being iterated
-referenceInvocation of static method is tied to the type of reference variable, 
-not to the object that is assigned to the reference variable
+NB! * If you modify the state of loop variable (of ref type list) the modified
+object state will be reflected in the list. But if you assign new object to that
+loop variable it won't be reflected in the list or the array that's being
+iterated over.
 
-Exmp: B extends A; B var1 = new A(); var1 holds in the B-defined static methods
+NB! * ReferenceInvocation of static method is tied to the type of reference
+variable, not to the object that is assigned to the reference variable
 
+ex: B extends A; B var1 = new A(); var1 holds in the B-defined static methods
 
 NB! * When a method modifies the state of an object reference variable that is
 passed to it, the changes made are visible in the calling method.
 
-Exmp:	void (MyObject obj1); obj1.property = some new property var; 
-now  obj1.property is changed in MyObject
-
-
+ex:	void (MyObject obj1); obj1.property = some new property var; now
+obj1.property is changed in MyObject

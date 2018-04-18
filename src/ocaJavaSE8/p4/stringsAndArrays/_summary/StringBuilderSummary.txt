@@ -27,9 +27,9 @@ requested data at the end of the StringBuilder object.
 StringBuilder. The method deleteCharAt() removes the char at the specified
 position.
 
-* Unlike the class String, the class StringBuilder doesn’t define the method trim. !!!
+NB! * Unlike the class String, the class StringBuilder doesn’t define the method trim.
 
-* The method reverse() reverses the sequence of characters of a StringBuilder.
+NB! * The method reverse() reverses the sequence of characters of a StringBuilder.
 
 * The replace method in the class StringBuilder replaces a sequence of characters,
 identified by their position, with another String.
