@@ -1,32 +1,32 @@
-* Base class—A class inherited by another class. The class Employee is a base class
-for the classes Programmer and Manager in the previous examples.
+* Base class — A class inherited by another class. The class Employee is a base
+class for the classes Programmer and Manager in the previous examples.
 
-* Superclass—A base class is also known as a superclass.
+* Superclass — A base class is also known as a superclass.
 
-* Parent class—A base class is also known as a parent class.
+* Parent class — A base class is also known as a parent class.
 
-* Derived class—A class that inherits from another class. The classes Programmer
+* Derived class — A class that inherits from another class. The classes Programmer
 and Manager are derived classes in the previous example.
 
-* Subclass—A derived class is also known as a subclass.
+* Subclass — A derived class is also known as a subclass.
 
-* Extended class—A derived class is also known as an extended class.
+* Extended class — A derived class is also known as an extended class.
 
-* Child class—A derived class is also known as a child class.
+* Child class — A derived class is also known as a child class.
 
-* IS-A relationship—A relationship shared by base and derived classes. In the previous
-examples, a Programmer IS-A Person. A Manager IS-A Person. Because a
-derived class represents a specialized type of a base class, a derived IS-A class is a
-kind of base class.
+* IS-A relationship — A relationship shared by base and derived classes. In the
+previous examples, a Programmer IS-A Person. A Manager IS-A Person. Because a
+derived class represents a specialized type of a base class, a derived IS-A
+class is a kind of base class.
 
-* extends—The keyword used by a class to inherit another class and by an interface
-to inherit another interface.
+* extends — The keyword used by a class to inherit another class and by an
+interface to inherit another interface.
 
-* implements—The keyword used by a class to implement an interface (interfaces
+* implements — The keyword used by a class to implement an interface (interfaces
 are covered in the next section).
 
-* Casting is the process of forcefully making a variable behave as a variable of another
-type. If a class shares an IS-A or inheritance relationship with another class or interface,
-their variables can be cast to each other’s type.
+* Casting is the process of forcefully making a variable behave as a variable
+of another type. If a class shares an IS-A or inheritance relationship with
+another class or interface, their variables can be cast to each other’s type.
 
-* can’t use super in static method
+NB! * super() can’t be in static method

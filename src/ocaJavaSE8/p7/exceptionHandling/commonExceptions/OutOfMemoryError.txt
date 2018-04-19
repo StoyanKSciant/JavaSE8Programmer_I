@@ -1,6 +1,6 @@
-* if you create and use a lot of objects in your application—for example,
-if you load a large chunk of persistent data to be processed by your
-application. In such a case, the JVM may run out of memory on the heap,
-and the garbage collector may not be able to free more memory for the JVM.
-In this case, the JVM is unable to create any more objects on the heap.
-An OutOfMemoryError will be thrown
+* if you create and use a lot of objects in your application—for example, if you
+load a large chunk of persistent data to be processed by your application.
+In such a case, the JVM may run out of memory on the heap, and the garbage
+collector may not be able to free more memory for the JVM. In this case, the
+JVM is unable to create any more objects on the heap. An OutOfMemoryError will
+be thrown.

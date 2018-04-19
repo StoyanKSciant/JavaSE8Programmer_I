@@ -6,10 +6,10 @@ public class MyClass {
 	static int x = count();
 	int count() { return 10; }
 
-	/**
-	 * class can define multiple methods with the name main, provided
-	 * that the signature of these methods doesn’t match the signature
-	 * of the main method defined in the previous point.
+	/*
+	 Class can define multiple methods with the name main, provided
+	 that the signature of these methods doesn’t match the signature
+	 of the main method defined in the previous point.
 	 */
 	public static void main(String[] args) {
 

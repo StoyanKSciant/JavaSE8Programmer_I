@@ -6,7 +6,7 @@ public class RecursionOfConstructors {
 
 	RecursionOfConstructors() {
 		if (7<2) {
-			// this();	// Won’t compile—conditional execution of constructorsisn’t allowed
+			// this()  Won’t compile—conditional execution of constructors isn’t allowed
 		}
 	}
 

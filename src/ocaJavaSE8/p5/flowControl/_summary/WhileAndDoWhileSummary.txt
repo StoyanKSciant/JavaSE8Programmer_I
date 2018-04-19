@@ -1,12 +1,12 @@
 * A while loop is used to keep executing a set of statements until the condition
-that it uses evaluates to false. This loop checks the condition before it starts the
-execution of the statement.
+that it uses evaluates to false. This loop checks the condition before it starts
+the execution of the statement.
 
-* A do-while loop is used to keep executing a set of statements until the condition
-that it uses evaluates to false. This loop checks the condition before it starts the
-execution of the statement.
+* A do-while loop is used to keep executing a set of statements until the
+condition that it uses evaluates to false. This loop checks the condition before
+it starts the execution of the statement.
 
 * The levels of nested do-while and while loops have no limitations.
 
-* Both do-while and while loops can define either a single line of code or a code block
-to execute. The latter is defined by using curly braces{}.
+* Both do-while and while loops can define either a single line of code or a
+code block to execute. The latter is defined by using curly braces{}.

@@ -5,17 +5,31 @@ package ocaJavaSE8.p6.inheritance.castingExample;
 Which of the following lines of code can be individually inserted at //INSERT CODE
 HERE so that the output of the code is as follows:
 
-Programmer - Mala Gupta
-Author - Mala Gupta
+	Programmer - Mala Gupta
+	Author - Mala Gupta
 
-a Programmer b = new Programmer();
-b Programmer b = new Author();
-c Author b = new Author();
-d Author b = new Programmer();
-e Programmer b = ((Author)new Programmer());
-f Author b = ((Author)new Programmer());
-Answer: b, c
+a Programmer b = new Programmer();				N
+b Programmer b = new Author();					Y
+c Author b = new Author();						Y
+d Author b = new Programmer();					N
+e Programmer b = ((Author)new Programmer());	N
+f Author b = ((Author)new Programmer());		N
 
+*/
+public class TestEJava {
+
+    public static void main(String[] args) {
+        Programmer4 a = new Programmer4();
+
+        Author4 b = new Author4();	// 	Or
+        // Programmer4 b = new Author4();
+
+        a.print();
+        b.print();
+    }
+}
+
+/*
 Explanation:
 Option (a) is incorrect. This code will compile, but because both the reference
 variable and object are of type Programmer, calling print on this object will
@@ -34,15 +48,4 @@ tries to cast an object of the base class—Programmer—to an object of its derived
 class—Author. This code will also compile successfully but will fail at runtime with a
 ClassCastException. Using a reference variable of type Author won’t make a difference
 here
-*/
-public class TestEJava {
-
-    public static void main(String[] args) {
-        Programmer4 a = new Programmer4();
-        Author4 b = new Author4();
-        // Or
-        // Programmer4 b = new Author4();
-        a.print();
-        b.print();
-    }
-}
+ */

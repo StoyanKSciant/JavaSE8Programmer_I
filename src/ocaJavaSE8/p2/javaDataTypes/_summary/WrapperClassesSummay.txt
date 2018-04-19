@@ -25,6 +25,9 @@ Character directly extend the class Object.
 	Boolean bool4 = Boolean.valueOf(true);
 	Double double4 = Double.valueOf(10.2);
 
+NB! * Integer instances created using the method valueOf() and autoboxing for
+int value 10 refer to the same instance.
+
 NB! * Boolean class has two constructors - Boolean(String) and Boolean(boolean)
 The String constructor allocates a Boolean object representing the value "true"
 if the string argument is not null and is equal, ignoring case, to the string

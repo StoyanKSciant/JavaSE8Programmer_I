@@ -1,6 +1,8 @@
 package ocaJavaSE8.p4.dateAndCalendar;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.Period;
 
 public class LocaDateTimeExample {
@@ -16,6 +18,7 @@ public class LocaDateTimeExample {
 
 	public static void main(String[] args) {
 		LocalDateTimeExampleMethods();
+		combineLocalDateAndLocalTime();
 	}
 
 	public static void LocalDateTimeExampleMethods() {
@@ -46,4 +49,15 @@ public class LocaDateTimeExample {
 		System.out.println(dateTime.minus(Period.ofYears(2)));
 	}
 
+	public static void combineLocalDateAndLocalTime() {
+		System.out.println();
+		LocalDate localDate = LocalDate.parse("2025-11-05");
+		System.out.println("localDate: " + localDate);
+		LocalTime localTime = LocalTime.of(17, 9, 12);
+		System.out.println("localTime: " + localTime);
+		LocalDateTime timePlusdate = localTime.atDate(localDate);
+		System.out.println("timePlusdate: " + timePlusdate);
+		LocalDateTime datePlustime = localDate.atTime(localTime);
+		System.out.println("datePlustime: " + datePlustime);
+	}
 }

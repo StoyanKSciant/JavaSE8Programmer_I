@@ -17,6 +17,11 @@ public class TestLambdaPredicate {
 		empArrList.add(e3);
 		empArrList.add(e4);
 
+		/*
+		To use Predicate in your code, your method must accept a parameter of type
+		Predicate and you must use its public method test to evaluate an argument.
+		 */
+
 		//					{	parameter -> lambda body	}	curly braces are optional
 		Predicate<Emp> predicate = e -> e.getPerformanceRating() >= 5;
 		filter(empArrList, predicate);

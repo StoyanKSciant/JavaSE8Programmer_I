@@ -1,17 +1,17 @@
-* It isn’t mandatory for an abstract class to define an abstract method. It may or
-may not define any abstract methods. But if an abstract base class defines one or
-more abstract methods, the class must be marked as abstract and the abstract
-methods must be implemented in all its derived classes. If a derived class doesn’t
-implement all the abstract methods defined by its base class, then it also needs to be
-an abstract class.
+* It isn’t mandatory for an abstract class to define an abstract method. It may
+or may not define any abstract methods. But if an abstract base class defines
+one or more abstract methods, the class must be marked as abstract and the
+abstract methods must be implemented in all its derived classes. If a derived
+class doesn’t implement all the abstract methods defined by its base class, then
+it also needs to be an abstract class.
 
 * You can never create objects of an abstract class.
 
-* A base class can be defined as an abstract class, even if it doesn’t define any
-abstract methods.
+* A base class can be defined as an abstract class, even if it doesn’t define
+any abstract methods.
 
-* A derived class should implement all the abstract methods of its base class. If it
-doesn’t, it must be defined as an abstract derived class.
+NB! * A derived class should implement all the abstract methods of its base class.
+If it doesn’t, it must be defined as an abstract derived class.
 
-* You can use variables of an abstract base class to refer to objects of its derived
-class (discussed in detail in section 6.3).
+* You can use variables of an abstract base class to refer to objects of its
+derived class

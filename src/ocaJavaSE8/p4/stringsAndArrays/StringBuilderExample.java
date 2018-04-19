@@ -7,7 +7,7 @@ public class StringBuilderExample {
 		System.out.println(sbExample);
 	}
 
-	/**
+	/*
 	 * Because you may want to add data from multiple data types to a StringBuilder
 	 * object, this method has been overloaded so that it can accept data of any
 	 * type. This method accepts all the primitives—String, char array, and Object
@@ -62,18 +62,16 @@ public class StringBuilderExample {
 	}
 
 	/*
-	 * The classes StringBuffer and StringBuilder offer the same functionality, with
-	 * one difference: the methods of the class StringBuffer are synchronized where
-	 * necessary, whereas the methods of the class StringBuilder aren’t. What does
-	 * this mean? When you work with the class StringBuffer, only one thread out of
-	 * multiple threads can execute your method. This arrangement prevents any
-	 * inconsistencies in the values of the instance variables that are modified by
-	 * these (synchronized) methods. But it introduces additional overhead, so
-	 * working with synchronized methods and the StringBuffer class affects the
-	 * performance of your code.
-	 *
-	 * Often your code won’t be accessed by multiple threads, so it won’t need the
-	 * overhead of thread synchronization. If you need to access your code from
-	 * multiple threads, use StringBuffer; otherwise use StringBuilder.
+	 The classes StringBuffer and StringBuilder offer the same functionality, with one difference:
+	 the methods of the class StringBuffer are synchronized where necessary, whereas the methods
+	 of the class StringBuilder aren’t.
+	 When you work with the class StringBuffer, only one thread out of  multiple threads can execute
+	 your method. This arrangement prevents any inconsistencies in the values of the instance variables
+	 that are modified by these (synchronized) methods. But it introduces additional overhead, so
+	 working with synchronized methods and the StringBuffer class affects the performance of your code.
+
+	 Often your code won’t be accessed by multiple threads, so it won’t need the overhead of thread
+	 synchronization. If you need to access your code from  multiple threads, use StringBuffer,
+	 otherwise use StringBuilder.
 	 */
 }

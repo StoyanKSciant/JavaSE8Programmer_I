@@ -1,4 +1,4 @@
-There are a few scenarios in Java in which a finally block does not execute:
+NB! *There are a few scenarios in Java in which a finally block does not execute:
 1. Application termination—The try or the catch block executes System.exit,
 	which terminates the application
 2. Fatal errors—A crash of the JVM or the OS
@@ -16,7 +16,7 @@ type, the finally block can’t modify the value being returned by it. If a catch
 block returns an object, the finally block can modify the value being
 returned by it.
 
-* Java doesn’t compile code if it contains unreachable statements.
+NB! * Java doesn’t compile code if it contains unreachable statements.
 
 * A try block may be followed by multiple catch blocks, and the catch blocks
 may be followed by a single finally block.
@@ -26,9 +26,9 @@ a finally block alone wouldn’t suffice if code in the try block throws a
 checked exception. In this case, you need to catch the checked exception or
 declare it to be thrown by your method. Otherwise your code won’t compile.
 
-* The try, catch, and finally blocks can’t exist independently.
+NB! * The try, catch, and finally blocks can’t exist independently.
 
-* The finally block can’t appear before a catch block.
+NB! * The finally block can’t appear before a catch block.
 
-* A finally block always executes, regardless of whether the code throws
+NB! * A finally block always executes, regardless of whether the code throws
 an exception.

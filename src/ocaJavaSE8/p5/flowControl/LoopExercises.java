@@ -35,6 +35,7 @@ public class LoopExercises {
 		int num = 10;
 		final int num2 = 20;
 		switch (num) {
+		case 1:			// SwitchLabels are must
 		// INSERT CODE HERE
 		break;
 		default: System.out.println("default");
@@ -48,7 +49,7 @@ public class LoopExercises {
 		switch (num) {
 		default:
 			System.out.println("default");
-		case num2:
+		case num2:						// case expressions must be constant expressions
 			System.out.println(4);
 			break;
 		}
@@ -59,10 +60,10 @@ public class LoopExercises {
 		switch (num) {
 		default:
 			System.out.println("default");
-			// duplicated cases are not allowed
+
 		case 0:
 			System.out.println("case1");
-		case 10 * 2 - 20:
+		case 10 * 2 - 20:				// duplicated cases are not allowed
 			System.out.println("case2");
 			break;
 		}

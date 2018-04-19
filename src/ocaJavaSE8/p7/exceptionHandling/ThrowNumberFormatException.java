@@ -6,7 +6,7 @@ public class ThrowNumberFormatException {
 		try {
 			num = Integer.parseInt(val, 16);
 		} catch (NumberFormatException e) {
-			// Rethrows NumberFormatException thrown by method parseInt
+			// Re-throws NumberFormatException thrown by method parseInt
 			// with modified exception message
 			throw new NumberFormatException(val + " cannot be converted to hexadecimal number");
 		}

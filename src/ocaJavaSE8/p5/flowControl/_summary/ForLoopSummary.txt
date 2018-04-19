@@ -31,7 +31,8 @@ other statements, including method calls.
 
 							Enhanced for loops:
 
-NB! * The enhanced for loop can't be used to initialize an array and modify its elements.
+NB! * The enhanced for loop can't be used to initialize an array and modify its
+elements.
 
 NB! * The enhanced for loop can't be used to delete the elements of a collection.
 

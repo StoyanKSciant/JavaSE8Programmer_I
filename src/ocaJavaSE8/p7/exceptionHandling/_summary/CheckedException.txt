@@ -1,5 +1,4 @@
 
-
 * A checked exception is an unacceptable condition foreseen by the author of a
 method but outside the immediate control of the code. For example, FileNot-
 FoundException
@@ -14,11 +13,12 @@ NB! * Checked exceptions must be declared before being thrown
 NB! * Trying to execute a method that throws a checked exception without handling
 the thrown exception causes a compilation error.
 
-NB! * Trying to call a method recursively without defining an exit condition is considered
-an exceptional condition.
+NB! * Trying to call a method recursively without defining an exit condition is
+considered an exceptional condition.
 
-* If a method uses another method that may throw a checked exception, one of the two
-following things should be true:
+* If a method uses another method that may throw a checked exception, one of the
+two following things should be true:
+
 1. The method should be enclosed within a try-catch block
 				or
 2. The method should specify this exception to be thrown in its method signature

@@ -20,49 +20,49 @@ of the risk of ambiguity.
 
 * A class can implement multiple interfaces but can inherit only one class.
 
-* An interface can extend multiple interfaces.
+NB! * An interface can extend multiple interfaces.
 
 * Interfaces in Java 8 can also define abstract methods.
 
-* The declaration of a interface can't include a class name. An interface can never extends
-any class.
+* The declaration of a interface can't include a class name. An interface can
+never extends any class.
 
-* All the top-level Java types (classes, enums, interfaces) can be declared using only two
-access levels: public and default.
+* All the top-level Java types (classes, enums, interfaces) can be declared
+using only two access levels: public and default.
 
 * Inner or nested types can be declared using any access level.
 
-* A static method in an interface can't be called using a reference variable. It must be
-called using the interface name.
+* A static method in an interface can't be called using a reference variable. It
+must be called using the interface name.
 
-* Unlike an interface, if you define a static method in a base class, it can be accessed using
-either a reference variable or the class name.
+* Unlike an interface, if you define a static method in a base class, it can be
+accessed using either a reference variable or the class name.
 
-* You must implement an abstract method of an interface using the explicit access modifier
-public.
+* You must implement an abstract method of an interface using the explicit
+access modifier public.
 
-* While overriding a default method, you must not use the keyword default. The rules for
-overriding default and regular methods are same.
+* While overriding a default method, you must not use the keyword default. The
+rules for overriding default and regular methods are same.
 
-* static methods in a class and the interface that it implements are not related to each
-other. A static method in a class doesn't hide or override the static method in the
-interface that it implements.
+* static methods in a class and the interface that it implements are not related
+to each other. A static method in a class doesn't hide or override the static
+method in the interface that it implements.
 
 * A class can extends multiple interfaces, only if a set of rules is abhered to:
-	- A class can implement multiple interfaces with the same constant names only if the
-	reference to the constants is not ambiguous.
-	- A class can implement multiple interface with the same abstract method names if they
-	have the same signature or form an overloaded set of methods.
-	- A class can implement multiple interfaces with the same default method name if it
-	overrides its default implementation.
-	- A class can implement multiple interfaces, with the same static method name
-	regardless of their return types or signature.
+	- A class can implement multiple interfaces with the same constant names
+	only if the reference to the constants is not ambiguous.
+	- A class can implement multiple interface with the same abstract method
+	names if they have the same signature or form an overloaded set of methods.
+	- A class can implement multiple interfaces with the same default method
+	name if it overrides its default implementation.
+	- A class can implement multiple interfaces, with the same static method
+	name regardless of their return types or signature.
 
-* When an interface extends multiple interfaces, Java ensured that it doesn't inherit
-multiple method implementations for the same method.
+* When an interface extends multiple interfaces, Java ensured that it doesn't
+inherit multiple method implementations for the same method.
 
-* An interface can extend multiple interfaces that define static methods with the same name
-the signatures of these methods don't matter.
+* An interface can extend multiple interfaces that define static methods with
+the same name the signatures of these methods don't matter.
 
 * The variables of an interface are implicitly public, final, and static.
 

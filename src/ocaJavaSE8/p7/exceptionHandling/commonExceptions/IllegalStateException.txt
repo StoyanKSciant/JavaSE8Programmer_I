@@ -1,14 +1,15 @@
+
 * IllegalStateException "signals that a method has been invoked at an
 illegal or inappropriate time. In other words, the Java environment or
 Java application is not in an appropriate state for the requested operation."
 
-*As an author of code, you can throw IllegalStateException to signal to the
-calling method that the method being requested for execution can’t be called for the
-current state of an object.
+* As an author of code, you can throw IllegalStateException to signal to the
+calling method that the method being requested for execution can’t be called for
+the current state of an object.
 
 
-For example, what happens if an application tries to modify an SMS that is already
-in transmission? Examine the following code:
+For example, what happens if an application tries to modify an SMS that is
+already in transmission? Examine the following code:
 
 class SMS {
 	private String msg;
@@ -16,16 +17,17 @@ class SMS {
 	public void create() {
 		msg = "A new Message";
 	}
+
 	public void transmit() {
 		........
 		inTransit = true;
 	}
+
 	public void modify() {
 		if (!inTransit)
 		msg = "new modified message";
 		else
-		throw new IllegalStateException	// <--
-		("Msg in transit. Can't modify it");
+		throw new IllegalStateException	// "Msg in transit. Can't modify it");
 	}
 }
 

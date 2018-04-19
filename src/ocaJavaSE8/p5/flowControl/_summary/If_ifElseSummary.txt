@@ -5,8 +5,9 @@ will throw compiler error. But if there is "else" at if/"if else" code becomes
 compilable.
 
 NB! * if-clause and the else-clause can have empty statements.
-Empty statement (" ; ") is a valid statement. But this is illegal "if (true) else;"
-because the if part doesn't contain any valid statement.
+Empty statement (" ; ") is a valid statement.
+But this is illegal "if (true) else;" because the if part doesn't contain any
+valid statement.
 
 *  A statement cannot start with an else.
 
@@ -24,24 +25,24 @@ if condition.
 
 * An if construct may or may not define its else part.
 
-* It’s easy to get confused with the common if-else syntax used in other programming
-languages. The if-elsif and if-elseif statements aren’t used in Java to
-define if-else-if-else constructs. The correct keywords are if and else.
+* It’s easy to get confused with the common if-else syntax used in other
+programming languages. The if-elsif and if-elseif statements aren’t used in
+Java to define if-else-if-else constructs. The correct keywords are if and else.
 
 * You can execute a single statement or a block of statements for corresponding
 true and false conditions. A pair of braces marks a block of statements: {}.
 
-* If an if construct doesn’t use {} to define a block of code to execute for its then
-or else part, only the first line of code is part of the if construct.
+* If an if construct doesn’t use {} to define a block of code to execute for its
+then or else part, only the first line of code is part of the if construct.
 
 * An assignment of a boolean variable can also be passed as an argument to the
-if construct. It’s valid because the resultant value is boolean, which is accepted
-by if constructs.
+if construct. It’s valid because the resultant value is boolean, which is
+accepted by if constructs.
 
 * Theoretically, nested if and if-else constructs have no limits on their levels.
 When using nested if-else constructs, be careful about matching the else part
 with the right if part.
 
-* You can define multiple statements in the update clause, including calls to other
-methods. The only limit is that these statements will execute in the order in which
-they appear, at the end of all the statements defined in the for block.
+* You can define multiple statements in the update clause, including calls to
+other methods. The only limit is that these statements will execute in the order
+in which they appear, at the end of all the statements defined in the for block.

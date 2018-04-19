@@ -143,10 +143,10 @@ public class LoopsExamples {
 	public static void nestedForWithForeachLoop() {
 
 		/*
-		* The enhanced for loop can’t be used to initialize an array and modify its elements.
-		* The enhanced for loop can’t be used to delete the elements of a collection.
-		* The enhanced for loop can’t be used to iterate over multiple collections or arrays
-			in the same loop.
+		 The enhanced for loop can’t be used to initialize an array and modify its elements.
+		 The enhanced for loop can’t be used to delete the elements of a collection.
+		 The enhanced for loop can’t be used to iterate over multiple collections or arrays
+	     in the same loop.
 		 */
 
 		ArrayList<ArrayList<String>> nestedArrayList = new ArrayList< ArrayList<String>>();

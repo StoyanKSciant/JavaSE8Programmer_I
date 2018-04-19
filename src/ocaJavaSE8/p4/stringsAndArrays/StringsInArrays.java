@@ -20,7 +20,5 @@ public class StringsInArrays {
 
 /*
 One:Two:One:Two:
-
-The value of String
-objects can’t be modified once created.
+The value of String objects can’t be modified once created.
 */

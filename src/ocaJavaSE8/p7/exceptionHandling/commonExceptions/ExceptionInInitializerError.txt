@@ -1,7 +1,7 @@
 * The ExceptionInInitializerError error is typically thrown by the JVM when a
 static initializer in your code throws any type of RuntimeException
 
-* Runtime exceptions arising from any of the followin will throw this error:
+* Runtime exceptions arising from any of the following will throw this error:
 1. Execution of an anonymous static block
 2. Initialization of a static variable
 3. Execution of a static method (called from either of the previous two items)
@@ -29,6 +29,6 @@ public class DemoExceptionInInitializerError2 {
 	}
 }
 
-* ExceptionInInitializerError can be caused by an object of RuntimeException only.
+NB! * ExceptionInInitializerError can be caused by an object of RuntimeException only.
 It can’t occur as the result of an error or checked exception thrown by the static
 initialization block.

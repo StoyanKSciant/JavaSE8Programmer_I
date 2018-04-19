@@ -5,8 +5,7 @@ import java.time.LocalTime;
 import java.time.Month;
 import java.time.Period;
 
-	//LocalDate is immutable. Calling any method on its instance won’t
-	// modify its value!
+	//LocalDate is immutable. Calling any method on its instance won’t modify its value!
 
 public class LocalDateExample {
 

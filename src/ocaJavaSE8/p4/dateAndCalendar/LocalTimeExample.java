@@ -39,7 +39,7 @@ public class LocalTimeExample {
 	 * comply with the method’s argument type.
 	 */
 	public static void throwCompilatioError() {
-		LocalTime timeHrsMin2 = LocalTime.of(9986545781, 12);
+		// LocalTime timeHrsMin2 = LocalTime.of(9986545781, 12); //The literal 9986545781 of type int is out of range
 	}
 
 	/*

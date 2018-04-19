@@ -11,7 +11,7 @@ public class WrapperComparison {
 		"==" compares object references, it returns true if variable being compared
 		refer to the same instance
 
-		Integer instances created using the method valueOf() and autoboxing for
+		NB! Integer instances created using the method valueOf() and autoboxing for
 		int value 10 refer to the same instance.
 		 */
 

@@ -1,10 +1,9 @@
-* ArgumentException is thrown to specify that a method has
-passed illegal or inappropriate arguments.
+* ArgumentException is thrown to specify that a method has passed illegal or
+inappropriate arguments.
 
-* Even though it’s a runtime exception, programmersusually use this
-exception to validate the arguments that are passed to a method.
-The exception constructor is passed a descriptive message, specifying
-the exception details.
+* Even though it’s a runtime exception, programmers usually use this exception
+to validate the arguments that are passed to a method. The exception constructor
+is passed a descriptive message, specifying the exception details.
 
 public void login(String username, String pwd, int maxLoginAttempt) {
 	if (username == null || username.length() < 6)

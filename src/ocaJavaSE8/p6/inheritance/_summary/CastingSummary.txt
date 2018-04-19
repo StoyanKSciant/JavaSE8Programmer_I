@@ -7,7 +7,7 @@ the implemented interface.
 
 ((HRExecutive) interviewer).specialization = new String[] {"Staffing"}
 
-The parentheses that surround the whole (HRExecutive)interviewer token
+NB! * The parentheses that surround the whole (HRExecutive)interviewer token
 are required to bypass the Java operator precedence rules, according to
 which the "casting" operator has lower priority then the "." operator
 

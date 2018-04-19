@@ -1,18 +1,12 @@
 package ocaJavaSE8.p3.methodsAndEncapsulation;
 
-
 /*
- * The class EJavaGuruPassObject1 defines two methods,
- * someMethod and anotherMethod. The method someMethod
- * modifies the value of the object parameter passed to
- * it. Hence, the changes are visible within this method
- * and in the calling method (method main). But the
- * method anotherMethod reassigns the reference variable
- * passed to it. Changes to any of the values of this
- * object are limited to this method. They aren’t
+ * The class EJavaGuruPassObject1 defines two methods, someMethod and anotherMethod. The method someMethod
+ * modifies the value of the object parameter passed to it. Hence, the changes are visible within this method
+ * and in the calling method (method main). But the method anotherMethod reassigns the reference variable
+ * passed to it. Changes to any of the values of this object are limited to this method. They aren’t
  * reflected in the calling method (the main method).
  */
-
 
 class EJavaGuruPassObjects1 {
 	public static void main(String args[]) {
@@ -37,8 +31,5 @@ class EJavaGuruPassObjects1 {
 }
 // output
 /*
-anotherMethod
-EJava
-someMethod
-someMethod
-*/
+ * anotherMethod EJava someMethod someMethod
+ */

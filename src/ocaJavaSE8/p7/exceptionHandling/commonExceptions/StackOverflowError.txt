@@ -1,4 +1,6 @@
 * The StackOverflowError error extends Virtual-MachineError.
+This error is thrown by the JVM when a Java program calls itself so many times
+that the memory stack allocated to execute the Java program "overflows".
 
 public class DemoStackOverflowError{
 	static void recursion() {

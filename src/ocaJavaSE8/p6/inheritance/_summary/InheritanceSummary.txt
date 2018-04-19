@@ -1,13 +1,22 @@
 * A class can inherit the properties and behavior of another class.
 
-NB! * A reference variable of the base class can't access the variables and methods
- defined in its subclass without an explicit cast.
+NB! * A reference variable of the base class can't access the variables and
+methods defined in its subclass without an explicit cast.
 
-* An interface can inherit zero or more interfaces. An interface cannot inherit a class.
+* An interface can inherit zero or more interfaces. An interface cannot inherit
+a class.
+
+NB! * A class that is marked final cannot be extended by another class.
+
+NB! * A final method defined in a base class can’t be overridden by a derived
+class.
 
 * Inheritance enables you to use existing code.
 
 * Inheriting a class is also known as subclassing.
+
+NB! * The first concrete class in the hierarchy must supply actual method
+implementations for all abstract methods.
 
 * A class that inherits another class is called a derived class or subclass.
 
@@ -23,31 +32,29 @@ both the base class and the derived class are in the same package.
 
 * A class uses the keyword extends to inherit a class.
 
-* An abstract class can inherit a concrete class, and a concrete class can inherit an
-abstract class.
+* An abstract class can inherit a concrete class, and a concrete class can
+inherit an abstract class.
 
-* An abstract class can inherit a concrete class, and a concrete class can inherit
-an abstract class.
+* Though Java does not allow a class to inherit from more than one class, it
+allows a class to implement multiple interfaces. A class uses the keyword
+implements to implement an interface.
 
-* Though Java does not allow a class to inherit from more than one class, it allows a class
-to implement multiple interfaces. A class uses the keyword implements to implement an interface.
+* Does a change in the signature of a method in an interface have any impact on
+the definition of this method in the classes that implement it? Yes, it does. If
+the signature of a method is changed in an interface, all classes that implement
+the interface will fail to compile.
 
-* Does a change in the signature of a method in an interface have any impact on the definition
-of this method in the classes that implement it? Yes, it does. If the signature of a
-method is changed in an interface, all classes that implement the interface will fail to
-compile
-
-* If a derived class doesn’t implement all the abstract methods defined by its base class, then it also needs to be
-an abstract class.
+* If a derived class doesn’t implement all the abstract methods defined by its
+base class, then it also needs to be an abstract class.
 
 * You should initialize all variables in an interface, or your code won’t compile:
 	interface MyInterface {
 		int AGE;		// won't compile
 	}
 
-* The access modifiers play an important role in determining the inheritance of base
-class members in derived classes. A derived class inherits all the non-private members
-of its base class.
+* The access modifiers play an important role in determining the inheritance of
+base class members in derived classes. A derived class inherits all the
+non-private members of its base class.
 
 * Because a derived class may inherit different implementations for the same method
 signature from multiple base classes, multiple inheritance is not allowed in Java.
@@ -56,18 +63,20 @@ signature from multiple base classes, multiple inheritance is not allowed in Jav
 base and derived classes reside in the same package.
 
 * protected—Members with protected access are accessible to all the derived
-classes, regardless of the packages in which the base and derived classes are defined.
+classes, regardless of the packages in which the base and derived classes are
+defined.
 
 * public—Members with public access are visible to all the other classes.
 
 * private base class members can't be inherited.
 
-* Base class members with default access can't be inherited, if the base class and derived classes exist
-in separate packages.
+* Base class members with default access can't be inherited, if the base class
+and derived classes exist in separate packages.
 
-* Constructors of the base class can't be inherited. A derived class can call a base class’s constructors,
-but it doesn’t inherit them (section 6.5 discusses how a derived class can
-call a base class’s constructors using the implicit reference super).
+* Constructors of the base class can't be inherited. A derived class can call a
+base class’s constructors, but it doesn’t inherit them (section 6.5 discusses
+how a derived class can call a base class’s constructors using the implicit
+reference super).
 
 * An abstract class can extend a concrete class and vice versa.
 
@@ -75,5 +84,4 @@ call a base class’s constructors using the implicit reference super).
 
 * An abstract class can extend another abstract class.
 
-* The first concrete class in the hierarchy must supply actual method implementations
-for all abstract methods.
+

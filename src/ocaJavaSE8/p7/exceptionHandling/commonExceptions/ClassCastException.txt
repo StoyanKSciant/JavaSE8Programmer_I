@@ -1,4 +1,6 @@
-import java.util.ArrayList;
+class Ink{}
+class ColorInk extends Ink{}
+class BlackInk extends Ink{}
 
 public class ListAccess {
 public static void main(String args[]) {
@@ -10,19 +12,15 @@ public static void main(String args[]) {
 	}
 }
 
-class Ink{}
-class ColorInk extends Ink{}
-class BlackInk extends Ink{}
-
 * ClassCastException is thrown when an object fails an IS-A test with the
 class type to which it’s being cast. In the preceding example, class Ink is
 the base class for classes ColorInk and BlackInk. The JVM throws a
 ClassCastException in the previous case because the line of code in bold
 tries to explicitly cast an object of ColorInk to BlackInk.
 
-* Note that this line of code avoided the compilation error because the variable inks
-defines an ArrayList of type Ink, which is capable of storing objects of type Ink and
-all its subclasses.
+* Note that this line of code avoided the compilation error because the variable
+inks defines an ArrayList of type Ink, which is capable of storing objects of
+type Ink and all its subclasses.
 
 * You can use the instanceof operator to verify whether an object can be cast to
 another class before casting it.

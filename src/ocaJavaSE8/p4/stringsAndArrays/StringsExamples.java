@@ -55,7 +55,7 @@ public class StringsExamples {
 	}
 
 	static void comparisonExample() {
-		/**
+		/*
 		 * The operator == compares whether the reference variables refer
 		 * to the same objects, and the method equals compares the String
 		 * values for equality. Always use the equals method to compare
