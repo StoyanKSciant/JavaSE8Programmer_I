@@ -2,10 +2,10 @@
 
 public class IntegersExamples {
 
-	static int baseDecimal = 267; // 267 in decimal number system
-	static int octVal = 0413; // 267 in decimal number system is equal to 413 in octal number system
-	static int hexVal = 0x10B; // 267 in decimal number system is equal to 10B in hexadecimal number system
-	static int binVal = 0b100001011; // 276 in decimal number system is equal to 100001011 in binary number system
+	static int baseDecimal = 267; 	// 267 in decimal number system
+	static int octVal = 0413; 		// 267 in decimal number system is equal to 413 in octal number system
+	static int hexVal = 0x10B; 		// 267 in decimal number system is equal to 10B in hexadecimal number system
+	static int binVal = 0b100001011;// 276 in decimal number system is equal to 100001011 in binary number system
 
 	/*
 	With Java version 7, you can also use underscores as part of the literal values,

@@ -8,6 +8,11 @@ In the following example, the class Employee defines an initializer block:
 		}
 	}
 
+NB! * Static statements/blocks are called IN THE ORDER they are defined.
+
+NB! * Instance initializer statements/blocks are called IN THE ORDER they are
+defined.
+
 NB! * If you define both an initializer and a constructor for a class, both of these
 will execute. The initializer block will execute prior to the constructor.
 

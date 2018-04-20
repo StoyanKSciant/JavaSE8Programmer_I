@@ -4,6 +4,8 @@ with a null value.
 The key is to ensure that the reference variable has been assigned a non-null
 value.
 
+* calling an abstract method of field will throw a NullPointerException.
+
 * Accessing members of a reference variable that is explicitly assigned a null
 value.
 

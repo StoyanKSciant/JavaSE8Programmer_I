@@ -5,6 +5,20 @@ the methods defined in the class String can modify its value.
 assignment operator (=), or by using double quotes (as in System.out.println
 ("Four")).
 
+NB! String.intern() ensures that all strings having same contents share same
+memory. So if you have list of names where 'john' appears 1000 times, by
+interning you ensure only one 'john' is actually allocated memory.
+			("a" + "b" + "c").intern() == "abc"
+If the method String.intern has previously been called on an instance of class
+String containing a sequence of Unicode code points identical to that given by
+the CONSTANT_String_info structure, then the result of string literal derivation
+ is a reference to that same instance of class String.
+Otherwise, a new instance of class String is created containing the sequence of
+Unicode code points given by the CONSTANT_String_info structure; a reference to
+that class instance is the result of string literal derivation. Finally, the
+intern method of the new String instance is invoked.
+
+
 NB! * String objects created using the assignment operator are placed in a POOL
 OF STRING OBJECTS. Whenever the JRE receives a new request to create a String
 object using the assignment operator, it checks whether a String object with

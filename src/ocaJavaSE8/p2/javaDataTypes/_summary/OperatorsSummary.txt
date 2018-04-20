@@ -6,7 +6,7 @@ true && false ->  false
 false && true ->  false
 false && false ->  false
 true && true && false -> false
-________________________________
+________________________________________________________________________________
 
 Operator || (OR)
 
@@ -15,7 +15,7 @@ true || false ->  true
 false || true ->  true
 false || false ->  false
 false || false || true -> true
-________________________________
+________________________________________________________________________________
 
 Operator ! (NOT)*
 
@@ -23,7 +23,7 @@ Operator ! (NOT)*
 !false ->  true
 
 * can't be directly applied to variable, only to evaluation condition.
-______________________________________________________________________________
+________________________________________________________________________________
 
 
 

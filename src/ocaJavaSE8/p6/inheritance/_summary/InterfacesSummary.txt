@@ -1,7 +1,14 @@
 NB! * Interface can't be initialized
 
+* Having ambiguous fields or methods does not cause any problem by itself but
+referring to such fields or methods in an ambiguous way will cause a compile
+time error.
+
 * An interface can only define constants. Once it’s assigned, you can’t change the value
 of a constant.
+
+NB! * An interface can have a static method but the method must have a body,
+because STATIC METHODS CAN'T BE ABSTRACT.
 
 * The variables of an interface are implicitly public, final, and static.
 	interface MyInterface {	is equivalent to: 	interface MyInterface {

@@ -107,6 +107,9 @@ characters from virtually all the world’s existing scripts and languages.
 inclusive) to store a char. Unicode values are defined in the hexadecimal number
 system.
 
+NB! * A char value can ALWAYS be assigned to an int variable, since the int type
+is wider than the char type. So line 2 is valid.
+
 NB! * Internally, the char data type is stored as an unsigned integer value (only
 positive integers).
  	When you assign a letter to a char, Java stores its integer equivalent value. You
@@ -116,6 +119,3 @@ may assign a positive integer value to a char instead of a letter, such as 122.
 a decimal number and the latter is a hexadecimal number.
 
 * Single quotes, not double quotes, are used to assign a letter to a char variable.
-
-
-

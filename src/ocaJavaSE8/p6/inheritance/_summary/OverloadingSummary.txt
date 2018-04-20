@@ -1,0 +1,29 @@
+
+* You can define multiple parameters for a method.
+
+* The method parameter can be a primitive type or object.
+
+* The method"s parameters are separated by commas.
+
+* Each method parameter is preceded by the name of its type. Each method
+parameter must have an explicit type declared with its name. You can't declare
+the type once and then list the parameters separated by commas, as you can
+for variables.
+
+* For a method that returns a value, the return statement must be followed
+immediately by a value.
+
+* For a method that doesn't return a value (return type is void), the return
+statement must not be followed by a return value.
+
+* If the compiler determines that a return statement isn't the last statement to
+execute in a method, the method will fail to compile.
+
+* Overloaded methods must have method parameters different from one another.
+
+* Overloaded methods may or may not define a different return type.
+
+* Overloaded methods may or may not define different access levels.
+
+* Overloaded methods can't be defined by only changing their return type or
+access modifiers or both.
