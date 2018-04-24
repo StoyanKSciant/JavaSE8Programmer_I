@@ -4,16 +4,20 @@ NB! * Interface can't be initialized
 referring to such fields or methods in an ambiguous way will cause a compile
 time error.
 
-* An interface can only define constants. Once it’s assigned, you can’t change the value
-of a constant.
+* An interface can only define constants. Once it’s assigned, you can’t change
+the value of a constant.
+
+* Implementing interfaces for class, extending other class, which already
+implement those interfaces redundant but invalid.
 
 NB! * An interface can have a static method but the method must have a body,
 because STATIC METHODS CAN'T BE ABSTRACT.
 
 * The variables of an interface are implicitly public, final, and static.
-	interface MyInterface {	is equivalent to: 	interface MyInterface {
-		int age = 10;				--->			public static final int AGE = 10;
-	}											}
+
+interface MyInterface {	is equivalent to: 	interface MyInterface {
+	int age = 10;				--->			public static final int AGE = 10;
+}											}
 
 NB! * A class that implements interfaces* (*that have defined a method with the
 same signature and implementation), must always override that methods because
@@ -42,8 +46,8 @@ using only two access levels: public and default.
 * A static method in an interface can't be called using a reference variable. It
 must be called using the interface name.
 
-* Unlike an interface, if you define a static method in a base class, it can be
-accessed using either a reference variable or the class name.
+NB * Unlike an interface, if you define a static method in a base class, it can
+be accessed using either a reference variable or the class name.
 
 * You must implement an abstract method of an interface using the explicit
 access modifier public.
@@ -51,9 +55,9 @@ access modifier public.
 * While overriding a default method, you must not use the keyword default. The
 rules for overriding default and regular methods are same.
 
-* static methods in a class and the interface that it implements are not related
-to each other. A static method in a class doesn't hide or override the static
-method in the interface that it implements.
+NB! * static methods in a class and the interface that it implements are not
+related to each other. A static method in a class doesn't hide or override the
+static method in the interface that it implements.
 
 * A class can extends multiple interfaces, only if a set of rules is abhered to:
 	- A class can implement multiple interfaces with the same constant names
@@ -79,4 +83,3 @@ the same name the signatures of these methods don't matter.
 
 * The method signatures of a method defined in an interface and in the class
 that implements the interface must match; otherwise, the class won’t compile.
-

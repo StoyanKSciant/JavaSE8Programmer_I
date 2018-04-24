@@ -1,7 +1,7 @@
 * Casting is the process of forcefully making a variable behave as a variable
 of another type.
 
-Use casting to access some of the members of derived class, which aren't
+* Use casting to access some of the members of derived class, which aren't
 explicitly available, by using the reference variable of the base type or
 the implemented interface.
 
@@ -10,4 +10,34 @@ the implemented interface.
 NB! * The parentheses that surround the whole (HRExecutive)interviewer token
 are required to bypass the Java operator precedence rules, according to
 which the "casting" operator has lower priority then the "." operator
+
+* Reference variable of the base class can refer to object of its derived class,
+but the base class can access variables and methods of the derived class
+ONLY WITH AN EXPLICIT CAST
+
+	public class DomesticAnimal {
+		int age;
+		String name;
+		DomesticAnimal(int age, String name){
+			this.age = age;
+			this.name = name;
+		}
+	}
+
+	public class Horse extends DomesticAnimal{
+		public void gallop() {
+			System.out.println(this.name + " is galloping.");
+		}
+	}
+
+	public class TestExplicitCasting {
+		public static void main(String[] args) {
+			DomesticAnimal flash = new Horse(4, "flash");
+			((Horse)flash).gallop();
+		}
+	}
+
+* You can cast reference variable (class or interface) refering to a class that,
+doesn't extend that reference, but at runtime that code will throw
+ClassCastException
 

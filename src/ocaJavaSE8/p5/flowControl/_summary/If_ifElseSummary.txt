@@ -9,6 +9,9 @@ Empty statement (" ; ") is a valid statement.
 But this is illegal "if (true) else;" because the if part doesn't contain any
 valid statement.
 
+* In Java if no brackets define the if-block, the "else" clause belongs to the
+innermost if
+
 *  A statement cannot start with an else.
 
 NB! The else part of an if construct can’t exist without the definition of its

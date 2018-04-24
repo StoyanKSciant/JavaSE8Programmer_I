@@ -7,6 +7,9 @@ interfaces defined in the same Java source code file.
 * The import statement can't be used to import multiple classes or interfaces
 with the same name.
 
+NB! * There can be only 1 "public" class within package scope in a file. You can
+have additional INNER classes that are public though.
+
 * By default, all classes and interfaces in separate packages and sub-packages
 aren't visible to each  other.
 

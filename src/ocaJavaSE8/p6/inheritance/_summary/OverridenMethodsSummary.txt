@@ -3,10 +3,10 @@
 relationships.
 
 NB! * variables are SHADOWED and methods are OVERRIDDEN.
- 1. Which variable will be
-used depends on the class that the variable is declared of.
+ 1. Which variable will be used depends on the class that the variable is
+declared of.
  2. Which method will be used depends on the actual class of the object that is
- referenced by the variable.
+referenced by the variable.
 
 * The name of the overridden method must be the same in both the base class
 and the derived class.
@@ -21,7 +21,7 @@ overridden method, it is known as a covariant return type.
 
 NB! * Covariant returns are allowed since Java 1.5, which means that an
 overriding method can change the return type to a subclass of the return type
-declared in the overridden method. But remember than covarient returns does not
+declared in the overridden method. But remember than covariant returns does not
 apply to primitives
 
 * An overridden method defined in the base class can be an abstract method or

@@ -47,6 +47,8 @@ and then assign.”
 * Arithmetic operators can’t be used with the boolean data type. Attempting to
 do so will make the code fail to compile.
 
+NB! * (a == a++) evaluates to true!
+
 * ++ and –- are unary increment and decrement operators. These operators work
 with single operands.
 

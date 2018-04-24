@@ -10,6 +10,13 @@ Following constructs are valid:
 2. try{ } finally{  }          // no catch
 3. try{ } catch(Exception e){  } finally{  }
 
+NB! * You can have multiple catch blocks to catch different kinds of exceptions,
+including exceptions that are subclasses of other exceptions. However, the catch
+clause for more specific exceptions (i.e. a SubClassException) should come
+before the catch clause for more general exceptions ( i.e. a
+SuperClassException). Failure to do so results in a compiler error as the more
+specific exception is unreachable.
+
 * Watch out for code that returns a value from the catch block and
 modifies it in the finally block. If a catch block returns a primitive data
 type, the finally block can’t modify the value being returned by it. If a catch

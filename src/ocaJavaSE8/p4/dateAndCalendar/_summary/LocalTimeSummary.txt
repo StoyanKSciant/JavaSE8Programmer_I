@@ -20,6 +20,8 @@ you’ll get a runtime exception.
 parse(). You can either pass a string in the format 15:08:23 (hours:minutes:seconds)
 or parse any text using DateTimeFormatter.
 
+NB! * LocalDateTime's toString() method generates the String in ISO 8601 format.
+
 * If you pass invalid string values to parse(), the code will compile but will throw
 a runtime exception. If you don’t pass a DateTimeFormatter, the format of the
 string passed to parse() must be exactly of the format 99:99:99. The hours and

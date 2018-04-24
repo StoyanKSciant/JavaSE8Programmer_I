@@ -13,8 +13,8 @@ the base class, which is also known as covariant return type.
 * Access modifiers for an overriding method can be the same or less restrictive
 but can’t be more restrictive than the method being overridden.
 
-* A derived class is said to override a method in the base class if it defines a
-method with the same name, same parameter list, and same return type as in
+* A derived class is said to override a method in the base class if it defines
+a method with the same name, same parameter list, and same return type as in
 the derived class.
 
 * If a method defined in a base class is overloaded in the derived classes, then
