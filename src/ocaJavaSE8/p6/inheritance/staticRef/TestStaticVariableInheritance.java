@@ -21,5 +21,8 @@ public class TestStaticVariableInheritance {
 		a.saySomethingInStatic();
 		// only the instance method depends on the pointed class
 		a.saySomething();
+
+		new MNOP().saySomethingInStatic();
+		new MNOP().saySomething();
    }
 }

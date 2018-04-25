@@ -10,6 +10,15 @@ public class StringsExamples {
 		exampleChaining();
 
 		comparisonExample();
+
+		toStringExmp();
+	}
+
+	static void toStringExmp() {
+		Object obj = new Object();
+		System.out.println("object to string: " + obj.toString());
+
+		System.out.println(new String("str"));	// but not 'str'
 	}
 
 	static void subStringsOperations() {

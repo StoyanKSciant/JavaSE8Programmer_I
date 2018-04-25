@@ -49,10 +49,12 @@ must be called using the interface name.
 NB * Unlike an interface, if you define a static method in a base class, it can
 be accessed using either a reference variable or the class name.
 
+* Default method is always an instance method.
+
 * You must implement an abstract method of an interface using the explicit
 access modifier public.
 
-* While overriding a default method, you must not use the keyword default. The
+* While overriding a default method, you MUST NOT USE the keyword default. The
 rules for overriding default and regular methods are same.
 
 NB! * static methods in a class and the interface that it implements are not

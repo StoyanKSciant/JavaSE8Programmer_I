@@ -15,19 +15,14 @@ public class IntegersExamples {
 	*/
 	long baseDecimalUndrScr = 100_267_760;
 	long octValUndrScr = 04_13;
-	long hexValUndrScr = 0x10_BA_75;
+	long hexValUndrScr = 0x10____BA_75;
 	long binValUndrScr = 0b1_0000_10_11;
 
-	/**
+	/*
 	 * The following line of code will compile successfully but will fail at
 	 * runtime:
 	 */
 	int i = Integer.parseInt("45_98");
-
-	/**
-	 * Because a String value can accept underscores, the compiler will compile the
-	 * previous code.
-	 */
 
 	public static void main(String args[]) {
 		baseDecimal = 267;
