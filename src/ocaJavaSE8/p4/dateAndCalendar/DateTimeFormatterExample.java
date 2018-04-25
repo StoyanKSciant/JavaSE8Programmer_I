@@ -1,7 +1,6 @@
 package ocaJavaSE8.p4.dateAndCalendar;
 
-import java.nio.charset.MalformedInputException;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
@@ -9,18 +8,20 @@ import java.time.format.FormatStyle;
 public class DateTimeFormatterExample {
 
 	public static void main(String[] args) {
-		DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
-		LocalTime time = LocalTime.now();
-		System.out.println(formatter.format(time));
-	}
 
-	// You can instantiate or access a DateTimeFormatter object in multiple ways:
+		LocalDateTime time = LocalDateTime.now();
 
-	public static void initialializeDTFormatter() {
 		// By calling a static ofXXX method, passing it a FormatStyle value
+		DateTimeFormatter fmt1 = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
+		System.out.println(fmt1.format(time));
+
 		// By access public static fields of DateTimeFormatter
+		DateTimeFormatter fmt2 = DateTimeFormatter.ISO_DATE;
+		System.out.println(fmt2.format(time));
+
 		// By using the static method ofPattern and passing it a string value
+		DateTimeFormatter fmt3= DateTimeFormatter.ofPattern("yy.M.dd");
+		System.out.println(fmt3.format(time));
 
 	}
-
 }

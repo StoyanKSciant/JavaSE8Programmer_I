@@ -8,8 +8,8 @@ readability. The code will work without them.
 * You can assign a literal value or an expression to a variable using a ternary
 operator.
 
-* A method that returns a value can be used to initialize a variable in a ternary
-construct.
+* A method that returns a value can be used to initialize a variable in a
+ternary construct.
 
 NB! * If the expression used to evaluate a ternary operator doesn't return a
 boolean or Boolean value, the code won't compile.
@@ -19,11 +19,11 @@ boolean or Boolean value, the code won't compile.
 NB! * The value returned by a ternary operator must be assign to a variable, or
 the code won't compile.
 
-* Because a ternary operator must return values, which are assigned to a variable,
-it can't include code blocks.
+* Because a ternary operator must return values, which are assigned to a
+variable, it can't include code blocks.
 
-NB! * A method that doesn't return a value can't be used to initialize variables in
-a ternary construct.
+NB! * A method that doesn't return a value can't be used to initialize variables
+in a ternary construct.
 
 * The value returned by a ternary construct must be compatible with a variable
 type to which the value is being assigned.

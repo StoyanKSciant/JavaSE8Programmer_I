@@ -1,6 +1,18 @@
+
 * Constructors are special methods defined in a class that create and return an
 object of the class in which they're defined. They are named after the class,
 and the don't specify a return type.
+
+* ORDER OF INSTANTIATING AN INSTANCE:
+
+	1. First static blocks and methods are called IN THE ORDER they are defined.
+	2. Instance fields are instantiated.
+	3. Constructors are evoked.
+
+
+* super() method calls the constructor of superclass from the instantiation of
+the child-class. super() CAN only be called at the beginning of the child-class
+constructor.
 
 * If you define a return type for a constructor, it'll no longer be treated like
 a constructor. It'll be treated like a regular method, even though it shares the
@@ -44,7 +56,6 @@ ex:	class Shoe {}
 			}
 		}
 
-* User-defined constructors are defined by the developer.
 
 NB! * If a class defines multiple initializer blocks, their order of execution
 depends on their placement in a class. But all of them execute before a class's

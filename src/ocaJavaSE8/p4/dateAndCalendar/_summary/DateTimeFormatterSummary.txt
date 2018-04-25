@@ -10,21 +10,19 @@ String using the rules of the formatter.
 
 NB! * You can instantiate or access a DateTimeFormatter object in multiple ways:
 
-	– By calling a static ofXXX method, passing it a FormatStyle value
-		* To instantiate a DateTimeFormatter using ofXXX methods, pass it a
-		Format-Style value (FormatStyle.FULL, FormatStyle.LONG, FormatStyle.MEDIUM, or
-		FormatStyle.SHORT).
+	– By calling a static ofXXX method, passing in it a Format-Style value
+	(FormatStyle.FULL, FormatStyle.LONG, FormatStyle.MEDIUM, or
+	FormatStyle.SHORT).
+		DateTimeFormatter fmt = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
 
 	– By accessing public static fields of DateTimeFormatter
-		* You can access a DateTimeFormatter object by using the public and static fields
-		of this class: BASIC_ISO_DATE, ISO_DATE, ISO_TIME, and ISO_DATE_TIME.
-		ex:	DateTimeFormatter formatter5 = DateTimeFormatter.ISO_DATE;
+	* You can access a DateTimeFormatter object by using the public and static
+	fields of this class: BASIC_ISO_DATE, ISO_DATE, ISO_TIME, and ISO_DATE_TIME.
+		DateTimeFormatter fmt = DateTimeFormatter.ISO_DATE;
 
-	– By using a static method ofPattern and passing it a string value
-
-		* You can instantiate a DateTimeFormatter using a pattern (of letters and
-		symbols) by using the static method ofPattern and passing it a string value:
-		ex:	DateTimeFormatter formatter6= DateTimeFormatter.ofPattern("yyyy-M-dd");
+	– By using a static method ofPattern and passing it a string value pattern
+	(of letters and symbols)
+		DateTimeFormatter fmt= DateTimeFormatter.ofPattern("yyyy-M-dd");
 
 * To parse a date or time object, you can use either the parse method in date/
 time objects or the parse method in the DateTimeFormatter class.

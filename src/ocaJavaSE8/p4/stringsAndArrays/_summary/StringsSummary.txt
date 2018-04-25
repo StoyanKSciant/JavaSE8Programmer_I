@@ -9,10 +9,11 @@ NB! String.intern() ensures that all strings having same contents share same
 memory. So if you have list of names where 'john' appears 1000 times, by
 interning you ensure only one 'john' is actually allocated memory.
 			("a" + "b" + "c").intern() == "abc"
+
 If the method String.intern has previously been called on an instance of class
 String containing a sequence of Unicode code points identical to that given by
 the CONSTANT_String_info structure, then the result of string literal derivation
- is a reference to that same instance of class String.
+is a reference to that same instance of class String.
 Otherwise, a new instance of class String is created containing the sequence of
 Unicode code points given by the CONSTANT_String_info structure; a reference to
 that class instance is the result of string literal derivation. Finally, the
@@ -28,33 +29,36 @@ reference for the existing String object from the pool.
 NB! * String objects created using the operator new are NEVER placed in the POOL
 OF STRING OBJECTS.
 
-NB! * The comparison operator (==) compares String references, whereas the equals
-method compares the String values.
+NB! * The comparison operator (==) compares String references, whereas the
+equals() method compares the String values.
 
 NB! * The right technique for comparing two String values for equality is to use
-the method equals() defined in the String class. This method returns a true value
-if the object being compared isn’t null and is a String object that represents
-the same sequence of characters as the object to which it’s being compared.
+the method equals() defined in the String class. This method returns a true
+value if the object being compared isn’t null and is a String object that
+represents the same sequence of characters as the object to which it’s being
+compared.
 
 	* The method charAt(int index) retrieves a character at a specified index of
 	a String.
 
-	* The method indexOf() can be used to search a String for the occurrence of a
-	char or a String, starting from the first position or a specified position.
+	* The method indexOf() can be used to search a String for the occurrence of
+	a char or a String, starting from the first position or a specified position.
 
-	* The method substring() can be used to retrieve a portion of a String object.
-	The substring method doesn’t include the character at the end position.
+	* The method substring() can be used to retrieve a portion of a String
+	object. The substring method doesn’t include the character at the end
+	position.
 
 	* The trim() method will return a new String by removing all the leading and
-	trailing white spaces in a String. This method doesn’t remove any white space
-	within a String.
+	trailing white spaces in a String. This method doesn’t remove any white
+	space within a String.
 
 	* You can use the method length() to retrieve the length of a String.
 
-	* The method startsWith() determines whether a String starts with a specified
-	String.
+	* The method startsWith() determines whether a String starts with a
+	specified String.
 
-	* The method endsWith() determines whether a String ends with a specified String.
+	* The method endsWith() determines whether a String ends with a specified
+	String.
 
 NB! * It’s a common practice to use multiple String methods in a single line of
 code. When chained, the methods are evaluated from left to right.

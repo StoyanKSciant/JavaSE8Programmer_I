@@ -1,7 +1,7 @@
 
-* ArrayList is one of the most widely used classes from the Collections framework.
-It offers the best combination of features offered by an array and the List
-data structure.
+* ArrayList is one of the most widely used classes from the Collections
+framework. It offers the best combination of features offered by an array and
+the List data structure.
 
 * An ArrayList is like a resizable array.
 
@@ -12,13 +12,13 @@ to it.
 
 * ArrayList implements all list operations (add, modify, and delete values).
 
-* ArrayList allows duplicate values to be added to it and maintains its
+* ArrayList ALLOWS DUPLICATE VALUES TO BE ADDED TO IT and maintains its
 insertion order.
 
 * You can use either Iterator or ListIterator to iterate over the items of an
 ArrayList.
 
-* ArrayList supports generics, making it type safe.
+* ArrayList SUPPORT GENERICS, making it type safe.
 
 NB! * Internally, an array of type java.lang.Object is used to store the data in
 an ArrayList.
@@ -68,5 +68,5 @@ NB! * The method clone() defined in the class ArrayList returns a shallow copy
 of this ArrayList instance. “Shallow copy” means that the method creates a new
 instance of the ArrayList to be cloned, but the ArrayList elements aren’t copied.
 
-* You can use the method toArray() to return an array containing all of the elements
-in ArrayList in sequence from the first to the last element.
+* You can use the method toArray() to return an array containing all of the
+elements in ArrayList in sequence from the first to the last element.

@@ -2,17 +2,18 @@
 predefined values.
 
 *  A switch statement accepts arguments of type
-	char,
-	byte,
-	short,
-	int, and
-	NOTE: doesn’t accept long primitive data type argument.
-	String. It also accepts arguments of wrapper classes:
-	Character,
-	Byte,
-	Short,
-	Integer,
-	and Enum.
+	> char
+	> byte
+	> short
+	> int
+		NOTE: doesn’t accept long primitive data type argument.
+	> String
+		It also accepts arguments of wrapper classes:
+	> Character
+	> Byte
+	> Short
+	> Integer
+	> Enum
 
 * A switch statement can be compared with multiple related if-else-if-else
 constructs.
@@ -29,8 +30,8 @@ NB! * You can't define duplicate case labels.
 
 NB! * The default case executes only if no matching values are found.
 
-NB! * The case value can define expressions that use literal values; that is, they
-can be evaluated at compile time, as in 7+2.
+NB! * The case value can define expressions that use literal values; that is,
+they can be evaluated at compile time, as in 7+2.
 
 NB! * Only {String, byte, char, short, int, and enum} values can be used as types
 of a switch variable. (String is allowed since Java 7.) Wrapper classes {Byte,
@@ -38,6 +39,9 @@ Character, Short, and Integer } are allowed as well.
 
 * One code block can be defined to execute for multiple case values in a
 switch statement.
+
+NB! * using continue instead of break in a switch isn't exemplarily but it
+will compile and run the same as with break;
 
 * A break statement is used to exit a switch construct once a matching case is
 found and the required code statements have executed.

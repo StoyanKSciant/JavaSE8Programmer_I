@@ -5,11 +5,10 @@ of another type.
 explicitly available, by using the reference variable of the base type or
 the implemented interface.
 
-((HRExecutive) interviewer).specialization = new String[] {"Staffing"}
-
-NB! * The parentheses that surround the whole (HRExecutive)interviewer token
-are required to bypass the Java operator precedence rules, according to
-which the "casting" operator has lower priority then the "." operator
+NB! * The parentheses that surround the whole (HRExecutive)interviewer token are
+required to bypass the Java operator precedence rules, according to which the
+"casting" operator has lower priority then the "." operator
+	((HRExecutive) interviewer).specialization = new String[] {"Staffing"}
 
 * Reference variable of the base class can refer to object of its derived class,
 but the base class can access variables and methods of the derived class

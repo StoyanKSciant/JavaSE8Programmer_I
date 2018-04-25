@@ -1,15 +1,15 @@
-* Any Java class can define a set of rules to determine whether two objects should
-be considered equal.
+* Any Java class can define a set of rules to determine whether two objects
+should be considered equal.
 
-NB! * The default implementation of the equals() method only compares whether two
-object variables refer to the same object.
+NB! * The default implementation of the equals() method only compares whether
+two object variables refer to the same object.
 
-* Because instance variables are used to store the state of an object, it’s common
-to compare the values of the instance variables to determine whether two
+* Because instance variables are used to store the state of an object, it’s
+common to compare the values of the instance variables to determine whether two
 objects should be considered equal.
 
-* When you override the equals() method in your class, make sure that you use the
-correct method signature for the equals method.
+* When you override the equals() method in your class, make sure that you use
+the correct method signature for the equals method.
 
 NB! * The Java API defines a contract for the equals method, which should be
 taken care of when you implement the method in any of your classes.

@@ -73,12 +73,12 @@ primitive wrapper class is converted to its corresponding primitive value.
 * All wrapper classes define methods of the format primitive Value(), where the
 term primitive refers to the exact primitive data type name.
 
-NB! * To get a primitive data type value corresponding to a string value, you can
-use the static utility method parseDataType, where DataType refers to the type
-of the return value.
+NB! * To get a primitive data type value corresponding to a string value, you
+can use the static utility method parseDataType, where DataType refers to the
+type of the return value.
 
 * The valueOf() method returns an OBJECT of the corresponding wrapper class when
- it's passed an argument of a primitive type or String.
+it's passed an argument of a primitive type or String.
 
 NB! * The method "equals" always compares the primitive value stored by a wrapper
 instance and == compares object references. The operator == return true if the

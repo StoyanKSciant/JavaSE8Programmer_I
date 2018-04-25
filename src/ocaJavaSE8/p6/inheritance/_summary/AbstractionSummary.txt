@@ -1,3 +1,4 @@
+
 * It isn’t mandatory for an abstract class to define an abstract method. It may
 or may not define any abstract methods. But if an abstract base class defines
 one or more abstract methods, the class must be marked as abstract and the
@@ -10,8 +11,8 @@ it also needs to be an abstract class.
 * A base class can be defined as an abstract class, even if it doesn’t define
 any abstract methods.
 
-NB! * A derived class should implement all the abstract methods of its base class.
-If it doesn’t, it must be defined as an abstract derived class.
+NB! * A derived class should implement all the abstract methods of its base
+class. If it doesn’t, it must be defined as an abstract derived class.
 
 * You can use variables of an abstract base class to refer to objects of its
 derived class

@@ -20,9 +20,5 @@ public class IntAndIntegers {
 		float f = i;
 		System.out.println(f);
 		System.out.println(i - (int)f);
-
-		short s = Short.MAX_VALUE; System.out.println( s);
-
-		Boolean bool = Boolean.FALSE;
 	}
 }

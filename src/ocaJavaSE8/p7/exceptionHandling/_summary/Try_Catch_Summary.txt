@@ -1,14 +1,15 @@
-NB! *There are a few scenarios in Java in which a finally block does not execute:
-1. Application termination—The try or the catch block executes System.exit,
-	which terminates the application
-2. Fatal errors—A crash of the JVM or the OS
+
+NB! * There are a few scenarios in Java in which a finally block doesn't execute:
+	> Application termination—The try or the catch block executes System.exit,
+		which terminates the application
+	> Fatal errors—A crash of the JVM or the OS
 
 NB! * A try without resources must have either a catch or a finally. It may
 have both as well.
 Following constructs are valid:
-1. try{ } catch(Exception e){  }          // no finally
-2. try{ } finally{  }          // no catch
-3. try{ } catch(Exception e){  } finally{  }
+	>  try{ } catch(Exception e){  }          	// no finally
+	>  try{ } finally{  }          				// no catch
+	>  try{ } catch(Exception e){  } finally{  }
 
 NB! * You can have multiple catch blocks to catch different kinds of exceptions,
 including exceptions that are subclasses of other exceptions. However, the catch

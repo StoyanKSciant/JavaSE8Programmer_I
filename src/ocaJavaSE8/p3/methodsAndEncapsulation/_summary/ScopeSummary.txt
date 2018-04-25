@@ -1,4 +1,3 @@
-								Scope of variables:
 
 * Variables scopes can be: class, instance, local, and method parameters.
 

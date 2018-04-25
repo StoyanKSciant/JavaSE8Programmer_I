@@ -1,18 +1,17 @@
-* LocalTime is immutable.
 
-* It stores time in the format hours-minutes-seconds (without a time zone) with
-nanosecond precision.
+* LocalTime is immutable. It stores time in the format hours-minutes-seconds
+(without a time zone) with nanosecond precision.
 
 * You can instantiate LocalTime using LocalTime’s static method of() that accepts
 hours, minutes, seconds, and nanoseconds.
 
-* The of() method uses a 24-hour clock to specify the hour value.
-The of() method will throw a runtime exception, DateTimeException, if you
-pass an invalid range of values to it.
+* The of() method uses a 24-hour clock to specify the hour value. The of()
+method will throw a runtime exception, DateTimeException, if you pass an invalid
+range of values to it.
 
 * LocalTime doesn’t define a method to pass a.m. or p.m. Use values 0–23 to
-define hours. If you pass out-of-range values to either hours, minutes, or seconds,
-you’ll get a runtime exception.
+define hours. If you pass out-of-range values to either hours, minutes, or
+seconds, you’ll get a runtime exception.
 
 * To get the current time from the system clock, use the static method now().
 
@@ -25,8 +24,8 @@ NB! * LocalDateTime's toString() method generates the String in ISO 8601 format.
 * If you pass invalid string values to parse(), the code will compile but will throw
 a runtime exception. If you don’t pass a DateTimeFormatter, the format of the
 string passed to parse() must be exactly of the format 99:99:99. The hours and
-minutes values passed to parse() must be of two digits; a single digit is considered
-an invalid value. For hours and minutes with a value 0–9, pass 00–09.
+minutes values passed to parse() must be of two digits; a single digit is
+considered an invalid value. For hours and minutes with a value 0–9, pass 00–09.
 
 * You can use constants from the LocalTime class to work with predefined times:
 	– LocalTime.MIN—Minimum = 00:00
@@ -34,35 +33,46 @@ an invalid value. For hours and minutes with a value 0–9, pass 00–09.
 	– LocalTime.MIDNIGHT—Time = 00:00
 	– LocalTime.NOON—Noontime = 12:00
 
-* You can use instance methods like getXX() to query LocalTime on its hour,
-minutes, seconds, and nanoseconds. All these methods return an int value.
-
-* The correct method names to query LocalTime are getHour(), getMinute(), get-
-Second(), and getNano(). Watch out for exam questions that use invalid method
-names like getHours(), getMinutes(), getSeconds(), or getNanoSeconds().
-
 * You can use the instance methods isAfter() and isBefore() to check whether
 a time is after or before the specified time.
 
-* You can use the instance methods
+* You can use instance methods like getXX() to query LocalTime on its hour,
+minutes, seconds, and nanoseconds. All these methods return an int value.
+
+* The correct method names to query LocalTime are in singular
+	getHour()
+	getMinute()
+	getSecond()
+	getNano()
+Watch out for exam questions that use invalid method names like getHours(),
+getMinutes(), getSeconds(), or getNanoSeconds().
+
+* Unlike the getXXX() methods, the minusXXX() methods use the plural form:
+	getHour() VS minusHours(),
+	getMinute() VS minusMinutes(),
+	getSecond() VS minusSeconds(),
+	and getNano() VS minusNanos().
+
+* You can use the instance methods to create and return a copy of LocalTime
+instances with the specified period subtracted:
 	minusHours(),
 	minusMinutes(),
 	minusSeconds(),
 	minusNanos()
-to create and return a copy of LocalTime instances with the specified period subtracted.
 
-* Unlike the getXXX() methods, the minusXXX() methods use the plural form:
-	getHour() versus minusHours(),
-	getMinute() versus minusMinutes(),
-	getSecond() versus minusSeconds(),
-	and getNano() versus minusNanos().
+* The methods below accept long values and add the specified hours, minutes,
+seconds or nanoseconds of time, returning its copy as LocalTime.
+	plusHours()
+	plusMinutes()
+	plusSeconds()
+	plusNanos()
 
-* The plusHours(), plusMinutes(), plusSeconds(), and plusNanos() methods
-accept long values and add the specified hours, minutes, seconds, or nanoseconds
-to time, returning its copy as LocalTime.
-
-* The withHour(), withMinute(), withSecond(), and withNano() methods accept
-an int value and return a copy of LocalTime with the specified value altered.
+* The methods below accept an int value and return a copy of LocalTime with the
+specified value altered.
+	withHour()
+	withMinute()
+	withSecond()
+	withNano()
 
 * The class LocalTime defines the method atDate(), which can be passed a Local-
 Date instance to create a LocalDateTime instance.

@@ -11,36 +11,32 @@ with the for, for-each, do, and do-while loops and the switch construct.
 *  When you use the continue statement with nested loops, it exits the current
 iteration of the inner loop.
 
-NB! * A break statement with no label attempts to transfer control to the innermost
-enclosing {switch, while, do, or for} statement; this statement, which is called
-the break target, then immediately completes normally.
-
 NB! If no switch, while, do, or for statement encloses the break statement,
 a compile-time error occurs.
 
-* A break statement with no label attempts to transfer control to the innermost
-enclosing {switch, while, do, or for statement; this statement}, which is called
-the break target, then immediately completes normally. IF NO while, do, or for
-statement ENCLOSES  the break statement, a compile-time error occurs.
-
-* A break statement with label Identifier attempts to transfer control to the
+* A BREAK statement WITH LABEL identifier attempts to transfer control to the
 enclosing labeled statement that has the same Identifier as its label;
 This statement, which is called the break target, then immediately completes
 normally. In this case, the break target need not be a while, do, for, or switch
 statement.
 
-* A continue statement with no label attempts to transfer control to the
-innermost enclosing {while, do, or for statement; this statement}, which is
-called the continue target, then immediately ends the current iteration and
-begins a new one. IF NO while, do, or for statement ENCLOSES the continue
-statement, a compile-time error occurs.
-NOTE: switch statement on its own  doesn't allow continue
+* A BREAK statement WITH NO LABEL attempts to transfer control to the innermost
+enclosing {switch, while, do, or for statement; this statement}, which is called
+the break target, then immediately completes normally. IF NO while, do, or for
+statement ENCLOSES  the break statement, a compile-time error occurs.
 
-* A continue statement with label Identifier attempts to transfer control to
-the enclosing labelled statement that has the same Identifier as its label; that
+* A CONTINUE statement WITH LABEL Identifier attempts to transfer control to
+the enclosing labeled statement that has the same Identifier as its label; that
 statement, which is called the continue target, then immediately ends the
-current iteration and begins a new one. The continue target must be a {while,do,
-or for statement} or a compile-time error occurs. If no labelled statement with
+current iteration and begins a new one. The continue target must be a {while, do,
+for statement} or a compile-time error occurs. If no labeled statement with
 Identifier as its label contains the continue statement, a compile-time error
 occurs.
-NOTE: switch statement on its own  doesn't allow continue
+
+* A CONTINUE statement WITH NO LABEL attempts to transfer control to the
+innermost enclosing {while, do, or for statement; this statement}, which is
+called the continue target, then immediately ends the current iteration and
+begins a new one. IF NO {while, do, for statement} ENCLOSES the continue
+statement, a compile-time error occurs.
+
+

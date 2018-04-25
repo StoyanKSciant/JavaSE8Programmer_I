@@ -5,6 +5,8 @@
 
 * The method"s parameters are separated by commas.
 
+* Static methods CAN be overloaded.
+
 * Each method parameter is preceded by the name of its type. Each method
 parameter must have an explicit type declared with its name. You can't declare
 the type once and then list the parameters separated by commas, as you can

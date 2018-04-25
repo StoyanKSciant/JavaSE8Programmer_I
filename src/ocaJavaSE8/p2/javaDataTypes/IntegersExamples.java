@@ -1,4 +1,4 @@
-3package ocaJavaSE8.p2.javaDataTypes;
+package ocaJavaSE8.p2.javaDataTypes;
 
 public class IntegersExamples {
 

@@ -3,12 +3,12 @@
 times.
 
 * A for loop defines three types of statements separated by semicolons:
-	<initialization statements; termination condition; update clause>
+	< initialization statements; termination condition; update clause >
 
 NB! * The definition of any of the three for statements—initialization statements,
-termination condition, and update clause—is optional. For example, for (;;);
-and for (;;){} are valid code for defining a for loop. Also, defining any one of
-these statements is also valid code.
+termination condition, and update clause—is optional. For example, for < (;;); >
+and for < (;;){} > are valid code for defining a for loop. Also, defining any
+one of these statements is also valid code.
 
 * An initialization block executes only once. A for loop can declare and initialize
 multiple variables in its initialization block, but the variables that it declares
@@ -20,13 +20,12 @@ statements defined within the body of the loop are executed.
 * The for loop terminates when the termination condition evaluates to false.
 
 * The update block is usually used to increment or decrement the value of the
-variables that are defined in the initialization block. It can also execute multiple
-other statements, including method calls.
+variables that are defined in the initialization block. It can also execute
+multiple other statements, including method calls.
 
 * Nested for loops have no limits on levels.
 
 * Nested for loops are frequently used to work with multidimensional arrays.
-
 
 
 							Enhanced for loops:

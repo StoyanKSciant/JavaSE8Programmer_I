@@ -91,6 +91,7 @@ public class ArraysExample {
 		System.out.println("----------------");
 	}
 
+	/*
 	public static void wontCompile() {
 
 		// Array size can’t be defined with the array declaration.
@@ -104,6 +105,7 @@ public class ArraysExample {
 
 		multiArr = new int[][3]; // won’t compile
 	}
+	*/
 
 	public static void MiscMethodsArrayList() {
 		ArrayList<StringBuilder> myArrList = new ArrayList<StringBuilder>();

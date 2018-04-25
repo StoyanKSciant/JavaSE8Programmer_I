@@ -1,17 +1,17 @@
 
-* Classes and interfaces defined in the same Java source code file
-can't be defined in separate packages. Classes and interfaces imported
-using the import statement are available to all the classes and
-interfaces defined in the same Java source code file.
+* Classes and interfaces defined in the same Java source code file can't be
+defined in separate packages. Classes and interfaces imported using the import
+statement are available to all the classes and interfaces defined in the same
+Java source code file.
 
 * The import statement can't be used to import multiple classes or interfaces
 with the same name.
 
-NB! * There can be only 1 "public" class within package scope in a file. You can
-have additional INNER classes that are public though.
+NB! * There can be only 1 "public" class within package scope in a file. But you
+can have additional INNER classes that are public.
 
 * By default, all classes and interfaces in separate packages and sub-packages
-aren't visible to each  other.
+aren't visible to each other.
 
 * All classes and interfaces in the same package are visible to each other.
 
@@ -26,4 +26,3 @@ an asteriks (*), in the import statement.
 
 NB! * A class from a default package can't be used in any named package class
 regardless of whether it's defined within the same directory or not.
-

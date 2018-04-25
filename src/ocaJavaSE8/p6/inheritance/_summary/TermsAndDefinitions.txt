@@ -1,3 +1,4 @@
+
 * Base class — A class inherited by another class. The class Employee is a base
 class for the classes Programmer and Manager in the previous examples.
 

@@ -1,21 +1,21 @@
 
-* Object orientation Java emulates real-life object definition and behavior. It uses
-classes, interfaces, or enumerators to define all its code.
+* Object orientation Java emulates real-life object definition and behavior. It
+uses classes, interfaces, or enumerators to define all its code.
 
-* Abstraction Java lets you abstract objects and include only the required properties
-and behavior in your code.
+* Abstraction Java lets you abstract objects and include only the required
+properties and behavior in your code.
 
 * Encapsulation The state or the fields of a class are protected from unwanted
 access and manipulation.
 
-* Inheritance Java enables ins classes to inherit other classes and implement interfaces.
-The interfaces can inherit other interfaces.
+* Inheritance Java enables ins classes to inherit other classes and implement
+interfaces. The interfaces can inherit other interfaces.
 
-* Polymorphism Java enables its classes to exhibit multiple behaviors for the same
-methods calls.
+* Polymorphism Java enables its classes to exhibit multiple behaviors for the
+same methods calls.
 
-* Type safety In java, you must declare a variable with its data type before you can
-use it.
+* Type safety In java, you must declare a variable with its data type before you
+can use it.
 
 * Automatic memory management Java uses garbage
 

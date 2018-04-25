@@ -1,3 +1,4 @@
+
 NB! * A functional interface is an interface that contains only ONE abstract
 method. It may contain one or more default methods or static methods. Because a
 functional interface contains only one abstract method, you can omit the name of
@@ -19,19 +20,19 @@ public void printImportantData(ArrayList<Data> dataList, Predicate<Data> p){
 
 Now, you can call the above method as follows:
        
-	printImportantData(al, (Data d)->{ return d.value>1; } );
+   > printImportantData(al, (Data d)->{ return d.value>1; } );
 Notice the lack of method name here. This is possible because the interface has
 only one abstract method so the compiler can figure out the name.
 This can be shortened to:
      
-	printImportantData(al, (Data d)->d.value>1);  
+   > printImportantData(al, (Data d)->d.value>1);  
 Notice the lack of curly brackets and the return keyword. This is possible
 because the method returns a boolean and the expression d.value>1 also returns
 a boolean. The compiler is therefore able to figure out that the value of this
 expression is to be returned from the method.
 This can be shortened even more to:
 
-	printImportantData(al, d->d.value>1);
+   > printImportantData(al, d->d.value>1);
 Notice that there is no declaration of d! The  compiler can figure out all
 information it needs because the interface has only one abstract method and that
 method has only one parameter. So you don't need to write all those things in

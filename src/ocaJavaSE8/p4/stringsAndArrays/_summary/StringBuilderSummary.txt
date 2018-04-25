@@ -19,15 +19,15 @@ Ensures that the capacity is at least equal to the specified minimum. If the
 current capacity is less than the argument, then a new internal array is
 allocated with greater capacity(Twice the old capacity + 2).
 
-* The methods charAt(), indexOf(), substring(), and length() defined in the class
-StringBuilder work in the same way as methods with the same names defined
+* The methods charAt(), indexOf(), substring(), and length() defined in the
+class StringBuilder work in the same way as methods with the same names defined
 in the class String.
 
 * The append() method adds the specified value at the end of the existing value of
 a StringBuilder object. THERE IS NO concat() method in StringBuilder
 
-* The insert() method enables you to insert characters at a specified position in a
-StringBuilder object. The main difference between the append() and insert()
+* The insert() method enables you to insert characters at a specified position
+in a StringBuilder object. The main difference between the append() and insert()
 methods is that the insert() method enables you to insert the requested data at a
 particular position, whereas the append() method only allows you to add the
 requested data at the end of the StringBuilder object.
@@ -36,7 +36,8 @@ requested data at the end of the StringBuilder object.
 StringBuilder. The method deleteCharAt() removes the char at the specified
 position.
 
-NB! * Unlike the class String, the class StringBuilder doesn’t define the method trim.
+NB! * Unlike the class String, the class StringBuilder doesn’t define the method
+trim.
 
 NB! * The method reverse() reverses the sequence of characters of a StringBuilder.
 

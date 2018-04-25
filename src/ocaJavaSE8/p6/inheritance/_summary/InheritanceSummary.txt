@@ -15,11 +15,10 @@ NB! * non-static variables are SHADOWED and methods are OVERRIDDEN.
  1. Which variable will be used depends on the class that the variable is
 declared of.
  2. Which method will be used depends on the actual class of the object that is
- referenced by the variable.
+referenced by the variable.
 ________________________________________________________________________________
-NB! * Access to static and instance fields and static methods depends on the
-CLASS OF REFERENCE VARIABLE and not the actual object to which the variable
-points to.
+NB! * Access to static fields/methods and instance fields depends on the CLASS
+OF REFERENCE VARIABLE and not the actual object to which the variable points to.
 
 	class ABCD{
 	   int x = 10;
@@ -82,17 +81,18 @@ the interface will fail to compile.
 * If a derived class doesn’t implement all the abstract methods defined by its
 base class, then it also needs to be an abstract class.
 
-* You should initialize all variables in an interface, or your code won’t compile:
-	interface MyInterface {
-		int AGE;		// won't compile
-	}
+* You should initialize all variables in an interface, or your code won’t
+compile:		interface MyInterface {
+					int AGE;		// won't compile
+				}
 
 * The access modifiers play an important role in determining the inheritance of
 base class members in derived classes. A derived class inherits all the
 non-private members of its base class.
 
-* Because a derived class may inherit different implementations for the same method
-signature from multiple base classes, multiple inheritance is not allowed in Java.
+* Because a derived class may inherit different implementations for the same
+method signature from multiple base classes, multiple inheritance is not allowed
+in Java.
 
 * Default—Members with default access can be accessed in a derived class only if
 base and derived classes reside in the same package.

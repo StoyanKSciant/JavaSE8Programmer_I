@@ -1,7 +1,7 @@
 
 public < protected < package (i.e. no modifier) < private
 
-Access PUBLIC members   || Same package ||Sepr. package
+Access PUBLIC members   || Same package ||Separ. package
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 Derived classes   		||	   YES  	||	  YES 	  ||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -9,7 +9,7 @@ Unrelated classes 	 	||	   YES 	    ||	  YES     ||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 _________________________________________________________
 
-Access PROTECTED        || Same package ||Sepr. package
+Access PROTECTED        || Same package ||Separ. package
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 Derived classes   		||	   YES  	||  YES*/NO** ||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||

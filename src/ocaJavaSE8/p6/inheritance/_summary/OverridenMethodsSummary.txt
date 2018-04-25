@@ -2,17 +2,26 @@
 * Overridden methods are defined by classes and interfaces that share inheritance
 relationships.
 
+* The name of the overridden method must be the same in both the base class
+and the derived class.
+
+* The argument list passed to the overridden method must be the same in both
+the base class and derived class.
+
+* Overriding in Java simply means that the particular method would be called
+based on the run time type of the object and not on the compile time type of it
+(which is the case with overriden static methods).
+
 NB! * variables are SHADOWED and methods are OVERRIDDEN.
  1. Which variable will be used depends on the class that the variable is
 declared of.
  2. Which method will be used depends on the actual class of the object that is
 referenced by the variable.
 
-* The name of the overridden method must be the same in both the base class
-and the derived class.
-
-* The argument list passed to the overridden method must be the same in both
-the base class and derived class.
+NB! * Static methods can not be overridden in the exact sense of the word, but
+they can hide parent static methods. In practice it means that queue compiler
+will decide which method to execute at compile time, and not in runtime, as it
+does with overridden instance methods.
 
 NB! * The return type of an overriding method in the derived class can be the
 same, or a subclass of the return type of the overridden method in the base
