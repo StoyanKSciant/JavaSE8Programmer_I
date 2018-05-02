@@ -4,10 +4,7 @@ passed an argument of a primitive type or String.
 
 NB! * Wrapper classes Byte, Short, Integer, Long cache objects with values of
 the range -128 to 127. The Character class caches objects with values 0 to 127.
-
 These primitive values -128 to 127 or 0 to 127 are stored in an array.
-If you request and object of any of these classes, from this range, the
-
 
 NB! * For all wrapper classes the valueOf() method returns a reference to a
 predefined object, otherwise it creates a new object and returns its reference:
@@ -22,19 +19,19 @@ predefined object, otherwise it creates a new object and returns its reference:
 
 * No cached instances exists for Double and Float
 
-NB! * You can't compare wrapper instances for equality using equals() or "==" if
-they aren't of the same class.
+NB! * You can't compare wrapper instances for equality using equals() or "=="
+if they aren't of the same class.
 	> The code won't compile for instances that are compared using ==.
 	> When compared using equals(), the output will be false.
 
 NB! * When "==" is used to compare a primitive to a wrapper, the wrapper will be
 unwrapped and the comparison will be primitive to primitive.
 
+NB! * Can't compare primitive and wrapper with equals();
+
 NB! * When using equals() for comparing wrapper instances with primitives like
 this: < wrapperInstance.equals(primitive) > the wrapper will be unwrapped and
 the comparison will be primitive to primitive.
-
-* Can't compare primitive and wrapper with equals();
 
 * AUTOBOXING Java converts primitive types to their wrapper equivalence
 -=/+= can be used only with primitives (wrappers are immutable!)

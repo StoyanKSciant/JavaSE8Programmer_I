@@ -28,4 +28,6 @@ limited to the method where they’re defined.
 
 * A method parameter and a local variable can’t be defined using the same name.
 
+NB! * String String = "something"; IS VALID!
+
 * Class and instance variables can’t be defined using the same name.

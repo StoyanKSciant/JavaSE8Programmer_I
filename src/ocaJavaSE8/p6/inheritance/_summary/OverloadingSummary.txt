@@ -29,3 +29,7 @@ execute in a method, the method will fail to compile.
 
 * Overloaded methods can't be defined by only changing their return type or
 access modifiers or both.
+
+NB! * The Overloaded method MUST declare signature with the same exceptions or
+subclasses of the same exceptions (getting more specific at the exception
+handling) that have been described in the super method signature.

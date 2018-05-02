@@ -21,8 +21,9 @@ interfaces defined from different packages.
 * An import statement allows the use of simple names for packaged classes and
 interfaces defined in other packages.
 
-* You can't import classes from a sub-package by using the wildcard character,
-an asteriks (*), in the import statement.
+NB! * You can't import classes from a sub-package by using the wildcard
+character, an asteriks (*), in the import statement. So for EVERY SUBPACKAGE
+NEW IMPORT is NECESSARY.
 
 NB! * A class from a default package can't be used in any named package class
 regardless of whether it's defined within the same directory or not.

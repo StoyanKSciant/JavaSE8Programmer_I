@@ -18,11 +18,10 @@ before the catch clause for more general exceptions ( i.e. a
 SuperClassException). Failure to do so results in a compiler error as the more
 specific exception is unreachable.
 
-* Watch out for code that returns a value from the catch block and
-modifies it in the finally block. If a catch block returns a primitive data
-type, the finally block can’t modify the value being returned by it. If a catch
-block returns an object, the finally block can modify the value being
-returned by it.
+* Watch out for code that returns a value from the catch block and modifies it
+in the finally block. If a catch block returns a primitive data type, the
+finally block can’t modify the value being returned by it. If a catch block
+returns an object, the finally block can modify the value being returned by it.
 
 NB! * Java doesn’t compile code if it contains unreachable statements.
 

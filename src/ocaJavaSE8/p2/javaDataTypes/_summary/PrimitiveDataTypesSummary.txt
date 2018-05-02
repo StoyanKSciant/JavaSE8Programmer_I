@@ -94,9 +94,8 @@ system to another.
 
 * Starting with Java 7, you can use underscores within the Java literal values
 to make them more readable:
-
-0B1_0000_10_11, 0_413, and 0x10_B are valid binary, octal, and hexadecimal
-literal values.
+		0B1_0000_10_11, 0_413, and 0x10_B
+		are valid binary, octal, and hexadecimal literal values.
 
 * The default type of a decimal number is double.
 
@@ -116,14 +115,14 @@ store characters from virtually all the world’s existing scripts and languages.
 inclusive) to store a char. Unicode values are defined in the hexadecimal number
 system.
 
-NB! * A char value can ALWAYS be assigned to an int variable, since the int type
-is wider than the char type. So line 2 is valid.
-
 NB! * Internally, the char data type is stored as an unsigned integer value (only
 positive integers).
  	When you assign a letter to a char, Java stores its integer equivalent value
     You may assign a positive integer value to a char instead of a letter, such
     as 122.
+
+NB! * A char value can ALWAYS be assigned to an int variable, since the int type
+is wider than the char type.
 
 * The literal value 122 is not the same as the Unicode value \u0122. The former
 is a decimal number and the latter is a hexadecimal number.

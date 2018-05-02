@@ -4,7 +4,7 @@ class TestPhone {
 	static int  hello() {
 		int var = 1;
 		return var;
-		--var;	// can't run after return, but it will compile
+		// --var;	// can't run after return, but it will compile
 	}
 	public static void main(String[] args) {
 		Phone p1 = new Phone();

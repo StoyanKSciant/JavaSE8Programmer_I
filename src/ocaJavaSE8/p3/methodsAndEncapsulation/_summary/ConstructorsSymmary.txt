@@ -36,16 +36,16 @@ compiler generates a default constructor for it, which looks like the following:
 		super();
 	}
 
-	Accessibility of a default constructor matches the accessibility of its class.
-	Java creates a public default constructor for a public class. It creates a
-	default constructor with package access for a class with package-level access.
+  Accessibility of a default constructor matches the accessibility of its class.
+  Java creates a public default constructor for a public class. It creates a
+  default constructor with package access for a class with package-level access.
 
 NB! * A Constructor can be declared public, protected, default or private.
 
 NB! * Java accepts changes in the objects of base-derived classes as the sole
 criterion to define overloaded constructors and methods.
 
-ex:	class Shoe {}
+ 	class Shoe {}
 		class Boot extends Shoe {}
 		class ShoeFactory {				    // *both constructors are valid
 			ShoeFactory(Boot val) {			// *
@@ -55,8 +55,3 @@ ex:	class Shoe {}
 				System.out.println("shoe");
 			}
 		}
-
-
-NB! * If a class defines multiple initializer blocks, their order of execution
-depends on their placement in a class. But all of them execute before a class's
-constructor.

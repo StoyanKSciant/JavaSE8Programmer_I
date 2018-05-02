@@ -1,6 +1,6 @@
 package ocaJavaSE8.p1.basics;
 
-public final interface GenericInterface {
+public /*final*/ interface GenericInterface {
 
 /*
  * An interface cannot be marked as final. An interface is abstract

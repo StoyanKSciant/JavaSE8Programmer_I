@@ -22,6 +22,8 @@ public class StringsExamples {
 	}
 
 	static void subStringsOperations() {
+
+		String String = "naming varible Sting is ok";
 		String letters = "ABCAB";
 		System.out.println(letters.indexOf('B'));
 		System.out.println(letters.indexOf("S"));

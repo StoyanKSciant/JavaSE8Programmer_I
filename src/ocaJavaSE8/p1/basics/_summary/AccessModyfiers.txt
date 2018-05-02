@@ -32,7 +32,7 @@ package building;
 import library.Book;
 public class House{
 	public House(){
-		Book book=new Book();	// can initialize public class
+		Book book = new Book();	// can initialize public class
 		book.author="ABC";		// can't access protected field
 		book.modifyTemplate();	// can't access protected field
 	}
@@ -49,6 +49,8 @@ public class StoryBook extends Book{	// inherit protected fields
 	}
 }
 
+* method or field declared as protected will be accessible from a
+subclass even if the subclass is not in the same package.
 
 _________________________________________________________
 

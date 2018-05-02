@@ -49,7 +49,7 @@ public class LoopExercises {
 		switch (num) {
 		default:
 			System.out.println("default");
-		case num2:						// case expressions must be constant expressions
+		case 5:				//case num2 is not allowed: case expressions must be constant expressions
 			System.out.println(4);
 			break;
 		}
@@ -63,7 +63,7 @@ public class LoopExercises {
 
 		case 0:
 			System.out.println("case1");
-		case 10 * 2 - 20:				// duplicated cases are not allowed
+		case 20 - 20 + 1:				//case 20 - 20:  duplicated cases are not allowed
 			System.out.println("case2");
 			break;
 		}

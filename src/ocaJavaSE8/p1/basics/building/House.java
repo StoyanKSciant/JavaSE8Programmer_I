@@ -5,15 +5,14 @@ import ocaJavaSE8.p1.basics.library.Book;
 public class House {
 	House() {
 		Book book = new Book();
-		String value = book.isbn;
-		book.printBook();
+		Book b = new Book();
 
-		// can't access protected
+		// can't access if package protected or private
+
+		book.printBook();
 		book.author="ABC";
 		book.modifyTemplate();
 
-		Book b = new Book();
-		// can't access package
 		int c = b.issueCount;
 		b.issueHistory();
 	}

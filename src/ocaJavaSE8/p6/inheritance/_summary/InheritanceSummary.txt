@@ -20,6 +20,8 @@ ________________________________________________________________________________
 NB! * Access to static fields/methods and instance fields depends on the CLASS
 OF REFERENCE VARIABLE and not the actual object to which the variable points to.
 
+	class instanceName REFERENCE TYPE = new class() OBJECT TYPE
+
 	class ABCD{
 	   int x = 10;
 	   static int y = 20;
@@ -59,7 +61,7 @@ implementations for all abstract methods.
 NB! * A base class can use reference variables and object of its derived classes
 (with exception of constructors).
 
-* Private members of a base class cannot be inherited in the derived class.
+NB! * Private members of a base class cannot be inherited in the derived class.
 
 * A derived class can only inherit members with the default access modifier if
 both the base class and the derived class are in the same package.
@@ -73,10 +75,8 @@ inherit an abstract class.
 allows a class to implement multiple interfaces. A class uses the keyword
 implements to implement an interface.
 
-* Does a change in the signature of a method in an interface have any impact on
-the definition of this method in the classes that implement it? Yes, it does. If
-the signature of a method is changed in an interface, all classes that implement
-the interface will fail to compile.
+* If the signature of a method is changed in an interface, all classes that
+implement the interface will fail to compile.
 
 * If a derived class doesn’t implement all the abstract methods defined by its
 base class, then it also needs to be an abstract class.

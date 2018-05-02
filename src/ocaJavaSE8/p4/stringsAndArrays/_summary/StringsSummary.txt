@@ -6,8 +6,8 @@ assignment operator (=), or by using double quotes (as in System.out.println
 ("Four")).
 
 NB! String.intern() ensures that all strings having same contents share same
-memory. So if you have list of names where 'john' appears 1000 times, by
-interning you ensure only one 'john' is actually allocated memory.
+memory. So if you have list of names where "abc" appears 1000 times, by
+interning you ensure only one "abc" is actually allocated memory.
 			("a" + "b" + "c").intern() == "abc"
 
 If the method String.intern has previously been called on an instance of class

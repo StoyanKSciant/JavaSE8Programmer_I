@@ -7,8 +7,7 @@ times.
 
 NB! * The definition of any of the three for statements—initialization statements,
 termination condition, and update clause—is optional. For example, for < (;;); >
-and for < (;;){} > are valid code for defining a for loop. Also, defining any
-one of these statements is also valid code.
+and for < (;;){} > are valid code for defining a for loop.
 
 * An initialization block executes only once. A for loop can declare and initialize
 multiple variables in its initialization block, but the variables that it declares
@@ -27,6 +26,9 @@ multiple other statements, including method calls.
 
 * Nested for loops are frequently used to work with multidimensional arrays.
 
+* You can define multiple statements in the update clause, including calls to
+other methods. The only limit is that these statements will execute in the order
+in which they appear, at the end of all the statements defined in the for block.
 
 							Enhanced for loops:
 

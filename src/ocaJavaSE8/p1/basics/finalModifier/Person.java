@@ -1,6 +1,6 @@
 package ocaJavaSE8.p1.basics.finalModifier;
 
-final class Person {
+/*final*/ class Person {
 	// A class marked final can't be extended by another class
 
 	final long MAX_AGE = 120;
@@ -16,7 +16,7 @@ final class Person {
 	public static void main(String[] args) {
 		Person p = new Person();
 		System.out.println(p.name);
-		changeName();	// can't call method on a final variable that change its state
+		p.changeName();	// can't call method on a final variable IF that change its state
 		System.out.println(p.name);
 	}
 }

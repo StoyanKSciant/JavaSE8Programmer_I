@@ -35,6 +35,7 @@ requested data at the end of the StringBuilder object.
 * The method delete() removes the characters in a substring of the specified
 StringBuilder. The method deleteCharAt() removes the char at the specified
 position.
+	HINT: myStringBuilder.delete(0, myStringBuilder.length()); to del everything
 
 NB! * Unlike the class String, the class StringBuilder doesn’t define the method
 trim.

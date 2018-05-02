@@ -12,7 +12,7 @@ valid statement.
 * In Java if no brackets define the if-block, the "else" clause belongs to the
 innermost if
 
-*  A statement cannot start with an else.
+* A statement cannot start with an else.
 
 NB! The else part of an if construct can’t exist without the definition of its
 {then} part.
@@ -25,12 +25,6 @@ on the result of a condition, which should evaluate to a boolean or Boolean valu
 * The if construct doesn’t use the keyword then to define code to execute when
 an if condition evaluates to true. The then part of the if construct follows the
 if condition.
-
-* An if construct may or may not define its else part.
-
-* It’s easy to get confused with the common if-else syntax used in other
-programming languages. The if-elsif and if-elseif statements aren’t used in
-Java to define if-else-if-else constructs. The correct keywords are if and else.
 
 * You can execute a single statement or a block of statements for corresponding
 true and false conditions. A pair of braces marks a block of statements: {}.
@@ -45,7 +39,3 @@ accepted by if constructs.
 * Theoretically, nested if and if-else constructs have no limits on their levels.
 When using nested if-else constructs, be careful about matching the else part
 with the right if part.
-
-* You can define multiple statements in the update clause, including calls to
-other methods. The only limit is that these statements will execute in the order
-in which they appear, at the end of all the statements defined in the for block.

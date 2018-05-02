@@ -32,8 +32,8 @@ they're said to belong to their class, not to any instance of that class.
 * A static variable or method can be accessed using the name of a reference
 object variable or the name of a class.
 
-* A static method or variable can't access non-static variables or methods of a
-class. But the reverse is true: non-static variables and methods can access
+NB! * A static method or variable can't access non-static variables or methods
+of a class. But the reverse is true: non-static variables and methods can access
 static variables and methods.
 
 * static classes and interfaces are a type of nested classes and interfaces, but
@@ -43,23 +43,22 @@ they aren't covered in this exam.
 keyword static. A top-level class or interface is one that isn't defined within
 another class or interface.
 
-* synchronized method can't be accessed by multiple
-threads concurrently. This constraint is used to protect the integrity
-of data that might be accessed and changed by multiple threads
-concurrently. You can't mark classes, interfaces, or variables with
-this modifier.
+* synchronized method can't be accessed by multiple threads concurrently. This
+constraint is used to protect the integrity of data that might be accessed and
+changed by multiple threads concurrently. You can't mark classes, interfaces, or
+variables with this modifier.
 
-* native method calls and makes use of libraries and methods
-implemented in other programming languages such as C or C++. You can't
-mark classes, interfaces, or variables with this modifier.
+* native method calls and makes use of libraries and methods implemented in
+other programming languages such as C or C++. You can't mark classes, interfaces,
+ or variables with this modifier.
 
-* transient variable isn't serialized when the corresponding
-object is serialized. The transient modifier can't be applied to classes,
-interfaces, or methods.
+* transient variable isn't serialized when the corresponding object is
+serialized. The transient modifier can't be applied to classes, interfaces, or
+methods.
 
-* volatile variable's value can be safely modified by different
-threads. Classes, interfaces, and methods cannot use this modifier.
+* volatile variable's value can be safely modified by different threads. Classes,
+interfaces, and methods cannot use this modifier.
 
-* strictfp: Classes, interfaces, and methods defined using this keyword
-ensure that calculations using floating-point numbers are identical on
-all platforms. This modifier can't be used with variables.
+* strictfp: Classes, interfaces, and methods defined using this keyword ensure
+that calculations using floating-point numbers are identical on all platforms.
+This modifier can't be used with variables.
