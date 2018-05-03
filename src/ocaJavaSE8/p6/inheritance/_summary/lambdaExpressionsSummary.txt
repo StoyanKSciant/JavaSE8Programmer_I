@@ -1,9 +1,0 @@
-
-Whenever the method of a functional interface takes more than one parameter,
-you need to put the arguments within brackets.  If the method of a functional
-interface takes one parameter, you can omit the brackets.
-
-	For example, x -> expression and (x) -> expression are equivalent.
-If the method of a functional interface takes no parameter, you must write empty
-brackets.
-	For example, ( ) -> expression

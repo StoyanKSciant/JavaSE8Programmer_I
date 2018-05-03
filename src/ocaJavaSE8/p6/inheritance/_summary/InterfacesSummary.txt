@@ -13,6 +13,9 @@ implement those interfaces redundant but invalid.
 NB! * An interface can have a static method but the method must have a body,
 because STATIC METHODS CAN'T BE ABSTRACT.
 
+* An interface method cannot be default and static at the same time because a 
+default method is always an instance method.
+
 * The variables of an interface are implicitly public, final, and static.
 
 interface MyInterface {	is equivalent to: 	interface MyInterface {

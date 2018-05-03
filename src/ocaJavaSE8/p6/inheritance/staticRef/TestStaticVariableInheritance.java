@@ -21,8 +21,14 @@ public class TestStaticVariableInheritance {
 		a.saySomethingInStatic();
 		// only the instance method depends on the pointed class
 		a.saySomething();
-
+		System.out.println("---------------------");
 		new MNOP().saySomethingInStatic();
 		new MNOP().saySomething();
+		
+		MNOP mn = new MNOP();     // the same as only new MNOP();
+		
+		System.out.println("x for ref MNOP, instance field: " + mn.x);
+        System.out.println("y for ref MNOP, static field: " + mn.y);
+		
    }
 }
