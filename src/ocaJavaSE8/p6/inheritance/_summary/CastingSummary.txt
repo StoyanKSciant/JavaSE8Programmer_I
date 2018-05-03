@@ -1,9 +1,10 @@
 * Casting is the process of forcefully making a variable behave as a variable
-of another type.
-
-* Use casting to access some of the members of derived class, which aren't
-explicitly available, by using the reference variable of the base type or
-the implemented interface.
+of another type. You can’t access all the members of an object if you access it
+using a reference variable of any of its implemented interfaces or of a base
+class. But if a need arises, you might choose to access some of the members of
+a derived class, which are not explicitly available, by using the reference
+variable of the base type or the implemented interface. This is where casting
+comes in!
 
 NB! * The parentheses that surround the whole (HRExecutive)interviewer token are
 required to bypass the Java operator precedence rules, according to which the

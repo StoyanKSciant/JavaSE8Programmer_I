@@ -26,12 +26,20 @@ and so executes the overridden printVar method in the class Derived.
 */
 public class QReference {
     public static void main(String[] args) {
-        Base base = new Base();
-        Base derived = new Derived();
+    	Base base = new Base();				// can access only its own fields/methods
 
-        System.out.println(base.var);		// prints EJava
-        base.printVar();					// prints EJava
-        System.out.println(derived.var);	// prints EJava
-        derived.printVar();					// prints Guru
+    	Derived derived2 = new Derived();
+        derived2.interfaceMethod(); 		// can access interface methods, base fields/methods and its own fields/methods
+
+        Base derived = new Derived();
+        ((Derived) derived).interfaceMethod();	// cant access interfaceMethod() without a cast
+
+        System.out.println(base.var);		// prints EJava		instance variables bind at compile time
+        base.printVar();					// prints EJava		methods bind at runtime
+        System.out.println(derived.var);	// prints EJava 	instance variables bind at compile time
+        derived.printVar();					// prints Guru		methods bind at runtime
+
+
+
     }
 }

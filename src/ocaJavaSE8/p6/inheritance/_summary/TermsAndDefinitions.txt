@@ -31,3 +31,7 @@ of another type. If a class shares an IS-A or inheritance relationship with
 another class or interface, their variables can be cast to each other’s type.
 
 NB! * super() can’t be in static method
+
+* The keywords super and this are implicit object references. Because static
+methods belong to a class, not to objects of a class, you can’t use this and
+super in static methods.

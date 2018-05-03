@@ -16,6 +16,30 @@ NB! * non-static variables are SHADOWED and methods are OVERRIDDEN.
 declared of.
  2. Which method will be used depends on the actual class of the object that is
 referenced by the variable.
+
+NB! *  			MyDerivedClass instance = new MyDerivedClass();
+When you access an object of the class MyDerivedClass using its own type, you
+can access all the variables and methods that are defined in its base class and
+interface—the class.
+
+NB! *
+When you access an object of the class MyDerivedClass using its base class type,
+you can only access the variables and methods defined in the base class
+MyBaseClass and on other from the class referred to (MyDerivedClass) or other
+implemented interfaces.
+
+NB! *			MyInterface instance = new MyDerivedClass();
+When you access an object of the class MyDerivedClass using interface,
+you can only access the variables and methods defined in the interface
+MyInterface and on other from the class referred to (MyDerivedClass) or the
+inherited base class.
+
+NB! *			MyDerivedClass instance = new MyBaseClass();	// without cast
+			dog IS type of animal but animal isn't type of dog
+You can’t refer to an object of a base class by using a reference variable of
+its derived class. Because all members of a derived class can’t be accessed
+using an object of the base class, it isn’t allowed.
+
 ________________________________________________________________________________
 NB! * Access to static fields/methods and instance fields depends on the CLASS
 OF REFERENCE VARIABLE and not the actual object to which the variable points to.
