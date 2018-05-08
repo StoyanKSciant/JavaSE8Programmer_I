@@ -25,6 +25,11 @@ public class StringBuilderExample {
 		sb1.append(20.99);
 		sb1.append(", ");
 		sb1.append("Hi");
+		// doesn't exist:
+		//sb1.clear();
+		//sb1.empty();
+		//sb1.removeAll();
+		//sb1.deleteAll();
 		System.out.println(sb1);
 	}
 

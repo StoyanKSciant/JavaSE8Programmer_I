@@ -10,6 +10,8 @@ the value of a constant.
 * Implementing interfaces for class, extending other class, which already
 implement those interfaces redundant but invalid.
 
+NB! * super reference is illegal in interface context
+
 NB! * An interface can have a static method but the method must have a body,
 because STATIC METHODS CAN'T BE ABSTRACT.
 

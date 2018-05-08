@@ -3,7 +3,7 @@ package ocaJavaSE8.p3.methodsAndEncapsulation;
 class Triangle {
 	public int base;
 	public int height;
-	private final static double ANGLE;
+	private final static double ANGLE;	// if not initialized it can't be compiled
 	static {
 		ANGLE = 5;
 	}

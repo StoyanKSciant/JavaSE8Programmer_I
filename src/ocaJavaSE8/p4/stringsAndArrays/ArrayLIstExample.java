@@ -3,7 +3,7 @@ package ocaJavaSE8.p4.stringsAndArrays;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
-public class ArraysExample {
+public class ArrayLIstExample {
 
 	public static ArrayList simpleArrayAccess() {
 		ArrayList<String> myArrList = new ArrayList<>();
@@ -91,22 +91,6 @@ public class ArraysExample {
 		System.out.println("----------------");
 	}
 
-	/*
-	public static void wontCompile() {
-
-		// Array size can’t be defined with the array declaration.
-		int intArray[2];
-		String[5] strArray;
-		int[2] multiArray[3];
-		intArray = new int[];  // Array size missing.
-		intArray[2] = new int; // Array size placed incorrectly.
-
-		// can’t allocate a multidimensional array without including a size in the first square brackets
-
-		multiArr = new int[][3]; // won’t compile
-	}
-	*/
-
 	public static void MiscMethodsArrayList() {
 		ArrayList<StringBuilder> myArrList = new ArrayList<StringBuilder>();
 		StringBuilder sb1 = new StringBuilder("Jan");
@@ -124,7 +108,7 @@ public class ArraysExample {
 	}
 
 
-	/**
+	/*
 	 * The method clone defined in the class ArrayList returns a shallow copy of
 	 * this  Array-List instance. “Shallow copy” means that this method creates
 	 * a new instance of the ArrayList object to be cloned. Its element references
@@ -154,17 +138,6 @@ public class ArraysExample {
 	}
 
 	public static void main(String[] args) {
-
-		// You can also allocate the multidimensional array multiArr by
-		// defining size in only the first square bracket:
-		int[][] multiArr = new int[2][];
-
-		/*
-		 *
-		 *
-		 * /* String—Retrieve length using the method length() Array—Determine element
-		 * count using the variable length
-		 */
 
 		ArrayList myArrList = simpleArrayAccess();
 

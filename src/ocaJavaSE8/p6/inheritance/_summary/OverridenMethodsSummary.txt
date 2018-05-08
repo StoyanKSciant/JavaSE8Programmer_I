@@ -23,10 +23,14 @@ they can hide parent static methods. In practice it means that compiler will
 decide which method to execute at compile time, and not in runtime, as it does
 with overridden instance methods.
 
+NB! * Overriding method only needs to specify a subset of the list of exception
+classes the overridden method can throw. A set of NO classes is a valid subset
+of that list. NOTE An empty set is subset to EVERY set (Mathematics).
+
 NB! * The return type of an overriding method in the derived class can be the
-same, or a subclass of the return type of the overridden method in the base
-class. When the overriding method returns a subclass of the return type of the
-overridden method, it is known as a covariant return type.
+same, or a subclass/subinterface of the return type of the overridden method in
+the base class. When the overriding method returns a subclass of the return type
+of the overridden method, it is known as a covariant return type.
 
 NB! * Covariant returns are allowed since Java 1.5, which means that an
 overriding method can change the return type to a subclass of the return type

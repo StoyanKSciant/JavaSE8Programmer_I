@@ -1,28 +1,29 @@
 
 * You need to put the parameter list of the lambda expression in brackets if you
 want to use the parameter type.
-	For example: checkList(new ArrayList(), (List al) -> al.isEmpty()); 
+	For example: checkList(new ArrayList(), (List al) -> al.isEmpty());
 
-* Remember that specifying the parameter type is optional because the compiler 
-can figure out the parameter types by looking at the signature of the abstract 
+* Remember that specifying the parameter type is optional because the compiler
+can figure out the parameter types by looking at the signature of the abstract
 method of any functional interface (here, Predicate's test method).
 
-* You need to put the body within curly braces if you want to use the return 
-keyword. 
+* You need to put the body within curly braces if you want to use the return
+keyword.
 	For example: checkList(new ArrayList(), al -> { return al.size() == 0; });
 
 * Whenever the method of a functional interface takes more than one parameter,
 you need to put the arguments within brackets.  If the method of a functional
 interface takes one parameter, you can omit the brackets.
 For example, x -> expression and (x) -> expression are equivalent.
-If the method of a functional interface takes no parameter, you must write empty
+
+* If the method of a functional interface takes no parameter, you must write empty
 brackets.
-	For example: ( ) -> expression
-	
+	For example: () -> expression
+
 * Predicate is typed to List (not ArrayList) in the checkList method, therefore,
-the parameter type in the lambda expression must also be List. It cannot 
+the parameter type in the lambda expression must also be List. It cannot
 anything else.
 
-* lambda expression does not create a new scope for variables. Therefore, you 
-cannot reuse the variable names that have already been used to define new 
-variables in your argument list . 
+* lambda expression does not create a new scope for variables. Therefore, you
+cannot reuse the variable names that have already been used to define new
+variables in your argument list .
