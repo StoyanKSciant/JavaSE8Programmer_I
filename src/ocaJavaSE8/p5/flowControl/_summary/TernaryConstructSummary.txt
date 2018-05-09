@@ -8,16 +8,36 @@ readability. The code will work without them.
 * You can assign a literal value or an expression to a variable using a ternary
 operator.
 
+NB! * The value returned by a ternary operator must be assign to a variable, or
+the code won't compile.
+
+* It is not permitted for either the second or the third operand expression of
+the ? operator to be an invocation of a void method
+
 * A method that returns a value can be used to initialize a variable in a
 ternary construct.
+
+* If one of the operands is of type byte and the other is of type short, then
+the type of the conditional expression is short.
+
+* If one of the operands is of type T where T is byte, short, or char, and the
+other operand is a constant expression of type int whose value is representable
+in type T, then the type of the conditional expression is T.
+
+* If one of the second and third operands is of the null type and the type of
+the other is a reference type, then the type of the conditional expression is
+that reference type.
+
+* If the second and third operands are of different reference types, then it
+must be possible to convert one of the types to the other type (call this latter
+type T) by assignment conversion (5.2); the type of the conditional expression
+is T. It is a compile-time error if neither type is assignment compatible with
+the other type.
 
 NB! * If the expression used to evaluate a ternary operator doesn't return a
 boolean or Boolean value, the code won't compile.
 
 * All three parts of a ternary operator are mandatory.
-
-NB! * The value returned by a ternary operator must be assign to a variable, or
-the code won't compile.
 
 * Because a ternary operator must return values, which are assigned to a
 variable, it can't include code blocks.
