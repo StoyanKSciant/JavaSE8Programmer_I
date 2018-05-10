@@ -4,6 +4,8 @@ public class StringsExamples {
 
 	public static void main(String[] args) {
 
+		usingTrimAndConcat();
+
 		subStringsOperations();
 
 		// METHOD CHAINING: When chained, the methods are evaluated from left to right
@@ -12,6 +14,15 @@ public class StringsExamples {
 		comparisonExample();
 
 		toStringExmp();
+	}
+
+	static void usingTrimAndConcat() {
+		String blank = " "; // one space
+		String line = blank + "hello" + blank + blank;
+		line.concat("world");
+		System.out.println(line);
+		String newLine = line.trim();
+		System.out.println((int) (line.length() + newLine.length()));
 	}
 
 	static void toStringExmp() {

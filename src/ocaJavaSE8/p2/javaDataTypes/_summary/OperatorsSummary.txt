@@ -52,6 +52,9 @@ NB! * evaluation of ("1" + 2 + 3) is as follows: ("1" + 2) + 3 -> "12" + 3 ->
 
 NB! * (a == a++) evaluates to true!
 
+NB! * All compound assignment (*=, /=, +=, -=) operators internally do an
+explicit cast. so (var type) ..= (other var type) -> always cast to var type
+
 * ++ and –- are unary increment and decrement operators. These operators work
 with single operands.
 
@@ -67,7 +70,6 @@ expression.
 
 * By default, unary operators have a higher precedence than multiplication
 operators and addition operators.
-
 
 
 							Relational operators:

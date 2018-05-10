@@ -4,29 +4,29 @@ public class ForSwitch {
 	public static void main(String args[]) {
 
 		test(96);
-		char i;
-		// char a = '0';
-		// char b = 'E'; System.out.println((int)a );
-		// System.out.println((int)b );
+		System.out.println();
 
+		char i;
 		LOOP: for (i = 0; i < 5; i++) {
 			System.out.print((i + 1) + " ");
-			switch (i++) {
-			case '0': // '0' == 48
+			switch (i++) {	// case is first set from the for loop and after
+			// iteration by postfix, so even cases are evoked
+
+			case '0': // '0' == 48 not 0
 				System.out.println("A");
 			case 1:
 				System.out.println("B");
 				break LOOP;
 			case 2:
-				System.out.println("C"); // 1
+				System.out.println("C"); // print
 				break;
 			case 3:
 				System.out.println("D");
 				break;
 			case 4:
-				System.out.println("E"); // 2
+				System.out.println("E"); // print
 			case 'E': // 'E' == 69
-				System.out.println("F"); // 3
+				System.out.println("F"); // print due to no break at case 4
 			}
 		}
 	}
