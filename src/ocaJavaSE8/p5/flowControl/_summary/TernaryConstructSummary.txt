@@ -11,6 +11,9 @@ operator.
 NB! * The value returned by a ternary operator must be assign to a variable, or
 the code won't compile.
 
+NB! * If the condition before ? returns true, only the first operand will be
+evaluated, otherwise only the second operand is evaluated.
+
 * It is not permitted for either the second or the third operand expression of
 the ? operator to be an invocation of a void method
 
