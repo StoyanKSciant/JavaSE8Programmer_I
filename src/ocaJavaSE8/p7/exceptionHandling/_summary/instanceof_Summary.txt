@@ -1,0 +1,22 @@
+
+* Object o1; o1 instanceof o1; is not acceptable
+instanceof operator does not accept objects as the right hand side operand.
+The operand at the right hand side should be a class. Therefore, this
+expression will not compile.
+
+* You can use the instanceof operator to verify whether an object can be cast
+to another class before casting it.
+
+import java.util.ArrayList;
+public class AvoidClassCastException {
+	public static void main(String args[]) {
+		ArrayList<Ink> inks = new ArrayList<Ink>();
+		inks.add(new ColorInk());
+		inks.add(new BlackInk());
+		if (inks.get(0) instanceof BlackInk) {	// avoid exception
+			BlackInk ink = (BlackInk)inks.get(0);
+		}
+	}
+}
+
+*

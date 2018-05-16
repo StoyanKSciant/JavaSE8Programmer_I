@@ -88,9 +88,15 @@ system to another.
 	For example, 0x10B in the hexadecimal number system is 267 in the decimal
 	number system.
 
-	* The literal values in the binary number system start with the prefix 0b or
-	0B.
+	NB! * The literal values in the binary number system start with the prefix
+	0b or 0B.
 	For example, the decimal value 267 is 0B100001011 in the binary system.
+	Floating point suffices f, F or d, D are used ONLY when using decimal system
+	and NOT while using binary. However, since f is a valid digit in hexadecimal
+	system, a hex number may end with an f although it will not be interpreted
+	as float but as the digit f. Thus, {float x = 0x10_000f, float x = 10_000f}
+	are valid because they are written in hex and decimal respectively
+	but {float x = 0b10_000f} is invalid because is written in binary.
 
 * Starting with Java 7, you can use underscores within the Java literal values
 to make them more readable:

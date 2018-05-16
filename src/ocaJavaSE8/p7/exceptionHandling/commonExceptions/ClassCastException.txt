@@ -21,20 +21,3 @@ tries to explicitly cast an object of ColorInk to BlackInk.
 * Note that this line of code avoided the compilation error because the variable
 inks defines an ArrayList of type Ink, which is capable of storing objects of
 type Ink and all its subclasses.
-
-* You can use the instanceof operator to verify whether an object can be cast to
-another class before casting it.
-
-import java.util.ArrayList;
-public class AvoidClassCastException {
-	public static void main(String args[]) {
-		ArrayList<Ink> inks = new ArrayList<Ink>();
-		inks.add(new ColorInk());
-		inks.add(new BlackInk());
-		if (inks.get(0) instanceof BlackInk) {	// avoid exception
-			BlackInk ink = (BlackInk)inks.get(0);
-		}
-	}
-}
-
-*

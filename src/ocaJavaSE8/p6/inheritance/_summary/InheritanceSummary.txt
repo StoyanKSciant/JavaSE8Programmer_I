@@ -133,9 +133,15 @@ defined.
 and derived classes exist in separate packages.
 
 * Constructors of the base class can't be inherited. A derived class can call a
-base class’s constructors, but it doesn’t inherit them (section 6.5 discusses
-how a derived class can call a base class’s constructors using the implicit
-reference super).
+base class’s constructors, but it doesn’t inherit them.
+
+* Calling super(); means you are trying to call the super class's constructor.
+But you can't call the super class's constructor from a method super();
+can only be the first statement of a constructor.
+
+* for invoking base class methods use super without brackets super.method();
+ There is no way to go more than one level up for methods
+ super.super.method() is not allowed.
 
 * An abstract class can extend a concrete class and vice versa.
 
