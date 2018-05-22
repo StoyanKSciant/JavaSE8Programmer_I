@@ -1,4 +1,12 @@
 
+* Overloaded method must change the argument list.
+
+* Overloaded method may change the return type.
+
+* Overloaded method may throw new or broader exceptions.
+
+* Overloaded method may change the access modifier both ways.
+
 * You can define multiple parameters for a method.
 
 * The method parameter can be a primitive type or object.

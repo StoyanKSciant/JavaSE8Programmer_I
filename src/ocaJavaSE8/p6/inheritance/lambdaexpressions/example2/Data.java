@@ -1,4 +1,4 @@
-package ocaJavaSE8.p6.inheritance.lambdaexpressions.othere_example;
+package ocaJavaSE8.p6.inheritance.lambdaexpressions.example2;
 
 class Data {
 	int value;
