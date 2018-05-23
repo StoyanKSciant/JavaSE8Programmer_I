@@ -149,6 +149,8 @@ public class ArrayLIstExample {
 
 		addAllExample();
 
+		ArrayListContains();
+
 		test1();
 		test2();
 		test3();
@@ -161,6 +163,17 @@ public class ArrayLIstExample {
 		MiscMethodsArrayList();
 
 		cloneList();
+	}
+
+	public static void ArrayListContains() {
+		ArrayList<Double> al = new ArrayList<>();
+		al.add(1.5);
+		al.add(3.8);
+		al.add(7.5);
+		al.add(0.5);
+
+		System.out.println(al.contains("string")); // contains accepts Object type
+		System.out.println(al.contains(new ArrayList()));
 	}
 
 	/*

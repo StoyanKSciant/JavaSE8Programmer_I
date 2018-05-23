@@ -1,4 +1,4 @@
-package ocaJavaSE8.p2.javaDataTypesAndOperators;
+package ocaJavaSE8.p2.DataTypesAndOperators;
 
 public class ChainedOperator {
 	public static void main(String args[]) {

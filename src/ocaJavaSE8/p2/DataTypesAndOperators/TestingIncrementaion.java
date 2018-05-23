@@ -1,4 +1,4 @@
-package ocaJavaSE8.p2.javaDataTypesAndOperators;
+package ocaJavaSE8.p2.DataTypesAndOperators;
 
 import java.util.Arrays;
 

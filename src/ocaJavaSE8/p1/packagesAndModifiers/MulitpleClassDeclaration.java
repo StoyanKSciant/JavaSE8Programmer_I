@@ -7,7 +7,7 @@ interface FirstInterface {
 
 }
 
-public class MulitpleClassDeclaration {	// in single file only one class can be public
+public class MulitpleClassDeclaration {	// public class must be with the same name as the file
 
 }
 
