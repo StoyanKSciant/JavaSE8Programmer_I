@@ -1,7 +1,5 @@
 package ocaJavaSE8.p6.inheritance;
 
-import java.time.LocalDateTime;
-
 class HRExecutive extends Employee implements Interviewer, StaticMethodInterfaces {
 	String[] specialization;
 
