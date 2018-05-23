@@ -1,4 +1,4 @@
-package ocaJavaSE8.p2.DataTypesAndOperators;
+package ocaJavaSE8.p2.dataTypesAndOperators;
 
 public class AssingPrimitiveWithMethod {
 
