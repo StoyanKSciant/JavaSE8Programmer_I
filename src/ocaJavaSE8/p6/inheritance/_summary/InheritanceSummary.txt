@@ -6,10 +6,19 @@ methods defined in its subclass without an explicit cast.
 * An interface can inherit zero or more interfaces. An interface cannot inherit
 a class.
 
+NB! * In Java 8, interfaces DON'T allow multiple implementation inheritance 
+through default methods. You cannot have a class that implements two interfaces 
+where both the interfaces contain a default method with the same signature 
+unless the class provides an implementation for that method itself.
+
 NB! * A class that is marked final cannot be extended by another class.
 
 NB! * A final method defined in a base class can’t be overridden by a derived
 class.
+
+NB! * Observe that the rule for overriding a method is opposite to the rule for
+constructors. An overriding method cannot throw a superclass exception, while a
+constructor of a subclass cannot throw subclass exception
 
 NB! * non-static variables are SHADOWED and methods are OVERRIDDEN.
  1. Which variable will be used depends on the class that the variable is

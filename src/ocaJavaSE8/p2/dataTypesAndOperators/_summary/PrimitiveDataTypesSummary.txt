@@ -65,8 +65,8 @@ any value of int. Note that opposite is not true because of loss of precision.
 to the literal value.
 
 * Numeric values can be stored in binary, octal, decimal, and hexadecimal number
-formats. This exam won’t ask you to convert a number from one number
-system to another.
+formats. Floating point suffices f, F or d, D are used only when using decimal 
+system and not while using binary.
 
 	* Literal values in the decimal number system use digits from 0 to 9 (a
 	total of 10 digits).
