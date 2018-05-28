@@ -1,6 +1,8 @@
-package ocaJavaSE8.p6.inheritance;
+package ocaJavaSE8.p6.inheritance.inheritanceStructureExample;
 
 import java.time.LocalDateTime;
+
+import ocaJavaSE8.p6.inheritance.StaticMethodInterfaces;
 
 public class StaticMethodInterfacesTest {
 

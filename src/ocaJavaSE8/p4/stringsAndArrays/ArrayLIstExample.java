@@ -64,6 +64,7 @@ public class ArrayLIstExample {
 
 		for (StringBuilder element : myArrList) {
 			System.out.println(element);
+			// myArrList.remove(element);
 		}
 		System.out.println();
 

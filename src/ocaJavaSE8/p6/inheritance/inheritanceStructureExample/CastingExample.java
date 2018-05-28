@@ -1,4 +1,4 @@
-package ocaJavaSE8.p6.inheritance;
+package ocaJavaSE8.p6.inheritance.inheritanceStructureExample;
 
 public class CastingExample {
 

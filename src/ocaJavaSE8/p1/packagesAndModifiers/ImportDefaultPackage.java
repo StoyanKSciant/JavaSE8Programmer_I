@@ -1,7 +1,7 @@
 package ocaJavaSE8.p1.packagesAndModifiers;
 
 
-// import EJava;	// invalid
+// import ImportDefaultPackage;	// invalid
 
 /*
 A class that isn't defined in a package gets implicitly defined in
@@ -10,5 +10,5 @@ or interfaces, which are explicitly defined in a package.
  */
 
 public class ImportDefaultPackage {
-	// EJava ej = new EJava();	// can't be access
+	// ImportDefaultPackage ej = new ImportDefaultPackage();	// can't be access
 }

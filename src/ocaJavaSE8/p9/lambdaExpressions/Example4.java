@@ -3,7 +3,7 @@ package ocaJavaSE8.p9.lambdaExpressions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Whizlabs {
+public class Example4 {
 
 	public static void main(String[] args) {
 		// print [21, 13, 11]

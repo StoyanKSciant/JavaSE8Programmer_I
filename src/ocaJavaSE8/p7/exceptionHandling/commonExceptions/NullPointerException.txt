@@ -69,8 +69,8 @@ static variable.
 
 NB! * In the exam, watch out for code that tries to use an uninitialized local
 variable. Because such variables aren't initialized with even a null value,you
-can't print their value using the System.out.println method. Such code
-won't compile.
+can't print their value using the System.out.println method. SUCH CODE WON'T
+COMPILE.
 
 
 

@@ -46,7 +46,6 @@ public class ChangesOnObjectPassedToMethod {
 		System.out.println("Reference changed on passed object: ");
 		Obj elemt4 = new Obj();
 		changeObjectReference(elemt4);
-		System.out.print(elemt4.value);
-		System.out.println(" still the default, nothing has changed");
+		System.out.println(elemt4.value + " still the default, nothing has changed");
 	}
 }

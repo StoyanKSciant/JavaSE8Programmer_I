@@ -1,9 +1,8 @@
-package ocaJavaSE8.p9.lambdaExpressions;
+package ocaJavaSE8.p9.lambdaExpressions.example2;
 
 import java.util.ArrayList;
 
-public class Test {
-
+public class LambdaWithCustomInterfaceValidate {
 	public static void main(String[] args) {
 
 		Emp e1 = new Emp("Schreya", 5, 9999.00);
@@ -16,12 +15,15 @@ public class Test {
 		empArrList.add(e2);
 		empArrList.add(e3);
 		empArrList.add(e4);
-		filter(empArrList, new ValidatePerformanceRating());
+
+		//					{	parameter -> lambda body	}	curly braces are optional
+		Validate validatePerfor = e -> e.getPerformanceRating() >= 5;	// lambda expressions
+		filter(empArrList, validatePerfor);
 	}
 
 	static void filter(ArrayList<Emp> list, Validate rule) {
-		for(Emp e : list) {
-			if(rule.check(e)) {
+		for (Emp e : list) {
+			if (rule.check(e)) {
 				System.out.println(e);
 			}
 		}

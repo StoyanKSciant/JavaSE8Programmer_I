@@ -1,4 +1,4 @@
-package ocaJavaSE8.p9.lambdaExpressions.example2;
+package ocaJavaSE8.p9.lambdaExpressions.example1;
 
 import java.util.ArrayList;
 import java.util.Iterator;

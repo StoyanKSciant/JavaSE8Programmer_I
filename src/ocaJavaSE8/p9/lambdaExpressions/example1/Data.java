@@ -1,4 +1,4 @@
-package ocaJavaSE8.p9.lambdaExpressions.example2;
+package ocaJavaSE8.p9.lambdaExpressions.example1;
 
 class Data {
 	int value;

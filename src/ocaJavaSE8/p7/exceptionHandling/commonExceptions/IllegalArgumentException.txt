@@ -6,6 +6,7 @@ to validate the arguments that are passed to a method. The exception constructor
 is passed a descriptive message, specifying the exception details.
 
 public void login(String username, String pwd, int maxLoginAttempt) {
+
 	if (username == null || username.length() < 6)
 	throw new IllegalArgumentException
 	("Login:username can’t be shorter than 6 chars");

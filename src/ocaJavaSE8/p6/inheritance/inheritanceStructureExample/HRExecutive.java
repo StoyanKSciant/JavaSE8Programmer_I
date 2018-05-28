@@ -1,4 +1,6 @@
-package ocaJavaSE8.p6.inheritance;
+package ocaJavaSE8.p6.inheritance.inheritanceStructureExample;
+
+import ocaJavaSE8.p6.inheritance.StaticMethodInterfaces;
 
 class HRExecutive extends Employee implements Interviewer, StaticMethodInterfaces {
 	String[] specialization;

@@ -1,9 +1,9 @@
-package ocaJavaSE8.p9.lambdaExpressions;
+package ocaJavaSE8.p9.lambdaExpressions.example2;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;
 
-public class TestLambdaPredicate {
+public class LambdaWithPredicate {
 	public static void main(String[] args) {
 
 		Emp e1 = new Emp("Schreya", 5, 9999.00);

@@ -1,3 +1,4 @@
 
-* NumberFormatException is thrown by multiple mehods from the Java API when invalid
-numbers are passed on as Strings to be converted to the specified number format.
+* NumberFormatException is thrown by multiple methods from the Java API when
+invalid numbers are passed on as Strings to be converted to the specified number
+format.

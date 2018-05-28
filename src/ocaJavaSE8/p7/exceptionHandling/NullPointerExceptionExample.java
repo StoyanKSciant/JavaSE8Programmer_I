@@ -15,7 +15,7 @@ it’s not handled in the outer try-catch block.
 
 */
 
-class EJava4 {
+class NullPointerExceptionExample {
 	void foo() {
 		try {
 			String s = null;
@@ -32,7 +32,7 @@ class EJava4 {
 	}
 
 	public static void main(String args[]) {
-		EJava4 obj = new EJava4();
+		NullPointerExceptionExample obj = new NullPointerExceptionExample();
 		obj.foo();
 	}
 }

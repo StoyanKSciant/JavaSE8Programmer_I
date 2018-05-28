@@ -1,4 +1,4 @@
-package ocaJavaSE8.p7.exceptionHandling.commonExceptions;
+package ocaJavaSE8.p7.exceptionHandling;
 
 public class InvalidArrayAccess {
 

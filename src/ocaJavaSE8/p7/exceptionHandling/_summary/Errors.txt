@@ -1,4 +1,7 @@
 
+* Most common: AssertionError, ExceptionInInitializerError, StackOverflowError,
+NoClassDefFoundError, OutOfMemoryError, ClassFormatError.
+
 * Errors are considered to be serious exceptional conditions and they
 can’t be directly controlled by your code
 

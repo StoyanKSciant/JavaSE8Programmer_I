@@ -11,7 +11,7 @@ class MultipleReturn {
 			String[] students = { "Harry", "Paul" };
 			System.out.println(students[5]);
 		} catch (Exception e) {
-			System.out.println("About to return :" + returnVal);
+			System.out.println("catch return:"+ returnVal);
 			return returnVal;
 		} finally {
 
@@ -23,7 +23,7 @@ class MultipleReturn {
 			so the returned value is not modified when finally executes.
 			 */
 			returnVal += 10;
-			System.out.println("Return value is now :" + returnVal);
+			System.out.println("finally return:" + returnVal);
 		}
 		return returnVal;
 	}

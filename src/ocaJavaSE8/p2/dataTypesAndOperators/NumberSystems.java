@@ -18,9 +18,9 @@ public class NumberSystems {
 
 		long var1 = 0_100_267_760;
 		// long var2 = 0_x_4_13;		// incorrect
-		// long var3 = 0b_x10_BA_75;	// incorrect
-		// long var4 = 0b_10000_10_11;	// incorrect
-		// long var5 = 0xa10_AG_75;		// incorrect
+		// long var3 = 0b_x10_BA_75;	// incorrect can't be both hex and binary
+		long var4 = 0b10000_10_11;		// if b_1000000 it won't compile - no unterscores between 'b' and a digit
+		// long var5 = 0xa10_AG_75;		// incorrect no letters in hex after F
 		long var6 = 0x1_0000_10;
 		long var7 = 100__12_12;
 	}

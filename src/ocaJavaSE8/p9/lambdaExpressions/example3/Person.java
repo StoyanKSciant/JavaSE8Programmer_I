@@ -29,10 +29,10 @@ public class Person {
 	}
 
 	public static void main(String[] args) {
-		List<Person> iList = Arrays.asList(new Person("Hank", 45),
+		List<Person> iList = Arrays.asList(
+				new Person("Hank", 45),
 				new Person("Charlie", 40),
-				new Person("Smith", 38)
-				);
+				new Person("Smith", 38));
 
 		checkAge(iList, (Person p) -> p.getAge( ) > 40);
 		// or

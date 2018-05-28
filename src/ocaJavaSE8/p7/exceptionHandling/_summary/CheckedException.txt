@@ -1,4 +1,8 @@
 
+* Most common: Exception, IOException, FileNotFoundException, ParseException,
+ClassNotFoundException, NoSuchField/MethodException, CloneNotSupportedExceptoin,
+InstatiationException.
+
 * A checked exception is an unacceptable condition foreseen by the author of a
 method but outside the immediate control of the code. For example, FileNot-
 FoundException

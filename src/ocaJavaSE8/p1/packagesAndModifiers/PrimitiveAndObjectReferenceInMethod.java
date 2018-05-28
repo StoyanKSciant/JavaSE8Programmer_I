@@ -1,6 +1,6 @@
 package ocaJavaSE8.p1.packagesAndModifiers;
 
-public class TestClass {
+public class PrimitiveAndObjectReferenceInMethod {
     char c;
     public void m1(){
         char[ ] cA = { 'a' , 'b'};
@@ -13,6 +13,6 @@ public class TestClass {
         cA[1] = cA[0] = 'm';
     }
     public static void main(String args[]){
-        new TestClass().m1();
+        new PrimitiveAndObjectReferenceInMethod().m1();
     }
 }

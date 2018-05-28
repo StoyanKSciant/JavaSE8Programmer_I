@@ -18,13 +18,16 @@ public class IntegersExamples {
 	long hexValUndrScr = 0x10____BA_75;
 	long binValUndrScr = 0b1_0000_10_11;
 
-	/*
+	 /*
 	 * The following line of code will compile successfully but will fail at
 	 * runtime:
 	 */
-	int i = Integer.parseInt("45_98");
+	static int i = Integer.parseInt("45_98");
 
 	public static void main(String args[]) {
+
+		// System.out.println(i); // fail at runtime
+
 		baseDecimal = 267;
 		octVal = 0413;
 		hexVal = 0x10B;

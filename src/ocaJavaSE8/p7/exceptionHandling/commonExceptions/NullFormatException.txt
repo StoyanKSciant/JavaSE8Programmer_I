@@ -1,6 +1,6 @@
-* NumberFormat- Exception is a runtime exception. It’s thrown to indicate that the application
-has tried to convert a string (with an inappropriate format) to one of the numeric types.
-
+* NumberFormatException is a runtime exception. It’s thrown to indicate that the
+application has tried to convert a string (with an inappropriate format) to one
+of the numeric types.
 
 System.out.println(Integer.parseInt("-123"));	// valid
 System.out.println(Integer.parseInt("123"));	// valid

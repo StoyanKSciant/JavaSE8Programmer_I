@@ -7,12 +7,12 @@ public class TestBeep {
 		Beta bb = (Beta) b;
 
 		/*
-		 1. Evoke method which prints ont its own class name and field
+		 1. Evoke method which prints out its own class name and field
 		 2. Print in console: type of reference field + returned value from getH()
 		 */
 
-	//	System.out.println(b.h + " " + b.getH());
-	//	System.out.println(bb.h + " " + bb.getH());
+		System.out.println(b.h + " " + b.getH());
+		System.out.println(bb.h + " " + bb.getH());
 
 		/* Result:
 			Beta 44

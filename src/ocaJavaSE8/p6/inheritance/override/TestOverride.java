@@ -22,6 +22,7 @@ public class TestOverride {
 
 		System.out.println();
 
+		// This method shadows display() from Base
 		derv.display();
 		derv.print();
 	}
