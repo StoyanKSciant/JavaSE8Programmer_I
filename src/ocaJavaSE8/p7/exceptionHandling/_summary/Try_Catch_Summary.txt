@@ -16,10 +16,6 @@ another one, the Exception that is thrown in the last, is the Exception that is
 thrown by the method to the caller. Meaning the FINALLY exception is ALWAYS the
 thrown one.
 
-NB! * When returning value is set in
-try{return..}catch{return..}finally{return..} the returned value is always the
-one set in the finally block no matter the outcome.
-
 NB! * You can have multiple catch blocks to catch different kinds of exceptions,
 including exceptions that are subclasses of other exceptions. However, the catch
 clause for more specific exceptions (i.e. a SubClassException) should come

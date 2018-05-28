@@ -31,7 +31,8 @@ character data types.
 
 * Integral types means byte, short, int, long, and char
 
-							The boolean data type:
+
+							Boolean primitive data type:
 
 * The boolean data type is used to store data with only two possible values.
 These two possible values may be thought of as yes/no, 0/1, true/false, or any
@@ -42,7 +43,8 @@ other combination. The actual values that a boolean can store are true and false
 * A literal is a fixed value that doesn’t need further calculations to be
 assigned to any variable.
 
-							Numeric data types
+
+							Numeric primitive data types
 
 * Numeric values can be stored as either integers or decimal numbers.
 
@@ -58,38 +60,27 @@ their values.
 
 * The default type of integers (non-decimal) numbers is int.
 
+* The default type of a decimal number is double.
+
 NB! * Conversion of int to float does not need a cast because a float can hold
 any value of int. Note that opposite is not true because of loss of precision.
 
 * To designate an integer literal value as a long value, add the suffix L or l
 to the literal value.
 
+* To designate a decimal literal value as a float value, add the suffix F or f
+to the literal value.
+
+* The suffixes D and d can be used to mark a literal value as a double value.
+Though it’s allowed, doing so is not required because the default value of
+decimal literals is double.
+
 * Numeric values can be stored in binary, octal, decimal, and hexadecimal number
-formats. Floating point suffices f, F or d, D are used only when using decimal 
-system and not while using binary.
+formats.
 
-	* Literal values in the decimal number system use digits from 0 to 9 (a
-	total of 10 digits).
-
-	* Literal values in the octal number system use digits from 0 to 7 (a total
-	of 8 digits).
-
-	* Literal values in the hexadecimal number system use digits from 0 to 9 and
-	letters from A to F (a total of 16 digits and letters).
-
-	* Literal values in the binary number system use digits 0 and 1 (a total of
-	2 digits).
-
-	* The literal values in the octal number system start with the prefix 0. For
-	example, 0413 in the octal number system is 267 in the decimal number system.
-
-	* The literal values in the hexadecimal number system start with the prefix
-	0x.
-	For example, 0x10B in the hexadecimal number system is 267 in the decimal
-	number system.
-
-	NB! * The literal values in the binary number system start with the prefix
-	0b or 0B.
+	* Literal values in the BINARY number system use digits 0 and 1 (a total of
+	2 digits). The literal values in the binary number system start with the
+	prefix 0b or 0B.
 	For example, the decimal value 267 is 0B100001011 in the binary system.
 	Floating point suffices f, F or d, D are used ONLY when using decimal system
 	and NOT while using binary. However, since f is a valid digit in hexadecimal
@@ -98,19 +89,26 @@ system and not while using binary.
 	are valid because they are written in hex and decimal respectively
 	but {float x = 0b10_000f} is invalid because is written in binary.
 
+	* Literal values in the OCTAL number system use digits from 0 to 7 (a total
+	of 8 digits). The literal values in the octal number system start with the
+	prefix 0..
+	For example, 0413 in the octal number system is 267 in the decimal system.
+
+	* Literal values in the DECIMAL number system use digits from 0 to 9 (a
+	total of 10 digits). Floating point suffices f, F or d, D are used only when
+	using decimal system and not while using binary.
+
+	* Literal values in the HEXADECIMAL number system use digits from 0 to 9 and
+	letters from A to F (a total of 16 digits and letters) The literal values
+	in the hexadecimal number system start with the prefix 0x.
+	For example, 0x10B in the hexadecimal number system is 267 in the decimal
+	number system.
+
 * Starting with Java 7, you can use underscores within the Java literal values
 to make them more readable:
 		0B1_0000_10_11, 0_413, and 0x10_B
 		are valid binary, octal, and hexadecimal literal values.
 
-* The default type of a decimal number is double.
-
-* To designate a decimal literal value as a float value, add the suffix F or f
-to the literal value.
-
-* The suffixes D and d can be used to mark a literal value as a double value.
-Though it’s allowed, doing so is not required because the default value of
-decimal literals is double.
 
 						Character primitive data types:
 
@@ -130,8 +128,8 @@ positive integers).
 NB! * A char value can ALWAYS be assigned to an int variable, since the int type
 is wider than the char type.
 
-* The literal value 122 is not the same as the Unicode value \u0122. The former
-is a decimal number and the latter is a hexadecimal number.
+NB! * The literal value 122 is not the same as the Unicode value \u0122.
+The former is a decimal number and the latter is a hexadecimal number.
 
 * Single quotes, not double quotes, are used to assign a letter to a char
 variable.

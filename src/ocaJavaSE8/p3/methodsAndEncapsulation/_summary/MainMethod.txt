@@ -1,5 +1,0 @@
-* if you try to run java file without exact public static method(String[])
-Error will be thrown: Error: Could not find or load main class
-
-* You can have as many different method with the name main as long as they are
-with different signature than the pre-defined main method for class execution.

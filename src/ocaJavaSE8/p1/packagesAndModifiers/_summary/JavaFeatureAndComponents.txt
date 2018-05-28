@@ -17,9 +17,9 @@ same methods calls.
 * Type safety In java, you must declare a variable with its data type before you
 can use it.
 
-* Automatic memory management Java uses garbage
+* Automatic memory management Java uses garbage collector.
 
-* Multi-threading and concurrency = Java defines classes and interfaces to enable
+* Multi-threading and concurrency: Java defines classes and interfaces to enable
 developers to develop multi-threaded code.
 
 * Java isn't single-threaded language.

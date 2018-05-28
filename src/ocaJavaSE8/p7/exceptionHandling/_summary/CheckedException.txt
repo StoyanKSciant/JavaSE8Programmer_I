@@ -3,15 +3,15 @@
 method but outside the immediate control of the code. For example, FileNot-
 FoundException
 
-* Checked exception is a subclass of class java.lang.Exception, but it’s not a
-subclass of java.lang.RuntimeException. It’s interesting to note, however,
-that the class java.lang.RuntimeException itself is a subclass of the class
-java.lang.Exception.
-
 NB! * Checked exceptions must be declared before being thrown
 
 NB! * Trying to execute a method that throws a checked exception without handling
 the thrown exception causes a compilation error.
+
+* Checked exception is a subclass of class java.lang.Exception, but it’s not a
+subclass of java.lang.RuntimeException. It’s interesting to note, however,
+that the class java.lang.RuntimeException itself is a subclass of the class
+java.lang.Exception.
 
 NB! * Trying to call a method recursively without defining an exit condition is
 considered an exceptional condition.
@@ -22,4 +22,3 @@ two following things should be true:
 1. The method should be enclosed within a try-catch block
 				or
 2. The method should specify this exception to be thrown in its method signature
-

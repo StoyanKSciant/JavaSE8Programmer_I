@@ -12,16 +12,16 @@ base class and derived class.
 based on the run time type of the object and not on the compile time type of it
 (which is the case with overriden static methods).
 
+NB! * Static methods can not be overridden in the exact sense of the word, but
+they can hide parent static methods. In practice it means that compiler will
+decide which method to execute at compile time, and not in runtime, as it does
+with overridden instance methods.
+
 NB! * variables are SHADOWED and methods are OVERRIDDEN.
  1. Which variable will be used depends on the class that the variable is
 declared of.
  2. Which method will be used depends on the actual class of the object that is
 referenced by the variable.
-
-NB! * Static methods can not be overridden in the exact sense of the word, but
-they can hide parent static methods. In practice it means that compiler will
-decide which method to execute at compile time, and not in runtime, as it does
-with overridden instance methods.
 
 NB! * Overriding method only needs to specify a subset of the list of exception
 classes the overridden method can throw. A set of NO classes is a valid subset

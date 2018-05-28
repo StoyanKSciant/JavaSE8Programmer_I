@@ -40,5 +40,5 @@ the comparison will be primitive to primitive.
 of arithmetic operation may be stored in List of generics using which requires
 conversion to object instance
 
-* Unboxing wrapper reference variable, which refers to null will throw a
+NB! * UNBOXING wrapper reference variable, which refers to null will throw a
 NullPointerException

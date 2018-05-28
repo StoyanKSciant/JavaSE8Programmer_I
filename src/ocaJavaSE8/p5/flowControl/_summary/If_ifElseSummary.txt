@@ -5,7 +5,6 @@ will throw compiler error. But if there is "else" at if/"if else" code becomes
 compilable.
 
 NB! * if-clause and the else-clause can have empty statements.
-Empty statement (" ; ") is a valid statement.
 But this is illegal "if (true) else;" because the if part doesn't contain any
 valid statement.
 
@@ -29,7 +28,7 @@ if condition.
 * You can execute a single statement or a block of statements for corresponding
 true and false conditions. A pair of braces marks a block of statements: {}.
 
-* If an if construct doesn’t use {} to define a block of code to execute for its
+* If an if-construct doesn’t use {} to define a block of code to execute for its
 then or else part, only the first line of code is part of the if construct.
 
 * An assignment of a boolean variable can also be passed as an argument to the

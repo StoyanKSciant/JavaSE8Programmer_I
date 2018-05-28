@@ -24,6 +24,6 @@ brackets.
 the parameter type in the lambda expression must also be List. It cannot
 anything else.
 
-* lambda expression does not create a new scope for variables. Therefore, you
+* Lambda expression does not create a new scope for variables. Therefore, you
 cannot reuse the variable names that have already been used to define new
 variables in your argument list .

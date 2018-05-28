@@ -45,7 +45,7 @@ your code won’t compile.
 
 * The finally block can’t appear before a catch block.
 
-* You can rethrow an error that you catch in an exception handler.
+* You can re-throw an error that you catch in an exception handler.
 
 * You can either handle an exception or declare it to be thrown by your method.
 In the latter case, you need not handle the exception in your code. This applies

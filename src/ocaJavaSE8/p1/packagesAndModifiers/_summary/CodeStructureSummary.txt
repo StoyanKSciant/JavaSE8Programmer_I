@@ -4,23 +4,6 @@ of can be defined within a Java class: import and package statements, variables,
 constructors, methods, comments, nested classes, nested interfaces, annotations,
 and enums.
 
-* If a class defines a package statement, it should be the first statement in
-the class definition.
-
-* If present, the package statement should appear exactly once in a class.
-
-* The import statement allows usage of simple names, non-qualified names of
-classes, and interfaces.
-
-* The import statement can’t be used to import multiple classes or interfaces
-with the same name.
-
-* If a class includes a package statement, all the import statements should
-follow the package statement.
-
-* If present, an import statement must be placed before any class or interface
-definition.
-
 * Comments come in two flavors: multi-line and end-of-line comments.
 
 * Comments are another component of a class. Comments are used to annotate
@@ -52,39 +35,3 @@ method and still use it.
 
 * package and import statements apply to all the classes and interfaces defined
 in the same source code file (.java file).
-
-
-									Java packages:
-
-* You can use packages to group together a related set of classes and interfaces.
-
-* By default, all classes and interfaces in separate packages and subpackages
-aren’t visible to each other.
-
-* The package and subpackage names are separated using a dot..
-
-* All classes and interfaces in the same package are visible to each other.
-
-* An import statement allows the use of simple names for packaged classes and
-interfaces defined in other packages.
-
-* You can’t use the import statement to access multiple classes or interfaces
-with the same names from different packages.
-
-* You can import either a single member or all members (classes and interfaces)
-of a package using the import statement.
-
-NB! * You can’t import classes from a subpackage by using the wildcard character,
-an asterisk (*), in the import statement.
-
-* A class from a default package can’t be used in any named packaged class,
-regardless of whether it’s defined within the same directory or not.
-
-NB! * You can import an individual static member of a class or all its static
-members by using a static import statement.
-
-NB! * An import statement can’t be placed before a package statement in a class.
-Any attempt to do so will cause the compilation of the class to fail.
-
-* The members of default packages are accessible only to classes or interfaces
-defined in the same directory on your system.

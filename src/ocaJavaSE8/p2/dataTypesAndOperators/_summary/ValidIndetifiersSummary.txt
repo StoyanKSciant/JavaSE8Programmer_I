@@ -7,7 +7,7 @@ NB! * A valid identifier can contain digits but not in the starting place.
 NB! * A valid identifier can use the underscore and currency sign at any
 position of the identifier.
 
-* A valid identifier can't have the same spelling as a Java keyword, suck as
+* A valid identifier can't have the same spelling as a Java keyword, such as
 switch.
 
 * A valid identifier can't use any special characters, including:

@@ -19,8 +19,8 @@ NB! * ReferenceInvocation of static method is tied to the type of reference
 variable, not to the object that is assigned to the reference variable
 
 	B extends A;
-	ref type = object type
-	B var1 = new A(); // var1 holds in the B-defined static methods
+	<ref type> =  <object type>
+	 B var1    =   new A();     // var1 holds in the B-defined static methods
 
 NB! * When a method modifies the state of an object reference variable that is
 passed to it, the changes made are visible in the calling method.

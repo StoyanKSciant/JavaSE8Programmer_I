@@ -6,9 +6,9 @@ methods defined in its subclass without an explicit cast.
 * An interface can inherit zero or more interfaces. An interface cannot inherit
 a class.
 
-NB! * In Java 8, interfaces DON'T allow multiple implementation inheritance 
-through default methods. You cannot have a class that implements two interfaces 
-where both the interfaces contain a default method with the same signature 
+NB! * In Java 8, interfaces DON'T allow multiple implementation inheritance
+through default methods. You cannot have a class that implements two interfaces
+where both the interfaces contain a default method with the same signature
 unless the class provides an implementation for that method itself.
 
 NB! * A class that is marked final cannot be extended by another class.
@@ -26,25 +26,24 @@ declared of.
  2. Which method will be used depends on the actual class of the object that is
 referenced by the variable.
 
-NB! *  			MyDerivedClass instance = new MyDerivedClass();
-When you access an object of the class MyDerivedClass using its own type, you
-can access all the variables and methods that are defined in its base class and
-interface—the class.
+	Example:			MyDerivedClass instance = new MyDerivedClass();
 
-NB! *
-When you access an object of the class MyDerivedClass using its base class type,
-you can only access the variables and methods defined in the base class
+NB! * When you access an object of the class MyDerivedClass using its own type,
+you can access all the variables and methods that are defined in its base class
+and interface—the class.
+
+NB! * When you access an object of the class MyDerivedClass using its base class
+type, you can only access the variables and methods defined in the base class
 MyBaseClass and on other from the class referred to (MyDerivedClass) or other
 implemented interfaces.
 
-NB! *			MyInterface instance = new MyDerivedClass();
-When you access an object of the class MyDerivedClass using interface,
+NB! * When you access an object of the class MyDerivedClass using interface,
 you can only access the variables and methods defined in the interface
 MyInterface and on other from the class referred to (MyDerivedClass) or the
 inherited base class.
 
-NB! *			MyDerivedClass instance = new MyBaseClass();	// without cast
-			dog IS type of animal but animal isn't type of dog
+NB! *	MyDerivedClass instance = new MyBaseClass();	// without cast
+		dog IS type of animal but animal isn't type of dog
 You can’t refer to an object of a base class by using a reference variable of
 its derived class. Because all members of a derived class can’t be accessed
 using an object of the base class, it isn’t allowed.
@@ -82,19 +81,18 @@ In case of instance methods the method of the ACTUAL CLASS OF THE OBJECT is
 called.
 
 ________________________________________________________________________________
-* Inheriting a class is also known as subclassing.
 
 NB! * The first concrete class in the hierarchy must supply actual method
 implementations for all abstract methods.
-
-* A class that inherits another class is called a derived class or subclass.
-
-* A class that is inherited is called a parent or base class.
 
 NB! * A base class can use reference variables and object of its derived classes
 (with exception of constructors).
 
 NB! * Private members of a base class cannot be inherited in the derived class.
+
+* An abstract class can implement interfaces.
+
+* An abstract class can extend another abstract class.
 
 * A derived class can only inherit members with the default access modifier if
 both the base class and the derived class are in the same package.
@@ -149,13 +147,5 @@ But you can't call the super class's constructor from a method super();
 can only be the first statement of a constructor.
 
 * for invoking base class methods use super without brackets super.method();
- There is no way to go more than one level up for methods
- super.super.method() is not allowed.
-
-* An abstract class can extend a concrete class and vice versa.
-
-* An abstract class can implement interfaces.
-
-* An abstract class can extend another abstract class.
-
-
+There is no way to go more than one level up for methods super.super.method()
+is not allowed.

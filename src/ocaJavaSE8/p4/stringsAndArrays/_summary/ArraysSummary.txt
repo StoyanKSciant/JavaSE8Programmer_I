@@ -63,9 +63,6 @@ try to access an array element. The code throws an ArrayIndexOutOfBoundsExceptio
 exception if the requested index position doesn’t fall in the valid range
 at runtime.
 
-* A multidimensional array can be asymmetrical; it may not define the same number
-of columns for each of its rows.
-
 * The type of an array can also be an interface or abstract class. Such an array
 can be used to store objects of classes that inherit from the interface type or
 the abstract class type.

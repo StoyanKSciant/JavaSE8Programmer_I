@@ -64,10 +64,6 @@ with single operands.
 the variable increments/decrements just before the variable is used in an
 expression.
 
-* When the unary operators ++ and -- are used in postfix notation, the value of
-the variable increments/decrements just after the variable is used in an
-expression.
-
 * By default, unary operators have a higher precedence than multiplication
 operators and addition operators.
 
@@ -113,15 +109,3 @@ remaining sub-expressions are not evaluated.
 otherwise.
 
 * Logical OR (||) evaluates to true if any or all the operands are true.
-
-* The logical operators && and || are also called short-circuit operators. If
-these operators can determine the output of the expression with the evaluation
-of the first operand, they don't evaluate the second operand.
-
-* The && operator returns true only if both of the operands are true. If the first
-operand to this operator evaluates to false, the result can never be true.
-Therefore, && does not evaluate the second operand.
-
-* Similarly, the || operator returns true if any of the operands is true. If the
-first operand to this operator evaluates to true, the result can never be false.
-Therefore, || does not evaluate the second operator.

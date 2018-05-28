@@ -3,7 +3,7 @@ NB! * Java 8 introduces a new package java.time to deal with dates. The old
 classes such as java.util.Date are not recommended anymore.
 > java.time Package: This is the base package of new Java Date Time API. All the
 commonly used classes such as LocalDate, LocalTime, LocalDateTime, Instant,
-Period, Duration are part of this package.
+Period, Duration, DateTimeFormatter are part of this package.
 All of these classes are immutable and thread safe.
 
 * LocalDate can be used to store dates like 2015-12-27 WITHOUT time or time zones.

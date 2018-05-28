@@ -15,7 +15,7 @@ chapter 7).
 
 * Local variables can’t be accessed outside the method in which they’re defined.
 
-* In a method, a local variable can’t be accessed before its declaration.
+NB! * In a method, a local variable can’t be accessed before its declaration.
 
 * Instance variables are defined and accessible within an object. They’re
 accessible to all the instance methods of a class.
@@ -28,6 +28,6 @@ limited to the method where they’re defined.
 
 * A method parameter and a local variable can’t be defined using the same name.
 
-NB! * String String = "something"; IS VALID!
+NB! * String String = "input"; IS VALID!
 
 * Class and instance variables can’t be defined using the same name.

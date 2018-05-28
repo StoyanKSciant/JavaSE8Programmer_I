@@ -3,9 +3,16 @@
 
 * Overloaded method may change the return type.
 
-* Overloaded method may throw new or broader exceptions.
+* Overloaded method may throw new, broader or no exceptions.
 
 * Overloaded method may change the access modifier both ways.
+
+* Overloaded methods may or may not define different access levels.
+
+* Overloaded methods can't be defined by only changing their return type or
+access modifiers or both.
+
+* Overloaded methods fail to compile when the used calling arguments are dubious.
 
 * You can define multiple parameters for a method.
 
@@ -29,15 +36,39 @@ statement must not be followed by a return value.
 * If the compiler determines that a return statement isn't the last statement to
 execute in a method, the method will fail to compile.
 
-* Overloaded methods must have method parameters different from one another.
+						Overloading constructors
 
-* Overloaded methods may or may not define a different return type.
+NB!* Overloaded constructors are invoked by using the keyword this — an implicit
+reference that’s accessible to all objects that refer to an object itself:
+Also, when you invoke an overloaded constructor using the keyword this, it must
+be the first statement in your constructor:
 
-* Overloaded methods may or may not define different access levels.
+class Employee {                    	class Employee {
+String name;                        	String name;
+int age;                            	int age;
+  Employee() {                    	      Employee() {
+  	// no code allowed before this.
+  	this(null, 0);//legal use: this       Employee(null, 0);	//won't compile
+  	// other code ...					  // other code ...
+  }                              		}
 
-* Overloaded methods can't be defined by only changing their return type or
-access modifiers or both.
+Employee(String newName, int newAge) {  Employee(String newName, int newAge) {
+  name = newName;                     	  name = newName;
+  age = newAge;                       	  age = newAge;
+  }                                   	  }
+}                                       }
 
-NB! * The Overloaded method MUST declare signature with the same exceptions or
-subclasses of the same exceptions (getting more specific at the exception
-handling) that have been described in the super method signature.
+* Overloaded constructors must be defined using different argument lists.
+
+* Overloaded constructors can’t be defined by just a change in the access levels.
+
+* Overloaded constructors may be defined using different access levels.
+
+* If present, the call to another constructor must be the first statement in a
+constructor.
+
+* You can’t call multiple constructors from a constructor.
+
+* A constructor can’t be invoked from a method (except by instantiating a class
+using the new keyword).
+

@@ -6,8 +6,8 @@ times.
 	< initialization statements; termination condition; update clause >
 
 NB! * The definition of any of the three for statements—initialization statements,
-termination condition, and update clause—is optional. For example, for < (;;); >
-and for < (;;){} > are valid code for defining a for loop.
+termination condition, and update clause—is optional. For example, < for(;;); >
+and < for(;;){} > are valid code for defining a for loop.
 
 * An initialization block executes only once. A for loop can declare and initialize
 multiple variables in its initialization block, but the variables that it declares

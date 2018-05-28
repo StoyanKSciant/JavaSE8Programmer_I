@@ -2,7 +2,8 @@
 should be considered equal.
 
 NB! * The default implementation of the equals() method only compares whether
-two object variables refer to the same object.
+two object variables refer to the same object. In String obviously this method
+is overrided.
 
 * Because instance variables are used to store the state of an object, it’s
 common to compare the values of the instance variables to determine whether two
@@ -13,7 +14,7 @@ the correct method signature for the equals method.
 
 NB! * The Java API defines a contract for the equals method, which should be
 taken care of when you implement the method in any of your classes.
-According to the contract of the method equals, if a null value is passed to it,
+According to the contract of the method equals, if a NULL value is passed to it,
 the method equals should return false.
 
 * If the equals() method modifies the value of any of the instance variables of

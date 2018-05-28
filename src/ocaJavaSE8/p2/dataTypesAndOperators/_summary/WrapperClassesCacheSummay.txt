@@ -1,3 +1,4 @@
+
 All the wrapper objects are immutable. When you do i++, what actually happens is
 something like this: i = new Integer( i.intValue()  + 1);  As you can see, a new
 Integer object is assigned back to i.
@@ -8,7 +9,7 @@ fall in the following ranges:
 	All Boolean values (true and false)
 	All Byte values
 	All Character values from \u0000 to \u007f (i.e. 0 to 127 in decimal)
-	All Short and Integer values from-128 to 127 
+	All Short and Integer values from -128 to 127 
 
 So == will always return true when their primitive values are the same and
 belong to the above list of values. Once catch, however, is that when you create

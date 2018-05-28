@@ -19,8 +19,8 @@ elements, that is, days, months, and years, are stored the way it is initialized
 instances representing 15 or -15 days.
 
 * You can also parse a string to instantiate Period by using its static method
-parse. This method parses string values of the format PnYnMnD or PnW, where
-n represents a number and the letters (P, Y, M, D, and W) represent parse, year,
+parse. This method parses string values of the format PnYnMnD or PnW, where n
+represents a number and the letters (P, Y, M, D, and W) represent parse, year,
 month, day, and week. These letters can exist in lower- or upper case. Each
 string must start with the letter p or P and must include at least one of the
 four sections, that is, year, month, week, or day.
@@ -37,8 +37,8 @@ two dates. The first date is included, but the second date is excluded in the
 returned Period.
 
 * The Period class implements the interface TemporalAmount, so it can be used
-with the methods plus() and minus() defined in the classes LocalDateTime
-and LocalDate.
+with the methods plus() and minus() defined in the classes LocalDateTime and
+LocalDate.
 Because Period instances can represent positive or negative periods (like 15
 days or -15 days), you can subtract days from a LocalDate or LocalDateTime by
 calling the method plus.

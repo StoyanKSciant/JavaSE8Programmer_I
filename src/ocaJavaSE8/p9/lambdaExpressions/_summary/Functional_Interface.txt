@@ -1,6 +1,6 @@
 
 NB! * A functional interface is an interface that contains only ONE abstract
-method. It may contain one or more default methods or static methods. Because a
+method. It CAN contain ONE or MORE default methods OR static methods. Because a
 functional interface contains only one abstract method, you can omit the name of
 that method when you implement it using a lambda expression.
 
@@ -36,11 +36,10 @@ This can be shortened even more to:
 Notice that there is no declaration of d! The  compiler can figure out all
 information it needs because the interface has only one abstract method and that
 method has only one parameter. So you don't need to write all those things in
-your code. Compare the above approach to the old  style using an inner class
-that does the same thing:
+your code. Compare the above approach to the old style using an inner class that
+does the same thing:
 
-	printImportantData(al,  
-    new Predicate<Data>(){
+	printImportantData(al, new Predicate<Data>(){
     	public boolean test(Data d){ 
 	    	return d.value>1;
 	    }   

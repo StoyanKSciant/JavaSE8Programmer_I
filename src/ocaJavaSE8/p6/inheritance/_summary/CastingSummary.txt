@@ -1,3 +1,4 @@
+
 * Casting is the process of forcefully making a variable behave as a variable
 of another type. You can’t access all the members of an object if you access it
 using a reference variable of any of its implemented interfaces or of a base
@@ -37,7 +38,6 @@ ONLY WITH AN EXPLICIT CAST
 		}
 	}
 
-* You can cast reference variable (class or interface) refering to a class that,
-doesn't extend that reference, but at runtime that code will throw
-ClassCastException
-
+NB! * You can cast reference variable (class or interface) referring to a class
+that, doesn't extend that reference, but at runtime that code will throw
+ClassCastException.

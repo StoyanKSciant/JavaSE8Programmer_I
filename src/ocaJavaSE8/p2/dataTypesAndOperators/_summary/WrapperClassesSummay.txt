@@ -2,6 +2,9 @@
 state of their instances after initialization. The wrapper class variable
 is assigned a new object.
 
+* All wrapper classes (except Characters) define a constructor that accepts a
+String argument representing the primitive value that needs to be wrapped.
+
 * all wrapper classes extends the class java.lang.nuber classes Boolean and
 Character directly extend the class Object.
 
@@ -40,7 +43,7 @@ The boolean constructor is self explanatory.
 
 NB! * Boolean class has two static helper methods for creating booleans -
 parseBoolean and valueOf.
-	1. Boolean.parseBoolean(String ) method returns a primitive boolean and not
+	1. Boolean.parseBoolean(String) method returns a primitive boolean and not
 	a Boolean object (Note - Same is with the case with other parseXXX methods
 	such as Integer.parseInt - they return primitives and not objects).
 	The boolean returned represents the value true if the string argument is
@@ -48,7 +51,7 @@ parseBoolean and valueOf.
 
 	2. Boolean.valueOf(String) and its overloaded Boolean.valueOf(boolean)
 	version, on the other hand, work similarly but return a reference to either
-NB!	Boolean.TRUE or Boolean.FALSE wrapper objects. Observe that they don't
+	Boolean.TRUE or Boolean.FALSE wrapper objects. Observe that they don't
 	create a new Boolean object but just return the static constants TRUE or
 	FALSE defined in Boolean class.
 
@@ -59,16 +62,6 @@ If both are Boolean wrappers, then their references are compared just like in
 the case of other objects:
 Thus, 	new Boolean("true") == new Boolean("true") is false, but
 		new Boolean("true") == Boolean.parseBoolean("true") is true.
-
-
-* All wrapper classes (except Characters) define a constructor that accepts a
-String argument representing the primitive value that needs to be wrapped.
-
-NB! * None of the wrapper class defines a no-argument constructor.
-
-* You can assign a primitive value directly to a reference variable of its wrapper
-class type, called autoboxing. The reverse is unboxing, when an object of a
-primitive wrapper class is converted to its corresponding primitive value.
 
 * All wrapper classes define methods of the format primitive Value(), where the
 term primitive refers to the exact primitive data type name.
@@ -91,8 +84,4 @@ NB! * The Character class caches instances with values from 0 to 127. Classes
 Byte, Short, Integer and Long cache instances for values -128 to 127.
 
 NB! * No cached instances exist for the Float and Double wrapper classes.
-
-NB! * Wrapper classes are immutable. Adding a primitive value to a wrapper class
-variable doesn't modify the value of the object it refers to. The wrapper class
-variable is assigned a new object.
 

@@ -6,7 +6,6 @@ predefined values.
 	> byte
 	> short
 	> int
-NOTE:switch doesn’t accept long, float, double, or boolean primitive data type
 	> String
 		It also accepts arguments of wrapper classes:
 	> Character
@@ -14,12 +13,13 @@ NOTE:switch doesn’t accept long, float, double, or boolean primitive data type
 	> Short
 	> Integer
 	> Enum
+NOTE:switch doesn’t accept long, float, double, or boolean primitive data type
 
 * A switch statement can be compared with multiple related if-else-if-else
 constructs.
 
-* You can pass an expression as an argument to a switch statement, as long as the
-type of the expression is one of the acceptable data types.
+* You can pass an expression as an argument to a switch statement, as long as
+the type of the expression is one of the acceptable data types.
 
 NB! * All case labels should be COMPILE TIME CONSTANTS. You cannot have
 variables as case labels.
@@ -32,10 +32,6 @@ NB! * The default case executes only if no matching values are found.
 
 NB! * The case value can define expressions that use literal values; that is,
 they can be evaluated at compile time, as in 7+2.
-
-NB! * Only {String, byte, char, short, int, and enum} values can be used as types
-of a switch variable. (String is allowed since Java 7.) Wrapper classes {Byte,
-Character, Short, and Integer } are allowed as well.
 
 * One code block can be defined to execute for multiple case values in a
 switch statement.
@@ -57,7 +53,7 @@ the following will not compile because 300 cannot be assigned to 'by', which can
 only hold values from -128 to 127.
 
 	byte by = 10;
-	switch(by){     
-		case 200 :  //some code;     
-		case 300 :  //some code; }
-
+	switch(by){     	// won't compile
+		case 200 : ...  // case is over the range of byte type
+		case 300 : ...	// case is over the range of byte type
+	}

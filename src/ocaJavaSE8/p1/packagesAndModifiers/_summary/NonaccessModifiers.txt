@@ -23,8 +23,8 @@ variables, and methods. Inner classes and interfaces aren't covered in this exam
 * static attributes (fields and methods) are common to all instances of a class
 and aren't unique to any instance of a class.
 
-* static attributes exist independently of any instances of a class and may be
-accessed even when no instances of the class have been created.
+NB! * static attributes exist independently of any instances of a class and may
+be accessed even when no instances of the class have been created.
 
 * static attributes are also known as class fields or class methods because
 they're said to belong to their class, not to any instance of that class.

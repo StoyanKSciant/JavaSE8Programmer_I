@@ -4,6 +4,14 @@ superclass or base class, depending upon their type. Classes that share an
 inheritance relationship exhibit polymorphism. The polymorphic method should be
 defined in both the base class and the inherited class.
 
+* When implementing polymorphism with classes, a method defined in the base
+class may or may not be abstract.
+
+* When implementing polymorphism with interfaces, a method defined in the
+base interface is always abstract.
+
+NB! * Static methods in interfaces don't participate in polymorphism.
+
 * The polymorphic methods are also called overridden methods.
 
 * Overridden methods should define methods with the same name, same argument
@@ -19,13 +27,5 @@ a method with the same name, same parameter list, and same return type as in
 the derived class.
 
 * If a method defined in a base class is overloaded in the derived classes, then
-these two methods (in the base class and the derived class) are not called
+these two methods (in the base class and the derived class) are NOT called
 polymorphic methods.
-
-* When implementing polymorphism with classes, a method defined in the base
-class may or may not be abstract.
-
-* When implementing polymorphism with interfaces, a method defined in the
-base interface is always abstract.
-
-NB! * Static methods in interfaces don't participate in polymorphism.

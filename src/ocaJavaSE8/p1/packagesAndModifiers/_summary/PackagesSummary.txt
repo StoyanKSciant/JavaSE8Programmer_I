@@ -1,25 +1,13 @@
 
-* Classes and interfaces defined in the same Java source code file can't be
-defined in separate packages. Classes and interfaces imported using the import
-statement are available to all the classes and interfaces defined in the same
-Java source code file.
-
-* The import statement can't be used to import multiple classes or interfaces
-with the same name.
-
-NB! * There can be only 1 "public" class within package scope in a file. But you
-can have additional INNER classes that are public.
-
 * By default, all classes and interfaces in separate packages and sub-packages
 aren't visible to each other.
 
+* If a class defines a package statement, it should be the first statement in
+the class definition.
+
+* If present, the package statement should appear exactly once in a class.
+
 * All classes and interfaces in the same package are visible to each other.
-
-* An import statement allows the use of simple name for packaged classes and
-interfaces defined from different packages.
-
-* An import statement allows the use of simple names for packaged classes and
-interfaces defined in other packages.
 
 NB! * You can't import classes from a sub-package by using the wildcard
 character, an asteriks (*), in the import statement. So for EVERY SUBPACKAGE
@@ -27,3 +15,50 @@ NEW IMPORT is NECESSARY.
 
 NB! * A class from a default package can't be used in any named package class
 regardless of whether it's defined within the same directory or not.
+
+* An import statement allows the use of simple names for packaged classes and
+interfaces defined in other packages.
+
+* The import statement can’t be used to import multiple classes or interfaces
+with the same name.
+
+* You can use packages to group together a related set of classes and interfaces.
+
+* The package and subpackage names are separated using a dot..
+
+* All classes and interfaces in the same package are visible to each other.
+
+* You can’t use the import statement to access multiple classes or interfaces
+with the same names from different packages.
+
+* You can import either a single member or all members (classes and interfaces)
+of a package using the import statement.
+
+NB! * You can’t import classes from a subpackage by using the wildcard character,
+an asterisk (*), in the import statement.
+
+* A class from a default package can’t be used in any named packaged class,
+regardless of whether it’s defined within the same directory or not.
+
+NB! * You can import an individual static member of a class or all its static
+members by using a static import statement.
+
+NB! * An import statement can’t be placed before a package statement in a class.
+Any attempt to do so will cause the compilation of the class to fail.
+
+* The members of default packages are accessible only to classes or interfaces
+defined in the same directory on your system.
+
+* Classes and interfaces defined in the same Java source code file can't be
+defined in separate packages. Classes and interfaces imported using the import
+statement are available to all the classes and interfaces defined in the same
+Java source code file.
+
+* If a class includes a package statement, all the import statements should
+follow the package statement.
+
+* If present, an import statement must be placed before any class or interface
+definition.
+
+NB! * There can be only 1 "public" class within package scope in a file. But you
+can have additional INNER classes that are public.

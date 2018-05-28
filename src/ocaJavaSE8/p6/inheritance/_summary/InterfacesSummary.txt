@@ -15,14 +15,14 @@ NB! * super reference is illegal in interface context
 NB! * An interface can have a static method but the method must have a body,
 because STATIC METHODS CAN'T BE ABSTRACT.
 
-* An interface method cannot be default and static at the same time because a
-default method is always an instance method.
+NB! * An interface method cannot be default and static at the same time because
+a default method is always an instance method.
 
 * The variables of an interface are implicitly public, final, and static.
 
-interface MyInterface {	is equivalent to: 	interface MyInterface {
-	int age = 10;				--->			public static final int AGE = 10;
-}											}
+interface MyInterface {	is equivalent to: interface MyInterface {
+	int age = 10;				--->		  public static final int AGE = 10;
+}										  }
 
 NB! * A class that implements interfaces* (*that have defined a method with the
 same signature and implementation), must always override that methods because
@@ -43,21 +43,10 @@ NB! * An interface can extend multiple interfaces.
 * The declaration of a interface can't include a class name. An interface can
 never extends any class.
 
-* All the top-level Java types (classes, enums, interfaces) can be declared
-using only two access levels: public and default.
-
-* Inner or nested types can be declared using any access level.
-
 * A static method in an interface can't be called using a reference variable. It
 must be called using the interface name.
 
-NB * Unlike an interface, if you define a static method in a base class, it can
-be accessed using either a reference variable or the class name.
-
 * Default method is always an instance method.
-
-* You must implement an abstract method of an interface using the explicit
-access modifier public.
 
 * While overriding a default method, you MUST NOT USE the keyword default. The
 rules for overriding default and regular methods are same.
